@@ -1,0 +1,1992 @@
+<skin>
+	<!--
+  #################### Madhouse & StixMax v.1.0 ###########################
+  #                                                                       #
+  #      MadMax Skin       Version 2.0.0 released        01/03/21         #
+  #                                                                       #
+  #########################################################################
+  -->
+  <!-- MadMax Skin -->
+  <!-- This skin is a Freeware. Everyone can modify and use it in other images -->
+  <!-- !!!!!!! BUT DO NOT REMOVE OR CHANGE THIS DISCLAIMER !!!!!!! -->
+  <!-- Do whatever you want with this skin,but don't tell it's yours, or your idea -->
+  <!--    and leave the credentials in the "About-box" as they are -->
+	<!-- ALL User Interface Setup -->
+	<screen name="setup_userinterface" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL OSD 3D Setup -->
+	<screen name="setup_osd3d" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL EPG Setup -->
+	<screen name="setup_epgsettings" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />
+		<widget source="VKeyIcon" render="Pixmap" pixmap="MadMax/buttons/key_text.png" position="1390,970" zPosition="1" size="60,35" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<!--eLabel name="DEBUG" text="ALL04" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL EPGMulti Setup -->
+	<screen name="setup_epgmulti" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL EPGEnhanced Setup -->
+	<screen name="setup_epgenhanced" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL EPG Infobar Setup -->
+	<screen name="setup_epginfobar" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL07" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL EPG Infobar Graphical Setup -->
+	<screen name="setup_epginfobargraphical" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL08" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL EPG Graphical Setup -->
+	<screen name="setup_epggraphical" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL SubTitle Setup -->
+	<screen name="setup_subtitlesetup" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="HelpWindow" position="center,753" size="1,1" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL10" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL DVDPlayer Setup -->
+	<screen name="setup_dvdplayer" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL11" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Logs Setup -->
+	<screen name="setup_logs" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL12" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Time Setup -->
+	<screen name="setup_time" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />
+		<!--eLabel name="DEBUG" text="ALL13" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL KeyBoard Setup -->
+	<screen name="setup_keyboard" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL14" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Recording Setup -->
+	<screen name="setup_recording" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL15" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL TimeShift Setup -->
+	<screen name="setup_timeshift" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<!--panel name="M"/-->
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL16" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Special Features Setup -->
+	<screen name="setup_specialfeatures" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL17" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Display Setup -->
+	<screen name="setup_display" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL18" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Channel Selection Setup -->
+	<screen name="setup_channelselection" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="footnote" position="1260,880" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="ALL19" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Usage Setup -->
+	<screen name="setup_usage" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL20" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL Remote Setup -->
+	<screen name="setup_remotesetup" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL21" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL AutoLanguage Setup -->
+	<screen name="setup_autolanguagesetup" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="HelpWindow" position="center,753" size="1,1" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL22" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- ALL HardDisk Setup -->
+	<screen name="setup_harddisk" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="ALL23" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI SCREENS FHD -->
+	<!-- Modified for corret screen icon -->
+	<screen name="EgamiMainPanel" position="fill" title="EGAMI Panel - Main Menu" flags="wfNoBorder" >
+		<panel name="p800_Template_menu" />
+		<panel name="nRGBY"/>
+		<widget name="list" position="379,179" size="1170,580" itemHeight="72" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="2" transparent="1" />
+		<widget name="description" position="center,790" size="1150,600" font="Regular;34" halign="center" valign="top" foregroundColor="ltbluette" transparent="1" zPosition="2"/>
+		<!--eLabel name="DEBUG"  text="EG01" position="40,40" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI SoftCam CCCam Info FHD -->
+	<screen name="EGSoftCamInfo" position="fill" title="EGAMI Softcam Info" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<widget name="menu" position="585,183" size="760,540" font="Regular;32" zPosition="2" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EmuInfo Scripts FHD -->
+	<screen name="EGEmuInfoScript" position="fill" title="EGAMI Emu Info Scripts" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<widget name="list" position="585,183" size="760,540" font="Regular;32" zPosition="2" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="statuslab" position="center,580" size="770,600" font="Regular;34" halign="center" valign="top" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2"/>
+		<!--eLabel name="DEBUG" text="EG03" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Plugin Downloads FHD -->
+	<screen name="EG_PrzegladaczAddonow" position="fill" title="EGAMI Internet Addons" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="nRG"/>
+		<widget name="status" position="379,183" size="1160,60" font="Regular;35" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" />
+		<widget name="menu" position="379,270" size="1150,630" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="70" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG04" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Plugin Addons Preview FHD -->
+	<screen name="EGAddonInfo" position="fill" title="EGAMI Addon Informations" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<widget name="image" position="575,183" size="770,420" alphatest="on" />
+		<widget name="text" position="575,670" size="770,240" font="Regular;30" backgroundColor="#10202020" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Internet Addons FHD -->
+	<screen name="EG_InternetAddons" position="fill" title="EGAMI Internet Addons" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="nRG"/>
+		<widget name="status" position="379,183" size="1170,60" font="Regular;35" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" />
+		<widget name="menu" position="379,270" size="1170,630" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;30" itemHeight="70" scrollbarMode="showOnDemand" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EGS Script FHD -->
+	<screen name="EGScript" position="fill" title="EGAMI Script Tool" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<widget name="list" position="585,183" size="760,630" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="statuslab" position="center,480" size="770,200" font="Regular;33" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+ 		<!--eLabel name="DEBUG" text="EG07" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="SelectImage" position="fill" title="Menu" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<widget name="list" position="389,190" size="1160,740" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+	</screen>
+
+	<!--  EGAMI Smart Script FHD -->
+	<screen name="EGScript" position="fill" title="EGAMI Smart Script" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nR" />
+		<widget name="list" position="585,183" size="760,720" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="50" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="statuslab" position="center,480" size="770,200" font="Regular;33" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!--eLabel name="DEBUG" text="EG08" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Mount Manager FHD -->
+	<screen name="EGDeviceManager" position="fill"  title="EGAMI Devices Panel" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nRGYB" />
+		<widget name="lab1" position="575,183" size="770,60" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget source="list" render="Listbox" position="575,183" size="770,600" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="1" transparent="1" >
+		      <convert type="TemplatedMultiContent">
+			      {"template": [
+					      MultiContentEntryText(pos = (100, 2), size = (800, 50), font=0, color=0x3589ff, text = 0),
+					      MultiContentEntryText(pos = (120, 45), size = (780, 70), font=1, flags = RT_VALIGN_TOP, text = 1),
+					      MultiContentEntryPixmapAlphaTest(pos = (0, 5), size = (100, 100), png = 2),
+				      ],
+				      "fonts": [gFont("Regular", 32),gFont("Regular", 26)],
+				      "itemHeight": 120
+			      }
+		      </convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="EG09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EGS NetBrowser FHD -->
+	<screen name="EGNetBrowser" position="fill" title="Select Network Interface" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget source="list" render="Listbox" position="585,183" size="760,630" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="StringList" />
+		</widget>
+		<!--eLabel name="DEBUG" text="EG10" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Backup Panel FHD -->
+	<screen name="EGAMIBackupPanel" position="fill" title="EGAMI Image Backup Panel - STEP 1" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRGY" />
+		<widget name="label1" position="575,183" size="770,40" zPosition="1" halign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="label2" position="575,240" size="770,40" zPosition="1" halign="center" font="Regular;30" foregroundColor="white"     backgroundColor="header" transparent="1"/>
+		<widget name="label3" position="575,300" size="770,40" zPosition="1" halign="center" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="list" position="585,360" size="750,450" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG11" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Backup Panel Step 2 FHD -->
+	<screen name="EGAMIBackupPanel_Step2" position="fill" title="EGAMI Image Backup Panel - STEP 2" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget name="label1" position="575,183" size="770,40"  zPosition="1" halign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="label2" position="575,240" size="770,120" zPosition="1" halign="center" font="Regular;30" foregroundColor="white"     backgroundColor="header" transparent="1"/>
+		<widget name="config" position="575,430" size="770,450" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG012" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Backup Panel FHD -->
+    <!-- Modified for new icons -->
+	<screen name="EGAMIBackupPanel_Step3" position="center,center" size="550,300" title="EGAMI Backup in progress..." flags="wfNoBorder">
+		<widget name="status" position="0,0" size="550,300" zPosition="-1"
+			pixmaps="MadMax/icon_conn/connection_1.png,MadMax/icon_conn/connection_2.png,MadMax/icon_conn/connection_3.png,MadMax/icon_conn/connection_4.png
+			,MadMax/icon_conn/connection_5.png,MadMax/icon_conn/connection_6.png" />
+		<widget name="label" position="55,165" halign="center" size="460,60" zPosition="1" font="Regular;30" valign="top" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG13" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Backup Panel Step 2 FHD -->
+	<screen name="EGAMIRestorePanel_Step1" position="fill" title="EGAMI Image Restore Panel - STEP 1" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="nRG" />
+		<widget name="config" position="575,183" size="770,720" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
+		<!--eLabel name="DEBUG" text="EG14" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Backup Panel Step 3 FHD -->
+	<!-- Modified for new icons -->
+	<screen name="EGAMIRestorePanel_Step2" position="center,center" size="700,400" title="EGAMI Restore in progress..." >
+		<widget name="status" position="85,30" size="550,300" zPosition="-1"
+			pixmaps="MadMax/icon_conn/connection_1.png,MadMax/icon_conn/connection_2.png,MadMax/icon_conn/connection_3.png,MadMax/icon_conn/connection_4.png,
+			MadMax/icon_conn/connection_5.png,MadMax/icon_conn/connection_6.png" />
+		<widget name="label" position="10,340" halign="center" size="680,100" font="Regular;30" valign="top" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG15" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Full Backup Panel FHD -->
+	<screen name="EGFullBackup" position="fill" title="EGAMI Full Image Backup Panel - STEP 1" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget name="label1" position="575,183" size="770,40"  zPosition="1" halign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="label2" position="575,240" size="770,120" zPosition="1" halign="center" font="Regular;30" foregroundColor="white"     backgroundColor="header" transparent="1"/>
+		<widget name="config" position="575,430" size="770,450" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG16" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Remove Addons FHD -->
+	<screen name="EGAddonRemove" position="fill" title="EGAMI Remove Addons" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nR"/>
+		<widget name="status" position="center,183" size="770,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<widget name="remove" position="585,270" size="760,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG17" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Manual Addons Install FHD -->
+	<screen name="EG_Manual_installation" position="fill" title="EGAMI Manual Addons Installation" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="nR"/>
+		<widget name="status" position="center,183" size="1170,40" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<widget name="listaaddonow" position="370,270" size="1160,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG18" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI E2 Config Info FHD -->
+	<screen name="EGEnigma2ConfigInfo" position="fill" title="EGAMI Enigma2 Config" flags="wfNoBorder" >
+		<panel name="p900_Template" />
+		<widget name="menu" position="70,183" size="1700,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
+		<!--eLabel name="DEBUG" text="EG19" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Kernel Info FHD -->
+	<screen name="EGKernelInfo" position="fill" title="EGAMI Kernel Informations" flags="wfNoBorder" >
+		<panel name="p800_Template_menu" />
+		<widget name="menu" position="379,183" size="1160,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<!--eLabel name="DEBUG" text="EG20" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Process Info FHD -->
+	<screen name="EGProcessInfo" position="fill" title="EGAMI Process Informations" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<widget name="menu" position="585,183" size="760,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
+		<!--eLabel name="DEBUG" text="EG21" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EGS StreamInfo FHD -->
+	<screen name="EGStreamInfo" position="fill" title="EGAMI Stream Informations" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<widget name="menu" position="585,183" size="760,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
+		<!--eLabel name="DEBUG" text="EG22" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI News About FHD -->
+	<screen name="EGAMIMainNews" position="fill" title="EGAMI News" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="sRGYB"/>
+		<widget name="header" position="1000,1025" size="0,0" font="Regular;32" halign="center" valign="top" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1"/>
+		<widget source="menu" render="Listbox" position="379,183" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" size="1170,715" scrollbarMode="showOnDemand" transparent="1" zPosition="3">
+			<convert type="TemplatedMultiContent" transparent="0">
+				{"template": [
+					MultiContentEntryPixmapAlphaBlend(pos = (5, 4), size = (50, 50), png = 2), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (65, 6), size = (1080, 44), font=0, color=0xdddddd, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+					],
+					"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="EG23" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI News Updates Info FHD -->
+	<screen name="EGAMIUpdateInfo" position="fill" title="EGAMI News" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="sRGYB"/>
+		<widget name="header" position="1000,1015" size="1170,200" font="Regular;30" halign="center" valign="top" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1"/>
+		<widget name="update" position="379,183" size="1170,740" font="Regular;28" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
+		<!--eLabel name="DEBUG" text="EG24" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI BootManager FHD -->
+	<screen name="EGAMIBootImageChoose" position="fill" title="EGAMI Multiboot Image Choose" flags="wfNoBorder">
+		<panel name="p900_Template" />
+		<panel name="nRGYB" />
+		<widget name="label10" position="70,170"  size="760,100" font="Regular;34" foregroundColor="ltbluette" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<widget name="label11" position="810,166" size="100,44"  font="Regular;40" foregroundColor="white"     backgroundColor="#101010" transparent="1" zPosition="1" />
+		<widget name="label1"  position="70,230"  size="820,120" font="Regular;32" foregroundColor="grey"      backgroundColor="#101010" transparent="1" zPosition="1" />
+		<widget name="device_icon" position="70,350" size="80,80" alphatest="blend" />
+		<widget name="label2"  position="160,360" size="820,40" halign="left" font="Regular;30" backgroundColor="#101010" foregroundColor="ltbluette" transparent="1" zPosition="1" />
+		<widget name="label6"  position="160,400" size="820,40" halign="left" font="Regular;30" backgroundColor="#101010" foregroundColor="ltbluette" transparent="1" zPosition="1" />
+		<eLabel position="895,460" size="5,440" backgroundColor="#20000000" zPosition="5"/>
+		<widget name="config"  position="70,460" size="840,440" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="label3"  position="1280,540" size="300,40" font="Regular;34" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="label7"  position="1480,540" size="300,40" font="Regular;34" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="label4"  position="1280,480" size="300,40" font="Regular;30" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="label8"  position="1550,480" size="300,40" font="Regular;30" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="free_space_progressbar" position="1280,600" size="570,20" borderColor="ltbluette" borderWidth="1" zPosition="3" />
+		<widget name="label4"  position="1280,650" size="300,40" font="Regular;30" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="label8"  position="1550,650" size="270,40" font="Regular;30" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="label5"  position="1280,750" size="600,70" font="Regular;30" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="label9"  position="1280,820" size="600,50" font="Regular;44" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG25" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI MultiBoot FHD -->
+	<screen name="EGAMIChooseOnLineImage" position="fill" title="EGAMIBoot - Download OnLine Images" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<widget source="list" render="Listbox" position="575,183" size="770,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="3">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (150, 2), size = (690, 35), font=0, color=0x3589ff, flags = RT_HALIGN_LEFT, text = 0),
+					MultiContentEntryPixmapAlphaBlend(pos = (5, 5), size = (140, 70), png = 1),
+					MultiContentEntryText(pos = (150, 37), size = (690, 32), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_LEFT, text = 3),
+					],
+					"fonts": [gFont("Regular", 30),gFont("Regular", 28)],
+					"itemHeight": 72
+				}
+			</convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="EG26" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI MultiBoot Download Images FHD -->
+	<screen name="DownloadOnLineImage" position="fill" title="EGAMIBoot - Download Image" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget name="imageList" position="575,183" size="770,720" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
+		<!--eLabel name="DEBUG" text="EG27" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI MultiBoot FHD -->
+	<screen name="EGAMIBootInstallation" position="fill" title="EGAMI Multiboot Installation" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget name="label1" position="575,183" size="770,80"  zPosition="1" halign="center" valign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="label2" position="575,300" size="770,240" zPosition="1" halign="center" font="Regular;30" backgroundColor="header" transparent="1"/>
+		<widget name="config" position="575,520" size="770,280" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+		<widget name="HelpWindow" position="575,450" size="1,1" transparent="1" zPosition="2" alphatest="on"/>
+		<!--eLabel name="DEBUG" text="EG28" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI MultiBoot FHD -->
+	<screen name="EGAMIBootImageInstall" position="fill" title="EGAMIBoot - Image Installation" flags="wfNoBorder" >
+		<panel name="p800_Template_menu" />
+		<panel name="nRG" />
+		<widget name="config" position="379,183" size="1170,280" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+		<widget name="HelpWindow" position="379,700" size="1,1" transparent="1" alphatest="on" zPosition="5" />
+		<!--eLabel name="DEBUG" text="EG29" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Plugin FHD -->
+	<screen name="EGGreenPanel" position="fill" title="EGAMI Green Panel" flags="wfNoBorder" >
+		<panel name="p800_Template_menu" />
+		<panel name="nRGYB"/>
+		<widget source="list" render="Listbox" position="379,183" size="1170,720" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="3">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (170, 0), size = (650, 36), font=0, text = 0),
+				MultiContentEntryText(pos = (170, 34), size = (650, 34), font=1, color = 0x6da6ff, text = 1),
+				MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (150, 60), png = 2, flags = BT_SCALE),
+				],
+				"fonts": [gFont("Regular", 32),gFont("Regular", 28)],
+				"itemHeight": 72
+				}
+			</convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Plugin Addons FHD -->
+	<screen name="EGAddonMenu" position="fill" title="EGAMI Addons Panel" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nR"/>
+		<widget name="list" position="575,183" size="770,720" itemHeight="72" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<!--eLabel name="DEBUG" text="EG31" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI FAQ List FHD -->
+	<screen name="EGAMIFaq_YTChannel" position="fill" title="EGAMI FAQ List" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nR" />
+		<widget name="title"        position="575,170" size="770,40"  font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="4" />
+		<widget name="genreList"    position="575,230" size="770,350" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="name"         position="575,310" size="770,80"  font="Regular;32" valign="top" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="0" />
+		<widget name="ContentTitle" position="575,650" size="770,200" font="Regular;32" halign="center" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="4" />
+		<!--eLabel name="DEBUG" text="EG32" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI ListChannel FHD -->
+	<screen name="EGAMIFaq_ListChannel_ListScreen" position="fill" title="EGAMI FAQ List" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="nRGYB" />
+		<widget name="ContentTitle" position="575,183" size="770,50"  font="Regular;34" halign="center" foregroundColor="ltbluette" backgroundColor="header" zPosition="1" />
+		<widget name="liste"        position="575,230" size="770,700" font="Regular;30" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="coverArt" pixmap="~/original/images/no_coverArt.png" position="1400,180" size="410,300" transparent="1" alphatest="blend" borderWidth="2" borderColor="#00555556" />
+		<widget name="name"         position="1240,550" size="770,30"  foregroundColor="#00e5b243" backgroundColor="#00101214" transparent="1" font="Regular;26" valign="top" zPosition="0" />
+		<widget name="handlung"     position="1240,600" size="770,170" backgroundColor="#00101214" transparent="1" font="Regular;19" valign="top" zPosition="0" />
+		<widget name="VideoPrio"    position="1240,800" size="770,50"  backgroundColor="#00101214" transparent="1" foregroundColor="#00555556" font="Regular; 20" valign="center" halign="right" zPosition="1" />
+		<widget name="vPrio"        position="1240,850" size="25,25"   backgroundColor="#00101214" transparent="1" font="Regular;20" valign="center" halign="center" zPosition="1" foregroundColor="#00bab329" />
+		<widget name="Page"         position="1275,850" size="56,25"   backgroundColor="#00101214" transparent="1" foregroundColor="#00555556" font="Regular;20" valign="center" halign="right" zPosition="0" />
+		<widget name="page"         position="1350,850" size="95,25"   backgroundColor="#00101214" transparent="1" font="Regular;20" valign="center" halign="right" zPosition="0" />
+		<widget name="header" position="1240,900" size="600,120" font="Regular;33" halign="center" valign="top" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1"/>
+		<!--eLabel name="DEBUG" text="EG33" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Animation FHD -->
+    <!-- Modified for new icons -->
+	<screen name="EGConnectionAnimation" position="center,100" size="550,300" title="EGAMI" flags="wfNoBorder">
+		<widget name="connect" position="0,0" size="550,300" zPosition="-1" transparent="1"
+			pixmaps="MadMax/icon_conn/connection_1.png,MadMax/icon_conn/connection_2.png,MadMax/icon_conn/connection_3.png,MadMax/icon_conn/connection_4.png,MadMax/icon_conn/connection_5.png,MadMax/icon_conn/connection_6.png" />
+		<widget name="lab1" position="55,165" halign="center" size="460,60" zPosition="1" font="Regular;20" valign="top" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG34" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Permanent Clock FHD -->
+  <screen name="EGPermanentClock" position="1650,40" size="200,90" flags="wfNoBorder" title="Egami Permanent Clock" backgroundColor="#55000000" >
+    <widget source="global.CurrentTime" render="Label" position="10,10" size="180,50" font="LCD;40" foregroundColor="#d0d0d0" valign="center" halign="center" transparent="1" >
+      <convert type="ClockToText">Default</convert>
+    </widget>
+		<!--eLabel name="DEBUG" text="EG35" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI News Updates FHD -->
+	<screen name="UpdateEGAMI" position="center,center" size="900,300" title="Software update" >
+		<widget name="activityslider" position="30,162" size="840,14" backgroundColor="bluette" zPosition="1" />
+		<widget source="package" render="Label" position="20,25" size="860,90" font="Regular;30" halign="center" valign="center" backgroundColor="#101010" transparent="1" />
+		<eLabel position="20,150" size="860,40" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="slider" position="25,155" size="850,30" borderColor="ltbluette" borderWidth="1" zPosition="1" />
+		<widget source="status"  render="Label" position="20,200" size="860,100" font="Regular;30" halign="center" valign="center" backgroundColor="header" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG36" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Execute FHD -->
+	<screen name="EGExecute" position="center,center" size="1200,600">
+		<widget name="linelist" position="10,10"  size="1180,580" font="Regular;30" itemHeight="40" backgroundColor="header" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG37" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI CCCam Edit FHD -->
+	<screen name="EGCCcamEditAddLine" position="fill" title="EGAMI CCcam Lines Editor" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="nRG" />
+		<widget name="config" position="379,180" size="1170,400" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="HelpText" position="379,850" size="1170,40" font="Regular;30" halign="center" valign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG38" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Execute FHD -->
+	<screen name="EGCCcamConfigEdit" position="fill" title="Config Edit" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="sRGYB" />
+		<widget name="menu" position="379,180" size="1170,400" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" />
+		<widget source="statusbar" render="Label" position="379,850" size="1180,50" halign="center" valign="center" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="10" />
+		<!--eLabel name="DEBUG" text="EG39" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI ExtraMenu FHD -->
+	<screen name="EGExtrasMenu" position="fill" title="EGAMI Extras Panel" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<widget source="list" render="Listbox" position="575,183" size="770,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (70, 0), size = (750, 40), font=0, text = 0),
+				MultiContentEntryText(pos = (70, 40), size = (750, 24), font=1, text = 3),
+				MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (40, 40), png = 1),
+				],
+				"fonts": [gFont("Regular", 30),gFont("Regular", 22)],
+				"itemHeight": 72
+				}
+			</convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="EG40" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI DropBear FHD -->
+	<screen name="EGDropbearConfig" position="fill" title="EGAMI DropBear Setup" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nRGYB" />
+		<widget name="state"  position="575,183" size="770,40" font="Regular;34" halign="center" valign="center" noWrap="1"  backgroundColor="red" foregroundColor="white" transparent="0" />
+		<widget name="config" position="575,250" size="770,400" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG41" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Choose Mount FHD -->
+	<screen name="EGDeviceManager_Setup" position="fill" title="EGAMI Devices Panel" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nRGYB" />
+		<widget name="config" position="575,183" itemHeight="40" size="770,840" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG42" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EGS NetBrowser -->
+	<screen name="EGSwapManager" position="fill" title="EGAMI Swap File Manager" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nRGYB" />
+		<widget name="state"  position="575,183" size="770,80" font="Regular;30" halign="center" noWrap="1" backgroundColor="red" foregroundColor="white" />
+		<widget name="config" position="575,280" size="770,600" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG43" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EmuManager FHD -->
+	<screen name="EmuManager" position="fill"  title="EMU Manager" flags="wfNoBorder" >
+		<panel name="p900_Template_emu" />
+		<panel name="nRGYB"/>
+		<ePixmap position="70,150" zPosition="3" size="120,157" pixmap="MadMax/icons/emupic.png" alphatest="blend" transparent="1" />
+		<widget name="choose_cam"  position="180,180" size="710,40" font="Regular;30" halign="center" valign="center" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget name="config"      position="180,250" size="710,40" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+ 		<eLabel text="OK to Start" position="680,250" size="200,40" font="Regular;30" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2"/>
+		<eLabel position="180,305" size="710,1" backgroundColor="#10404040" zPosition="2"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/lan.png" position="70,330" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1">
+			<convert type="RouteInfo">Lan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/wifi.png" position="70,330" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1" >
+			<convert type="RouteInfo">Wifi</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="240,360" size="650,240" font="Regular;40" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="EGExtraInfo">E-C-N</convert>
+		</widget>
+		<widget name="ecminfo" position="80,500" size="720,380" font="Regular;32" zPosition="2" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<eLabel position="1250,180" size="10,720" backgroundColor="bluette" zPosition="2"/>
+		<!-- ***** SAT Icon ***** -->
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/sat.png" position="1280,180" size="70,70" alphatest="blend" zPosition="1" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/dtt.png" position="1280,180" size="70,70" alphatest="blend" zPosition="1" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/cable.png" position="1280,180" size="70,70" alphatest="blend" zPosition="1" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/iptv.png" position="1280,180" size="70,70" alphatest="blend" zPosition="1" transparent="1">
+			<convert type="ServiceInfo">IsStream</convert>
+			<convert type="ConditionalShowHide">
+			</convert>
+		</widget>
+		<!-- ***** Tuner ***** -->
+		<eLabel text="Tun:" position="1370,180" size="90,40" font="Regular;30" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">3,3</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--E-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">4,4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--F-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">5,5</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--G-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">6,6</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--H-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">7,7</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--I-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="I" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">8,8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--J-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="J" position="1450,180" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">9,9</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- ***** Orbital ***** -->
+		<widget source="session.CurrentService" render="Label" position="1490,180" size="120,240" font="Regular;30" halign="left" text="DVB-T" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="ServiceOrbitalPosition"/>
+		</widget>
+		<!-- ***** System ***** -->
+		<widget source="session.CurrentService" render="Label" position="1600,180" size="260,240" font="Regular;30" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">TunerSystem</convert>
+		</widget>
+		<!-- ***** Quality ***** -->
+		<eLabel text="Snr:" position="1370,220" size="100,240" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Label" position="1450,220" size="130,40" font="Regular;32" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" >
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<eLabel text="Ber:" position="1620,225" size="100,240" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Label" position="1700,225" size="160,40" font="Regular;32" halign="left" foregroundColor="red" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" >
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<eLabel position="1280,270" size="575,1" backgroundColor="#808080" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Progress" position="1280,267" size="575,5" foregroundColor="ltbluette" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<!-- is crypted ? -->
+		<ePixmap position="1280,320" size="80,40" pixmap="MadMax/icons/ico_crypt_off.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/ico_crypt_on.png" position="1280,320" zPosition="4" size="80,40" alphatest="blend" >
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="lb_channel"     position="1280,380" size="580,80" font="Regular;38" zPosition="2" foregroundColor="yellow" backgroundColor="header" transparent="1"/>
+		<widget name="lb_provider"    position="1280,480" size="580,40" font="Regular;36" zPosition="2" foregroundColor="yellow" backgroundColor="header" transparent="1"/>
+		<widget name="lb_videosize"   position="1280,580" size="580,80" font="Regular;34" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="lb_aspectratio" position="1280,630" size="580,40" font="Regular;34" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG44" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI EmuManager FHD -->
+	<!-- Modified for new icons -->
+	<screen name="EGEmuManagerStarting" position="center,150" size="700,350" title="EGAMI StartCam" >
+		<widget name="text" position="10,10" size="680,100" halign="center" valign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="starting" position="center,110" size="200,200" zPosition="1" pixmaps="MadMax/icon_conn/sc1.png,MadMax/icon_conn/sc2.png,MadMax/icon_conn/sc3.png,MadMax/icon_conn/sc4.png
+			,MadMax/icon_conn/sc5.png,MadMax/icon_conn/sc6.png,MadMax/icon_conn/sc7.png,MadMax/icon_conn/sc8.png,MadMax/icon_conn/sc9.png,MadMax/icon_conn/sc10.png,MadMax/icon_conn/sc11.png
+			,MadMax/icon_conn/sc12.png,MadMax/icon_conn/sc13.png" alphatest="blend" />
+		<!--eLabel name="DEBUG" text="EG45" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- EGAMI EGAMISwap -->
+	<screen name="EGAMISwap" position="fill" title="EGAMI Swap" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRGY" />
+		<widget name="label1" position="585,183" size="760,40" zPosition="1" halign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="label2" position="585,240" size="760,40" zPosition="1" halign="center" font="Regular;30" foregroundColor="white" backgroundColor="header" transparent="1"/>
+		<widget name="label3" position="585,300" size="760,40" zPosition="1" halign="center" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<widget name="lab1" position="585,183" size="760,450" font="Regular;30" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" transparent="1"/>
+		<!--eLabel name="DEBUG" text="EG46" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- EGAMI EGAMI_UsbFormat -->
+	<screen name="EGAMI_UsbFormat" position="fill" title="EGAMI Usb Format" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget name="lab1" position="585,183" font="Regular;28" itemHeight="40" foregroundColor="ltbluette" size="740,840" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+		<!--eLabel name="DEBUG" text="EG47" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- EGAMI EgamiBootLogoSelector -->
+	<screen name="EgamiBootLogoSelector" title="Egami BootLogo Selector" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRG" />
+		<widget name="config" position="575,183" size="770,630" font="Regular;32" scrollbarMode="showOnDemand" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+		<eLabel text="Preview" position="1260,600" size="0,0" font="Regular;40" halign="center" valign="center" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="Preview" position="1370,705" size="390,220" alphatest="on" zPosition="10"/>
+		<!--eLabel name="DEBUG" text="EG48" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Plugin List -->
+	<screen name="ChannelListUpdateMenu" position="fill" title="" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<widget source="list" render="Listbox" position="575,183" size="770,720" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#10000000" zPosition="3">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (170, 0), size = (650, 36), font=0, text = 0),
+				MultiContentEntryText(pos = (170, 38), size = (650, 30), font=1, color = 0x6da6ff, text = 3),
+				MultiContentEntryPixmapAlphaTest(pos = (2, 5), size = (150, 60), png = 1, flags = BT_SCALE),
+				],
+				"fonts": [gFont("Regular", 32),gFont("Regular", 23)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
+		<widget name="info" position="70,830" size="840,234" font="Regular; 30" halign="center" transparent="1" backgroundColor="#10000000" foregroundColor="blue" />
+		<!--eLabel name="DEBUG" text="EG49" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  EGAMI Skin Menu -->
+	<screen name="UserSkin_Menu" position="fill" title="" flags="wfNoBorder">
+  	<panel name="p800_Template" />
+		<widget source="list" render="Listbox" position="45,180" size="770,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43" selectionPixmap="MadMax/box/slider72.png" backgroundPixmap="MadMax/box/sliderb.png">
+ 			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (25, 10), size = (40, 40), png = 0),
+				MultiContentEntryText(pos = (90, 0), size = (800, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+				],
+				"fonts": [gFont("Regular", 36)],
+				"itemHeight": 60
+				}
+			</convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="EG50" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  OpenDreamy Setup -->
+	<screen name="oDreamySetup" position="fill" title="oDreamy_FHD Skin Controler" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<widget name="config" font="Regular; 28" itemHeight="44" position="575,183" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" size="770,160" />
+		<widget name="Preview" position="575,395" size="770,472" zPosition="1" />
+		<ePixmap position="320,992" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,992" pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="565,992" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,1025" size="180,46" text="Cancel" />
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="360,1025" size="180,46" text="Save" />
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="605,1025" size="380,46" text="Reboot" />
+		<!--eLabel name="DEBUG" text="EG51" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+  <screen name="ConfigMenu" title="IPTV Player - ustawienia" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+    <panel name="sRG" />
+    <widget name="config" position="379,183" size="1170,720" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+    <widget name="footnote" position="1260,1840" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
+    <widget name="HelpWindow" position="379,700" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<!--eLabel name="DEBUG" text="EG52" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+	<screen name="ConfigHostsMenu" title="" position="fill" flags="wfNoBorder">
+    <panel name="sRG" />
+    <widget name="config" position="379,183" size="1165,720" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+    <widget name="footnote" position="1260,1840" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
+    <widget name="HelpWindow" position="80,700" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<eLabel position="50,30" size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32" size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="MadMax/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="MadMax/icons/list.png" alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142" size="1196,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
+		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
+		<!--eLabel name="DEBUG" text="EG53" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+	<screen name="IPTVDMWidget" title="IPTV Player download manager" position="fill" flags="wfNoBorder">
+    <panel name="sRGYB" />
+    <widget name="titel" position="70,160" size="820,40" font="Regular;30" backgroundColor="bluette" transparent="0" zPosition="1" />
+    <widget name="list" position="70,220" size="1165,700" font="Regular;28" itemHeight="70" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG54" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+	<screen name="IPTVUpdateWindow" title="Update Main" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+    <widget name="list" position="379,210" size="1170,720" font="Regular;30" halign="center" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+    <widget name="sub_title" position="379,160" size="1160,30" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" halign="left" valign="center" transparent="1" zPosition="1" />
+    <widget name="console" position="1047,476" size="550,426" font="Regular;23" foregroundColor="white" backgroundColor="background" transparent="1" enableWrapAround="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG55" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+	<screen name="IPTVChoiceBoxWidget" position="fill" title="" flags="wfNoBorder">
+		<panel name="p800_Template" />
+    <widget name="list" position="575,183" size="770,720" font="Regular;30" halign="center" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG56" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+	<screen name="ConfigHostMenu" position="fill" title="" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="sRG" />
+    <widget name="config" position="575,183" size="770,720" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<!--eLabel name="DEBUG" text="EG57" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  Egami MultiBoot -->
+	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot STARTUP Selector" flags="wfNoBorder">
+		<panel name="p800_Template_menu" />
+		<panel name="sRGY" />
+    <widget source="config" render="Label" position="379,183" size="1160,50" halign="left" transparent="1" font="Regular; 34" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" />
+    <widget source="options" render="Label" position="379,240" size="1160,35" halign="left" transparent="1" font="Regular; 28" backgroundColor="#00000000" foregroundColor="grey" />
+    <widget name="description" position="center,300" size="1150,26" transparent="1" font="Regular; 24" foregroundColor="#00ffffff" halign="left" backgroundColor="#00000000" valign="grey" />
+		<!--eLabel name="DEBUG" text="EG58" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!--  IpTV Player -->
+	<screen name="ExtensionsList" position="fill" title="ExtensionsList" flags="wfNoBorder">
+		<panel name="p900_Template" />
+		<widget name="list" position="70,183" size="840,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="3" />
+		<ePixmap position="1275,175" zPosition="2" size="50,50" pixmap="MadMax/icons/ram.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,190" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">MemTotal</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,200" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">MemTotal</convert>
+		</widget>
+		<ePixmap position="1275,240" zPosition="2" size="50,50" pixmap="MadMax/icons/cpu.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,250" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="MMCpuUsage">$0</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,260" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="MMCpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
+		</widget>
+		<ePixmap position="1284,305" zPosition="2" size="50,50" pixmap="MadMax/icons/flash.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,315" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">FleshInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,325" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">Flesh</convert>
+		</widget>
+		<ePixmap position="1275,365" zPosition="2" size="50,50" pixmap="MadMax/icons/hdd_extensions.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,380" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">HddInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,390" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">HddInfo</convert>
+		</widget>
+		<ePixmap position="1275,430" zPosition="2" size="50,50" pixmap="MadMax/icons/usb.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,445" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1336,455" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+		  <convert type="EGLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1280,540" size="500,100" font="Regular;28" backgroundColor="#10000000" foregroundColor="ltbluette" transparent="1" zPosition="99">
+      <convert type="EGStbInfo">All</convert>
+    </widget>
+		<widget source="session.CurrentService" render="Label" position="center,780" size="1920,35" halign="center" valign="center" font="Regular; 32" transparent="1" foregroundColor="ltbluette" backgroundColor="header" zPosition="6">
+			<convert type="EGBoxInfo">Uptime</convert>
+		</widget>
+    <!--eLabel name="DEBUG" text="EG59" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="j00zekBouquets" position="fill" title="j00zekBouquets @j00zek" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="nRGYB" />
+		<widget name="config" font="Regular; 28" itemHeight="44" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" position="575,180" size="770,720" scrollbarMode="showOnDemand"/>
+    <!--eLabel name="DEBUG" text="EG60" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="GOSconsole" position="fill" title="Command execution..." flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<widget name="text" position="575,183" size="770,720" font="Console;22"/>
+    <!--eLabel name="DEBUG" text="EG61" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="Master" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG62" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="Seto" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG63" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="HSWG" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG64" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="Fk" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG65" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="K80" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG66" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="Ritcher" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG67" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="Djcrash" title="" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRGYB"/>
+		<widget name="typ" position="575,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="typ2" position="330,370" size="100,40" font="Regular;32" foregroundColor="yellow" halign="left" transparent="1" />
+		<widget name="typ3" position="580,370" size="100,40" font="Regular;32" foregroundColor="blue" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats4x" position="330,440" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats20x" position="580,440" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion4x" position="330,480" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion20x" position="580,480" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG68" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="MasterPicon" title="" position="fill" flags="wfNoBorder">
+		<panel name="p900_Template"/>
+		<panel name="sRG"/>
+		<widget name="typ" position="85,190" size="200,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="800,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="575,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="new0" position="575,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="575,820" size="770,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <!--eLabel name="DEBUG" text="EG69" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- ####################################### -->
+	<!-- ########### ATV TEAM PANELS ########### -->
+	<!-- ####################################### -->
+
+	<!-- O-ATV Quick Menu -->
+	<screen name="QuickMenu" position="fill" title="Quick Launch Menu" flags="wfNoBorder">
+		<panel name="p900_Template"/>
+		<panel name="nRGY"/>
+		<widget name="list"    position="70,183"  size="570,700" itemHeight="70" font="Regular; 34" scrollbarMode="showNever" transparent="1" backgroundColor="header"
+		                       foregroundColor="white" backgroundColorSelected="bluette" foregroundColorSelected="white" />
+		<widget name="sublist" position="690,180" size="1160,700" itemHeight="70" font="Regular; 34" scrollbarMode="showNever" transparent="1" backgroundColor="header"
+		                       foregroundColor="white" backgroundColorSelected="bluette" foregroundColorSelected="white" />
+		<widget name="description" position="center,853" size="1700,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- MultiBootWizard -->
+	<screen name="MultiBootWizard" position="fill" title="MultiBoot maintenance" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRGY"/>
+		<widget name="config" position="379,180" size="1170,520" itemHeight="50" font="Regular;35" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" scrollbarMode="showOnDemand"/>
+		<widget source="description" render="Label" position="379,750" size="1170,150" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2"/>
+		<widget source="options" render="Label" position="379,800" size="1170,190" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2"/>
+	</screen>
+
+	<!-- O-ATV QuickMenu Devices -->
+	<screen name="QuickMenuDevices" position="fill" title="Devices" flags="wfNoBorder" >
+		<panel name="p800_Template_menu"/>
+		<panel name="M"/>
+		<eLabel text="Available Devices" position="379,183" size="820,50" font="Regular;30" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="0" />
+		<widget source="devicelist" render="Listbox" position="70,240" size="820,340" scrollbarMode="showOnDemand" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				 MultiContentEntryText(pos = (80, 0), size = (720, 40), font=0, color=0x59a5f5, text = 0),
+				 MultiContentEntryText(pos = (105, 40), size = (600, 60), font=1, flags = RT_VALIGN_TOP, text = 1),
+				 MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular",32),gFont("Regular",26)],
+				"itemHeight": 110
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" zPosition="2" position="379,183" size="820,40" font="Regular;32" backgroundColor="header" foregroundColor="white" halign="center" transparent="0" />
+		<!-- eLabel name="DEBUG" text="AT02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV Software Panel -->
+	<screen name="SoftwarePanel" position="fill" title="SoftwarePanel" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="nRG"/>
+		<eLabel position="379,183" size="825,50" backgroundColor="bluette" />
+		<widget source="list" render="Listbox" position="379,240" size="1170,640" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header"
+		        backgroundColorSelected="bluette" foregroundColorSelected="white" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 1), size = (750, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 40), size = (810, 30), font=1, color=0x91c7ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (970, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (0, 50), size = (700, 0), png = 5), # index 5 is the div pixmap
+					],
+				"fonts": [gFont("Regular",32),gFont("Regular",26)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
+		<widget name="feedstatusRED"    position="center,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
+		<widget name="feedstatusYELLOW" position="center,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
+		<widget name="feedstatusGREEN"  position="center,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
+		<widget name="packagetext"      position="379,183" size="820,40" font="Regular;36" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="packagenr"        position="830,180" size="100,40" zPosition="1" font="Regular;36" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="AT03" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Software Panel -->
+	<screen name="SoftcamPanel" position="fill" title="Softcam Panel" flags="wfNoBorder">
+		<panel name="p900_Template"/>
+		<panel name="nRGYB"/>
+		<ePixmap position="70,150" zPosition="3" size="120,157" pixmap="MadMax/icons/emupic.png" alphatest="blend" transparent="1" />
+		<widget name="config"    position="180,260" size="710,50" font="Regular;32" itemHeight="40" halign="left" valign="center" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget name="actifcam"  position="180,210" size="710,40" font="Regular;32" halign="right" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3"  />
+		<widget name="actifcam2" position="180,320" size="710,50" font="Regular;36" foregroundColorSelected="yellow" backgroundColor="header" transparent="1" zPosition="3" />
+		<eLabel position="180,305" size="710,1" backgroundColor="#10404040" zPosition="2"/>
+		<widget name="ecminfo" position="180,415" size="730,500" font="Regular;32" foregroundColor="#58bcff" backgroundColor="header" transparent="1" zPosition="2" />
+		<ePixmap pixmap="MadMax/icons/scan-c.png" position="70,350" size="90,90" alphatest="blend" zPosition="2" />
+		<!-- Provider Data -->
+		<eLabel  position="1260,140" size="610,360" backgroundColor="header" zPosition="1"/>
+		<eLabel  position="1260,500" size="620,10"  backgroundColor="#FF000000" zPosition="1"/>
+		<!-- is crypted ? -->
+		<ePixmap position="1280,167" size="80,40" pixmap="MadMax/icons/ico_crypt_off.png" alphatest="blend" zPosition="2" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/ico_crypt_on.png" position="1280,167" size="80,40" alphatest="blend" zPosition="3" >
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1390,160" size="490,40" font="Regular;36" foregroundColor="#FFFFFF" backgroundColor="header" transparent="1" zPosition="2" >
+			<convert type="ServiceName">Provider</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1390,210" size="530,80" font="Regular;34" foregroundColor="yellow" backgroundColor="header" nowrap="1" transparent="1" zPosition="2" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- Emu Info -->
+ 		<widget source="session.CurrentService" render="Label" position="1390,262" size="530,40" font="Regular;32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="MMCaidInfo2">CryptInfo2</convert>
+		</widget>
+		<!-- ECM Time -->
+ 		<widget source="session.CurrentService" render="Label" position="1680,254" size="200,40" font="Regular;40" halign="rigt" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="MMCaidInfo2">Delay</convert>
+		</widget>
+		<eLabel text="ms"   position="1800,257" size="120,40" font="Regular;36" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="3" />
+		<eLabel position="1390,315" size="460,2" backgroundColor="#303030" zPosition="3" />
+		<eLabel text="RES :" position="1390,340" size="90,40" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2" />
+		<!-- Panel Video Resolution -->
+		<widget source="session.CurrentService" render="Label" position="1460,340" size="100,40" font="Regular;32" halign="right" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" position="1570,340" size="30,40" font="Regular;32" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="3" />
+		<widget source="session.CurrentService" render="Label" position="1595,340" size="100,40" font="Regular;32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+		<!-- Panel SatType  -->
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/scan-s.png" position="1280,400" size="120,120" zPosition="2" alphatest="blend" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/scan-t.png" position="1280,400" size="120,120" zPosition="2" alphatest="blend" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/scan-c.png" position="1280,400" size="120,120" zPosition="2" alphatest="blend" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- TUNER Info -->
+		<eLabel text="TUN :" position="1390,395" size="90,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1490,395" size="20,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="2" >
+ 			<convert type="FrontendInfo">NUMBER</convert>
+ 			<convert type="ValueRange">0,0</convert>
+ 			<convert type="ConditionalShowHide" />
+ 		</widget>
+ 		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1490,395" size="40,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="2" >
+ 			<convert type="FrontendInfo">NUMBER</convert>
+ 			<convert type="ValueRange">1,1</convert>
+ 			<convert type="ConditionalShowHide" />
+ 		</widget>
+ 		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1490,395" size="40,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="2" >
+ 			<convert type="FrontendInfo">NUMBER</convert>
+ 			<convert type="ValueRange">2,2</convert>
+ 			<convert type="ConditionalShowHide" />
+ 		</widget>
+ 		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1490,395" size="40,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="2" >
+ 			<convert type="FrontendInfo">NUMBER</convert>
+ 			<convert type="ValueRange">3,3</convert>
+ 			<convert type="ConditionalShowHide" />
+ 		</widget>
+		<widget source="session.CurrentService" render="Label" position="1540,395" size="200,40" font="Regular;32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="5" >
+			<convert type="ServiceOrbitalPosition"/>
+		</widget>
+		<!-- Sat Name Info -->
+		<widget source="session.CurrentService" render="Label" position="1650,395" size="200,40" font="Regular;32" halign="right" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="5" >
+			<convert type="PliExtraInfo">TransponderName</convert>
+		</widget>
+		<eLabel text="SNR :" position="1390,445" size="100,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget source="session.FrontendStatus" render="Label" position="1490,445" size="200,40" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="2" >
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<eLabel text="AGC :" position="1670,445" size="100,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget source="session.FrontendStatus" render="Label" position="1770,445" size="120,40" font="Regular;32" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="2" >
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<widget source="session.FrontendStatus" render="Progress" pixmap="MadMax/buttons/bar_snr.png" position="1390,485" size="460,6" borderWidth="1" borderColor="#404040" zPosition="2" >
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<!-- eLabel name="DEBUG" text="AT04" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV SoftCam Panel Install -->
+	<screen name="ShowSoftcamPackages" position="fill" title="Install Softcams" flags="wfNoBorder" >
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget source="list" render="Listbox" position="379,183" size="1170,720" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (90, 5), size = (720, 40), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (90, 40), size = (720, 40), font=1, flags = RT_HALIGN_LEFT, text = 2, color=0x91c7ff, color_sel=0x04307e), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 58), size = (0, 0), png = 5), # index 4 is the div pixmap
+					],
+				"fonts": [gFont("Regular",32),gFont("Regular",28)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
+		<eLabel text="OK ="    position="1390,965"  size="0,0" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<widget source="key_ok" render="Label" position="1360,1000" size="0,0" font="Regular; 30" foregroundColor="ltbluette" halign="left" backgroundColor="header" valign="center" transparent="1"/>
+		<!-- eLabel name="DEBUG" text="AT05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV User Interface Setup -->
+	<screen name="setup_userinterface" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV OSD 3D Setup -->
+	<screen name="setup_osd3d" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT07" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV Video Setup -->
+	<screen name="VideoSetup" position="fill" title="Video Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="HelpWindow" position="center,700" size="1,1" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1150,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT08" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV EPG Setup -->
+	<screen name="setup_epgsettings" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="80,700" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<!-- eLabel name="DEBUG" text="AT09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV EPGMulti Setup -->
+	<screen name="setup_epgmulti" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT10" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV EPGEnhanced Setup -->
+	<screen name="setup_epgenhanced" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT11" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV EPG Infobar Setup -->
+	<screen name="setup_epginfobar" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT12" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV EPG Infobar Graphical Setup -->
+	<screen name="setup_epginfobargraphical" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT13" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV EPG Graphical Setup -->
+	<screen name="setup_epggraphical" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT14" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV DVDPlayer Setup -->
+	<screen name="setup_dvdplayer" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT16" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Logs Setup -->
+	<screen name="setup_logs" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT17" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Time Setup -->
+	<screen name="setup_time" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT18" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Recording Setup -->
+	<screen name="setup_recording" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT20" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV TimeShift Setup -->
+	<screen name="setup_timeshift" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT21" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Special Features Setup -->
+	<screen name="setup_specialfeatures" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT22" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Display Setup -->
+	<screen name="setup_display" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT23" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Channel Selection Setup -->
+	<screen name="setup_channelselection" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT24" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Usage Setup -->
+	<screen name="setup_usage" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT25" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Remote Setup -->
+	<screen name="setup_remotesetup" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT26" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV HardDisk Setup -->
+	<screen name="setup_harddisk" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT28" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV LED GigaBlue Setup -->
+	<screen name="LED_GigaSetup" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<panel name="M"/>
+		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="AT29" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Device Panels -->
+	<screen name="DevicePanelConf" position="fill" title="UserManager" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="M"/>
+		<panel name="nRG"/>
+		<widget name="config"  position="379,183" size="1160,600" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" enableWrapAround="1" transparent="1" />
+		<widget name="Linconn" position="379,183" size="820,100" font="Regular;32" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="AT30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Haupt Screen -->
+	<screen name="OPENA_TV_HauptScreen" position="fill" title="openATV Haupt Screen" flags="wfNoBorders" >
+		<panel name="p900_Template" />
+		<panel name="MI" />
+		<widget name="text_header" position="379,183" size="825,80"  font="Regular;34" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="0" zPosition="1" />
+		<widget name="liste"       position="70,290" size="840,540" font="Regular;30" itemHeight="40" foregroundColor="white" backgroundColor="header" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<widget name="menuname"    position="70,850" size="825,50"  font="Regular;36" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="0" zPosition="1" />
+		<widget name="text_login"  position="379,183" size="820,100" foregroundColor="red"    backgroundColor="#02e2e2e" valign="center" halign="right" font="Regular;18" zPosition="2" transparent="1" />
+		<ePixmap name="logo" position="1350,40" size="450,75" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/openATVreader/pics/logo.png" transparent="1" alphatest="blend" zPosition="2" />
+		<widget  name="feedstatus"       position="1280,150" size="200,30" foregroundColor="#00ffffff" backgroundColor="bluette" transparent="1" zPosition="4" valign="center" halign="left" font="Regular;30" />
+		<widget  name="feedstatus_gruen" position="1460,150" size="350,30" foregroundColor="#00389416" backgroundColor="bluette" transparent="1" zPosition="4" valign="center" halign="left" font="Regular;30" />
+		<widget  name="feedstatus_gelb"  position="1460,150" size="350,30" foregroundColor="#00bab329" backgroundColor="bluette" transparent="1" zPosition="4" valign="center" halign="left" font="Regular;30" />
+		<widget  name="feedstatus_rot"   position="1460,150" size="350,30" foregroundColor="#00f23d21" backgroundColor="bluette" transparent="1" zPosition="4" valign="center" halign="left" font="Regular;30" />
+		<widget  name="avatar"           position="1280,220" size="50,50"  transparent="1" alphatest="blend" zPosition="4" />
+		<widget  name="infopanel"     position="1270,540" size="600,120" font="Regular;28" valign="top" halign="center" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<ePixmap name="ico_help"      position="1270,790" size="60,30"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/openATVreader/pics/pvr.png" alphatest="blend" zPosition="2" />
+		<widget  name="text_ico_help" position="1360,782" size="300,40" font="Regular;26" valign="center" halign="left" foregroundColor="#00ffffff" backgroundColor="header" transparent="1" zPosition="2" />
+		<ePixmap name="ico_menu"      position="1270,840" size="60,30"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/openATVreader/pics/menu.png" alphatest="blend" zPosition="2" />
+		<widget  name="text_ico_menu" position="1360,835" size="300,30" font="Regular;26" valign="center" halign="left" foregroundColor="#00ffffff" backgroundColor="header" transparent="1" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="MadMax/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="text_ico_red" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="MadMax/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="text_ico_green"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="650,988"  pixmap="MadMax/buttons/yellowpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="text_ico_yellow"  position="690,955" size="210,95" zPosition="1" font="Regular;30" halign="center" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="940,988"  pixmap="MadMax/buttons/bluepanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="text_ico_blue"  position="980,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="AT31" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Reader Setup -->
+	<screen name="OPENA_TV_Setup" position="fill" title="openATV Reader Setup" flags="wfNoBorder" >
+		<panel name="p800_Template_menu" />
+		<widget name="text_header" position="379,183" size="820,50" font="Regular;36" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="0" zPosition="1" />
+		<widget name="menuname"    position="379,850" size="820,50" font="Regular;36" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="0" zPosition="1" />
+		<widget name="config" position="379,250" size="1170,680" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" />
+		<ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="text_ico_red" position="120,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="text_ico_green"  position="400,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="AT32" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV About -->
+	<screen name="OPENA_TV_About" position="center,center" size="1100,650" flags="wfNoBorders" transparent="0" backgroundColor="#10222222">
+		<eLabel name="header" position="0,0" size="1100,110" foregroundColor="green" backgroundColor="#161616" transparent="1" zPosition="1" />
+		<widget source="global.CurrentTime" render="Label" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" position="10,5" size="1080,100" font="Regular; 26" halign="left" transparent="1" zPosition="2">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<widget name="menuname" position="10,5" size="1080,100" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" halign="center" font="Regular; 26" zPosition="1" transparent="1" />
+		<widget name="text_header" position="10,50" size="1080,100" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" halign="center" font="Regular; 26" zPosition="1" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" position="937,5" size="108,31" font="Regular; 26" halign="right" transparent="1" zPosition="2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" position="1045,5" size="62,31" font="Regular; 26" valign="top" halign="left" transparent="1" zPosition="2">
+			<convert type="ClockToText">Format::%S</convert>
+		</widget>
+		<widget name="text1" position="10,130" size="1080,34" foregroundColor="ltbluette" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;30" />
+		<widget name="text2" position="10,160" size="1080,34" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="text3" position="10,195" size="1080,34" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp"  position="10,240" size="1080,30" foregroundColor="yellow" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;30" />
+		<widget name="pp1" position="10,275" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp2" position="10,305" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp3" position="10,330" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp4" position="10,365" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp5" position="10,395" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp6" position="10,425" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<widget name="pp7" position="10,455" size="1080,30" foregroundColor="#00ffffff" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<ePixmap name="ico_paypal" position="375,510" size="350,91" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/openATVreader/pics/paypal.png" alphatest="blend" zPosition="2" />
+		<widget name="text_info" position="10,600" size="1095,30" foregroundColor="yellow" backgroundColor="#102e2e2e" transparent="1" zPosition="2" halign="center" font="Regular;26" />
+		<!-- eLabel name="DEBUG" text="AT33" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV ChannelSelection Small -->
+	<screen name="mySmallChannelSelection" position="fill" title="Setup" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="nRGYB"/>
+		<eLabel text="Select service to add..." position="center,183" foregroundColor="ltbluette" size="1160,50" noWrap="0" font="Regular; 35" backgroundColor="header" transparent="1" />
+		<widget name="list" position="389,260" size="1160,610" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<!-- eLabel name="DEBUG" text="AT34" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Select Sat -->
+	<screen name="SelectSatsEntryScreen" position="fill" title="Select Sats Entry" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="M"/>
+		<panel name="nRGYB"/>
+		<eLabel text="Select Sats Entry" position="379,183" foregroundColor="header" size="800,50" font="Regular; 35" backgroundColor="header" transparent="1" />
+		<widget name="list" position="379,183" size="1170,500" itemHeight="30" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<widget source="hint" render="Label" position="70,700" size="820,140" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="header" valign="center" transparent="1"/>
+
+		<!-- eLabel name="DEBUG" text="AT35" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- O-ATV Software Manager -->
+	<screen name="SoftwareManagerInfo" position="fill" title="SoftwareManager information" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="M"/>
+		<panel name="nRGYB"/>
+		<widget source="Title" render="Label" position="379,183" foregroundColor="header" size="820,50" font="Regular; 35" backgroundColor="header" transparent="1" />
+		<widget source="list" render="Listbox" position="575,260" size="770,480" scrollbarMode="showOnDemand" backgroundColor="header" foregroundColor="white" backgroundColorSelected="header" foregroundColorSelected="ltbluette" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (5, 2), size = (695, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_CENTER, text = 0), # index 0 is the name
+					],
+				"fonts": [gFont("Regular", 26),gFont("Regular", 30)],
+				"itemHeight": 40
+				}
+			</convert>
+		</widget>
+
+		<!-- eLabel name="DEBUG" text="AT36" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV Restore Image -->
+	<screen name="RestoreMenuImage" position="fill" title="Restore Backups" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="M"/>
+		<panel name="nRGYB"/>
+		<eLabel text="Restore Backups" position="379,183" foregroundColor="header" size="820,50" font="Regular; 35" backgroundColor="header" transparent="1" />
+		<widget name="filelist" position="575,260" size="770,560" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<!-- eLabel name="DEBUG" text="AT37" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- O-ATV softcam -->
+	<screen name="SoftcamSetup" position="fill" title="Softcam Setup" flags="wfNoBorder">
+		<panel name="p900_Template_emu"/>
+		<panel name="sRGB"/>
+		<widget name="config" position="50,180" size="770,490" enableWrapAround="1" itemHeight="40" font="Regular; 30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<widget name="info" position="65,510" size="770,400" font="Regular; 30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<!-- ***** SAT Icon ***** -->
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/sat.png" position="1180,280" size="70,70" alphatest="blend" zPosition="1" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/dtt.png" position="1180,280" size="70,70" alphatest="blend" zPosition="1" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="MadMax/icons/cable.png" position="1180,280" size="70,70" alphatest="blend" zPosition="1" >
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/iptv.png" position="1180,280" size="70,70" alphatest="blend" zPosition="1" transparent="1">
+			<convert type="MMServiceInfo">IsStream</convert>
+			<convert type="ConditionalShowHide">
+			</convert>
+		</widget>
+		<!-- ***** Tuner ***** -->
+		<eLabel text="Tun:" position="1270,280" size="90,40" font="Regular;30" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">3,3</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--E-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">4,4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--F-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">5,5</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--G-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">6,6</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--H-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">7,7</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--I-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="I" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">8,8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!--J-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="J" position="1350,280" size="20,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" zPosition="3" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">9,9</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- ***** Orbital ***** -->
+		<widget source="session.CurrentService" render="Label" position="1390,280" size="120,240" font="Regular;30" halign="left" text="DVB-T" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="ServiceOrbitalPosition"/>
+		</widget>
+		<!-- ***** System ***** -->
+		<widget source="session.CurrentService" render="Label" position="1500,280" size="260,240" font="Regular;30" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			<convert type="MMPliExtraInfo">TunerSystem</convert>
+		</widget>
+		<!-- ***** Quality ***** -->
+		<eLabel text="Snr:" position="1270,320" size="100,240" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Label" position="1350,320" size="130,40" font="Regular;32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" >
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<eLabel text="Ber:" position="1520,325" size="100,240" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Label" position="1600,325" size="160,40" font="Regular;32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" >
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<eLabel position="1180,370" size="575,1" backgroundColor="#808080" zPosition="1" />
+		<widget source="session.FrontendStatus" render="Progress" position="1180,367" size="575,5" foregroundColor="ltbluette" transparent="1" zPosition="1" >
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<!-- is crypted ? -->
+		<ePixmap position="1180,420" size="80,40" pixmap="MadMax/icons/ico_crypt_off.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/ico_crypt_on.png" position="1180,420" zPosition="4" size="80,40" alphatest="blend" >
+			<convert type="MMServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/lan.png" position="1180,500" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1">
+			<convert type="MMRouteInfo">Lan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/wifi.png" position="1180,500" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1" >
+			<convert type="MMRouteInfo">Wifi</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- eLabel name="DEBUG" text="AT37" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- MyMetrix Lite -->
+	<screen name="MainSettingsView" position="fill" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget name="menuList" position="379,180" size="1170,500" scrollbarMode="showOnDemand" itemHeight="40" font="Regular; 30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<widget source="cancelBtn" render="Label" position="110,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="applyBtn" render="Label" position="400,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="helpertext" position="center,715" size="1170,190" font="Regular;26" foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1"/>
+	</screen>
+
+	<screen name="OtherSettingsView" position="fill" flags="wfNoBorder" >
+		<panel name="sRGYB"/>
+		<panel name="p800_Template_menu"/>
+		<widget name="config" position="379,180" size="1170,500" scrollbarMode="showOnDemand" itemHeight="40" font="Regular; 30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<widget source="cancelBtn" render="Label" position="110,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="applyBtn" render="Label" position="400,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="defaultsBtn" render="Label" position="680,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="testBtn" render="Label" position="950,992" size="400,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="helpertext" position="center,715" size="1170,190" font="Regular;28" foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1"/>
+	</screen>
+
+	<!-- ########### VIX ########### -->
+
+	<screen name="AboutReleaseNotes" position="fill" title="Release Notes" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<widget name="list" position="575,180" size="770,400" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="VX02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXMenu" position="fill" title="Vix Menu" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sR"/>
+		<widget source="menu" render="Listbox" position="575,180" size="770,440" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (10,2), size = (780,40), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 40
+				}
+			</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="575,820" size="770,50" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (10,2),size = (780,50),flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",30)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<!-- eLabel name="DEBUG" text="VX03" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXBackupManager" position="fill" title="Vix Backup Manager" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRGY"/>
+		<panel name="M"/>
+		<widget name="lab1" position="575,180" size="770,80"  font="Regular;30" zPosition="2" backgroundColor="bluette" transparent="0" halign="center" valign="center" />
+		<widget name="list" position="575,300" size="770,400" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="backupstatus" position="center,800" size="770,60" font="Regular;30" foregroundColor="ltbluette" zPosition="5" halign="center" valign="top"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(40)
+		</applet>
+		<!-- eLabel name="DEBUG" text="VX04" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXBackupManagerMenu" position="fill" title="Vix Backup Manager Menu" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRGYB"/>
+		<widget name="config" position="575,180" size="770,780" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="HelpWindow" pixmap="/usr/share/enigma2/MadMax/buttons/vkey_icon.png" position="80,180" size="541,720" zPosition="1" transparent="1" alphatest="on"/>
+		<applet type="onLayoutFinish">
+			self["config"].instance.setItemHeight(40)
+		</applet>
+		<!-- eLabel name="DEBUG" text="VX05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXBackupManagerLogView" position="fill" title="Vix Backup Manager Log" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<widget name="list" position="575,180" size="770,800" itemHeight="40" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<!-- eLabel name="DEBUG" text="VX06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXImageManager" position="fill" title="Vix Manager" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRGYB"/>
+		<panel name="M"/>
+		<widget name="lab1" position="575,180" size="770,100" font="Regular;30" zPosition="2" transparent="1" halign="center"/>
+		<widget name="list" position="575,280" size="770,400" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="backupstatus" position="center,800" size="770,100" font="Regular;30" zPosition="5" halign="center" valign="top" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+		<!-- eLabel name="DEBUG" text="VX07" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXIPKInstaller" position="fill" title="Vix IPK Installer" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRGY"/>
+		<widget name="lab1" position="center,180" size="1160,50" font="Regular;30" zPosition="2" backgroundColor="header" transparent="1" halign="center" valign="center" />
+		<widget name="list" position="379,280" size="1170,760" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(40)
+		</applet>
+		<!-- eLabel name="DEBUG" text="VX08" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXDevicesPanel" position="fill" title="Vix Devices Panels" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRGYB"/>
+		<widget source="list" render="Listbox" position="379,180" size="1170,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (100, 0), size = (760, 40), font=0, text = 0),
+				MultiContentEntryText(pos = (100, 33), size = (720, 60), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 30),gFont("Regular", 26)],
+				"itemHeight": 95
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" position="center,700" size="1160,60" font="Regular;30" foregroundColor="ltbluette" halign="center" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="VX09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXDevicePanelConf" position="fill" title="Vix Devices Panels Config" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="nRG"/>
+		<widget name="config"  position="379,180" size="1170,600" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="Linconn" position="center,780" size="1160,60" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
+		<!-- eLabel name="DEBUG" text="VX10" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXPartitionPanelConf" position="fill" title="Vix Partition Panel Config" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<panel name="sRG"/>
+		<widget source="list" render="Listbox" position="379,180" size="1170,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (100, 0), size = (760, 40), font=0, text = 0),
+				MultiContentEntryText(pos = (100, 33), size = (720, 60), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 30),gFont("Regular", 26)],
+				"itemHeight": 95
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" position="center,800" size="1160,60" font="Regular;30" foregroundColor="ltbluette" halign="center" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="VX11" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXSwap" position="fill" title="Vix Swap" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRGYB"/>
+		<widget name="lab1" position="575,180" size="770,50" font="Regular;30" valign="center" backgroundColor="bluette" transparent="1"/>
+		<widget name="autostart_off" position="800,192" zPosition="1" pixmap="/usr/share/enigma2/MadMax/icons/lock_off.png" size="32,32" alphatest="blend"/>
+		<widget name="autostart_on" position="800,192" zPosition="2" pixmap="/usr/share/enigma2/MadMax/icons/lock_on.png"  size="32,32" alphatest="blend"/>
+		<widget name="lab2" position="575,300" size="200,40" font="Regular;30" valign="center" backgroundColor="header" transparent="1"/>
+		<widget name="labplace" position="250,300" size="560,40" font="Regular;30" valign="center" backgroundColor="header" transparent="1"/>
+		<widget name="lab3" position="575,360" size="200,40" font="Regular;30" valign="center" backgroundColor="header" transparent="1"/>
+		<widget name="labsize" position="575,360" size="770,40" font="Regular;30" valign="center" halign="right" backgroundColor="header" transparent="1"/>
+		<widget name="lab4" position="575,420" size="150,40" font="Regular;30" valign="center" backgroundColor="header" transparent="1"/>
+		<widget name="inactive" position="575,420" size="770,40" font="Regular;30" valign="center" halign="right" backgroundColor="red"/>
+		<widget name="active" position="575,420" size="770,40" font="Regular;30" valign="center" halign="right" backgroundColor="green" zPosition="1" />
+		<!-- eLabel name="DEBUG" text="VX12" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXSoftcamManager" position="fill" title="Vix SoftCam" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRGYB"/>
+		<panel name="M"/>
+		<widget name="lab2" position="center,180"  size="770,40" font="Regular;30" halign="left" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget name="activecam" position="575,182" size="770,120" font="Regular;30" halign="left" backgroundColor="header" transparent="1" noWrap="1" zPosition="2" />
+		<widget name="lab1" position="center,320"  size="770,40"  font="Regular;30" halign="center" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget name="list" position="575,322" size="770,400" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(40)
+		</applet>
+		<!-- eLabel name="DEBUG" text="VX13" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXSoftcamLog" position="fill" title="VixCam Log" flags="wfNoBorder">
+		<panel name="p800_Template_menu"/>
+		<widget name="list" position="379,180" size="770,740" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1"/>
+		<!-- eLabel name="DEBUG" text="VX14" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXPowerManager" position="fill" title="Vix Power Manager" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="config" position="575,180" size="770,400" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" />
+		<widget name="standbystatus"     position="center,620"  size="770,55" halign="center" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="5"/>
+		<widget name="deepstandbystatus" position="center,670"  size="770,55" halign="center" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="5"/>
+		<widget name="guirestartstatus"  position="center,620" size="770,55" halign="center" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="6"/>
+		<widget name="rebootstatus"      position="center,670" size="770,55" halign="center" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="6"/>
+		<!-- eLabel name="DEBUG" text="VX15" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXSetup" position="fill" title="Vix Setup" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="config" position="575,180" size="770,800" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" />
+		<!-- eLabel name="DEBUG" text="VX16" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXAutoStartCam" position="fill" title="VixCam AutoStart" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<widget name="connect" position="575,180" size="770,680" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="lab1" position="center,760" halign="center" size="770,80" foregroundColor="ltbluette" font="Regular;30" valign="top" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="VX17" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXSoftcamMenu" position="fill" title="VixCam Menu" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="sRG"/>
+		<widget name="config" position="575,180" size="770,680" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
+		<!-- eLabel name="DEBUG" text="VX18" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXStartCam" position="fill" title="VixCam Start" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<widget name="connect" position="575,180" size="770,680" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="lab1" position="center,760" halign="center" size="770,80" foregroundColor="ltbluette" font="Regular;30" valign="top" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="VX19" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="VIXStopCam" position="fill" title="VixCam Stop" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<widget name="connect" position="575,180" size="770,680" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="lab1" position="center,760" halign="center" foregroundColor="ltbluette" size="770,80" font="Regular;30" valign="top" transparent="1" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="VX20" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+</skin>
