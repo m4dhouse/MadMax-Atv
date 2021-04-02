@@ -5,3 +5,4 @@ rm -rf /usr/lib/enigma2/python/Components/Renderer/MM*
 echo "*****************************************"
 echo "*        Skin successful removed        *"
 echo "*****************************************"
+exit 0
