@@ -5,7 +5,6 @@ from Components.Sources.Progress import Progress
 from Tools.Downloader import downloadWithProgress
 from Tools.Directories import SCOPE_LANGUAGE, resolveFilename
 from Components.Language import language
-from enigma import eTimer
 from Screens.Screen import Screen
 from Screens.Console import Console
 from Screens.MessageBox import MessageBox
@@ -20,11 +19,11 @@ except:
     py_version = 3
 try:
     from urllib.request import urlopen, Request, HTTPError, URLError
-    from subprocess import *
 except ImportError:
-    from subprocess import *
-    from commands import *
     from urllib2 import urlopen, Request, HTTPError, URLError
+
+file_vers = open('/usr/share/enigma2/MadMax/version','r')
+version = file_vers.read()
 
 PluginLanguageDomain = 'madmax'
 PluginLanguagePath = '/usr/lib/enigma2/python/Plugins/Extensions/MadMax/locale'
@@ -69,16 +68,6 @@ def DownloadInfo(url):
         print('HTTP Error code: ')
     response.close()
 
-def version_skins():
-    with open('/var/lib/opkg/status','r') as infile:
-        for line in infile:
-            if 'madmax' in line:
-                lines = next(infile)
-                vers_skin = lines.replace('Version: ', '').replace('\n', '')
-                return vers_skin
-
-version = version_skins()
-
 class updatemadmax(Screen):
     def __init__(self, session):
         self.session = session
@@ -86,18 +75,15 @@ class updatemadmax(Screen):
         Screen.__init__(self, session)
         self['progress'] = Progress()
         self['progresstext'] = StaticText()
-        self.xtimer = eTimer()
-        try:
-            self.xtimer.callback.append(self.prombt)
-        except:
-            self.xtimer_conn = self.xtimer.timeout.connect(self.prombt)
-        self.xtimer.start(100, 1)
         self['actions'] = ActionMap(['SetupActions',
          'ColorActions'], {'exit': self.close,
          'red': self.close,
          'cancel': self.close}, -1)
+        self.onFirstExecBegin.append(self.Update)
 
-    def prombt(self):
+    def Update(self):
+        file_vers = open('/usr/share/enigma2/MadMax/version','r')
+        version = file_vers.read()
         try:
             self.update_version = DownloadInfo(read_version_git)
             if float(self.update_version) > float(version):
