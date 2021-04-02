@@ -1,2 +1,2 @@
 # MadMax-Atv
-Skin for OpenAtv
+Skin for OpenAtv (py2/py3)
