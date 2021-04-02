@@ -1,0 +1,9 @@
+#!/bin/sh
+rm -rf /usr/share/enigma2/MadMax
+rm -rf /usr/lib/enigma2/python/Components/Converter/MM*
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MM*
+echo "*****************************************"
+echo "*              MadMax Skin              *"
+echo "*        is now being installed...      *"
+echo "*****************************************"
+exit 0
