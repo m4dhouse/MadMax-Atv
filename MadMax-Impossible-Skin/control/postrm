@@ -1,8 +1,0 @@
-#!/bin/sh
-rm -rf /usr/share/enigma2/MadMax
-rm -rf /usr/lib/enigma2/python/Components/Converter/MM*
-rm -rf /usr/lib/enigma2/python/Components/Renderer/MM*
-echo "*****************************************"
-echo "*        Skin successful removed        *"
-echo "*****************************************"
-exit 0

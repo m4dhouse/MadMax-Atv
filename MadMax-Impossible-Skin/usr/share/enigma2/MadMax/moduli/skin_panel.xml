@@ -13,6 +13,34 @@
   <!-- Do whatever you want with this skin,but don't tell it's yours, or your idea -->
   <!--    and leave the credentials in the "About-box" as they are -->
 
+  <screen name="MI">
+    <!-- Keys Buttons DRE -->
+    <ePixmap position="1440,1025"  size="114,40" pixmap="MadMax/buttons/menu-button.png" alphatest="blend" zPosition="2" />
+    <ePixmap position="1540,1025" size="114,40" pixmap="MadMax/buttons/info-button.png" alphatest="blend" zPosition="2" />
+  </screen>
+
+  <screen name="menubutton">
+    <ePixmap position="1440,1025"  size="114,40" pixmap="MadMax/buttons/menu-button.png" alphatest="blend" zPosition="2" />
+  </screen>
+  <screen name="infobutton">
+    <ePixmap position="1540,1025" size="114,40" pixmap="MadMax/buttons/info-button.png" alphatest="blend" zPosition="2" />
+  </screen>
+
+  <screen name="M">
+    <!-- Keys Buttons DRE -->
+    <ePixmap position="1540,1025"  size="114,40" pixmap="MadMax/buttons/menu-button.png" alphatest="blend" zPosition="2" />
+  </screen>
+
+  <screen name="I">
+    <!-- Keys Buttons DRE -->
+    <ePixmap position="1540,1025" size="114,40" pixmap="MadMax/buttons/info-button.png" alphatest="blend" zPosition="2" />
+  </screen>
+
+  <screen name="exitbutton">
+    <!-- Keys Buttons DRE -->
+    <ePixmap position="1540,1025" size="114,40" pixmap="MadMax/buttons/exit-button.png" alphatest="blend" zPosition="2" />
+  </screen>
+
   <!-- Menu Template FHD -->
   <screen name="MenuTemplatePlI" >
     <widget source="global.CurrentTime" render="Label" position="1679,1025" size="240,30" font="Regular;25" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
@@ -488,7 +516,7 @@
     <!-- Keys Buttons FHD -->
     <panel name="nR" />
     <ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_green"  position="400,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <widget name="key_green"  position="400,992" size="230,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
   </screen>
 
   <screen name="nRGY">
@@ -640,29 +668,6 @@
     <panel name="skRGY" />
     <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
     <widget source="blue" render="Label" position="950,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-  </screen>
-
-  <screen name="MI">
-    <!-- Keys Buttons DRE -->
-    <eLabel text="Menu" position="1390,992"  size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-    <eLabel text="Info" position="1390,1025" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-  </screen>
-
-  <screen name="menubutton">
-    <ePixmap position="1440,1025"  size="114,40" pixmap="MadMax/buttons/menu-button.png" alphatest="blend" zPosition="2" />
-  </screen>
-  <screen name="infobutton">
-    <ePixmap position="1540,1025" size="114,40" pixmap="MadMax/buttons/info-button.png" alphatest="blend" zPosition="2" />
-  </screen>
-
-  <screen name="M">
-    <!-- Keys Buttons DRE -->
-    <eLabel text="Menu" position="1560,992" size="200,95" font="Regular;34" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-  </screen>
-
-  <screen name="I">
-    <!-- Keys Buttons DRE -->
-    <eLabel text="Info" position="1390,992" size="200,95" font="Regular;34" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
   </screen>
 
   <screen name="fakeExit">

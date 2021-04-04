@@ -442,7 +442,7 @@
 	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="nRG"/>
-		<widget name="lab1" position="379,180" size="770,90" font="Regular;34" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" halign="center" valign="top" transparent="1" zPosition="2" />
+		<widget name="lab1" position="center,180" size="1170,90" font="Regular;34" foregroundColor="ltbluette" backgroundColor="header" halign="center" valign="top" transparent="1" zPosition="2" />
 		<widget name="config" position="379,310" size="1170,540" font="Regular;27" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
 		<!--eLabel name="DEBUG" text="009" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="red" transparent="1" zPosition="99"/-->
 	</screen>
@@ -657,7 +657,7 @@
 			}
 			</convert>
 		</widget>
-		<widget source="description" render="Label" position="center,500" size="750,90" font="regular;30" foregroundColor="ltbluette" halign="center" backgroundColor="header" valign="center" transparent="1"/>
+		<widget source="description" render="Label" position="center,500" size="750,90" font="Regular;30" foregroundColor="ltbluette" halign="center" backgroundColor="header" valign="center" transparent="1"/>
 	</screen>
 
 	<screen name="btscan" position="fill" flags="wfNoBorder">

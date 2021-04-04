@@ -2298,21 +2298,20 @@
   </screen>
   <!-- Software Manager FHD -->
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
-    <panel name="p800_Template"/>
-    <panel name=""/>
+    <panel name="p800_Template_menu"/>
     <panel name="M"/>
-    <widget source="menu" render="Listbox" position="575,180" size="770,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" >
+    <widget source="menu" render="Listbox" position="379,180" size="1170,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" >
        <convert type="TemplatedMultiContent">
-         {"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 1)],
+         {"template": [ MultiContentEntryText(pos = (15, 5), size = (1170, 60), flags = RT_HALIGN_LEFT, text = 1)],
          "fonts": [gFont("Regular", 35)],
          "itemHeight": 60
          }
        </convert>
      </widget>
-    <widget source="menu" render="Listbox" position="center,740" size="750,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+    <widget source="menu" render="Listbox" position="center,740" size="1170,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
-          MultiContentEntryText(pos = (0,0),size = (750,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+          MultiContentEntryText(pos = (0,0),size = (1170,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
           ],
           "fonts": [gFont("Regular",32)],
           "itemHeight": 140
@@ -2324,7 +2323,7 @@
   <!-- Software Manager Setup FHD -->
   <screen name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup" flags="wfNoBorder" >
     <panel name="p800_Template_menu"/>
-    <panel name="M"/>
+    <panel name="exitbutton"/>
     <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
     <widget source="introduction" render="Label" position="center,800" size="1150,80" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
     <!--eLabel name="DEBUG" text="S214" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -2407,12 +2406,10 @@
   </screen>
   <!-- FlashOnline FHD -->
   <screen name="FlashOnline" position="fill" title="Flash On the Fly" flags="wfNoBorder">
-    <panel name="p800_Template" />
+    <panel name="p800_Template_menu" />
     <panel name="sRGY"/>
-    <widget name="list" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
-    <widget name="info-local"  position="575,180" zPosition="1" size="770,120" font="Regular;32" halign="left" valign="top" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
-    <widget name="info-flash"  position="575,360" zPosition="1" size="770,300" font="Regular;32" halign="left" valign="top" foregroundColor="white"     backgroundColor="header" transparent="1" />
-    <widget name="info-online" position="575,700" zPosition="1" size="770,100" font="Regular;32" halign="left" valign="top" foregroundColor="yellow"    backgroundColor="header" transparent="1" />
+    <widget name="list" position="379,180" size="1170,520" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget source="description" render="Label" position="center,700" size="1170,150" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2"/>
     <!--eLabel name="DEBUG" text="S219" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- FlashImage FHD -->
@@ -2653,7 +2650,7 @@
   <!-- Language selection FHD -->
   <screen name="LanguageSelection" title="Language selection" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
-    <panel name="nRG"/>
+    <panel name="nRGYB"/>
     <widget source="languages" render="Listbox" position="575,180" size="770,720" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
@@ -2670,7 +2667,7 @@
   <!-- Nim selection FHD -->
   <screen name="NimSelection" title="Nim Selection" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu" />
-    <panel name="sRGYB"/>
+    <panel name="sRG"/>
     <eLabel text="Choose Tuner" position="379,175" size="1170,100" font="Regular;50" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
     <widget source="nimlist" render="Listbox" position="379,270" size="1170,600" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" >
       <convert type="TemplatedMultiContent">

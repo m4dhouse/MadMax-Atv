@@ -11,15 +11,7 @@
   <!-- !!!!!!! BUT DO NOT REMOVE OR CHANGE THIS DISCLAIMER !!!!!!! -->
   <!-- Do whatever you want with this skin,but don't tell it's yours, or your idea -->
   <!--    and leave the credentials in the "About-box" as they are -->
-	<!-- ALL User Interface Setup -->
-	<screen name="setup_userinterface" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<!--panel name="M"/-->
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
+
 	<!-- ALL OSD 3D Setup -->
 	<screen name="setup_osd3d" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
@@ -28,28 +20,6 @@
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!--eLabel name="DEBUG" text="ALL02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL EPG Setup -->
-	<screen name="setup_epgsettings" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<!--panel name="M"/-->
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<widget name="HelpWindow"  position="1260,720" size="1,1" zPosition="1" alphatest="on" transparent="1" />
-		<widget source="VKeyIcon" render="Pixmap" pixmap="MadMax/buttons/key_text.png" position="1390,970" zPosition="1" size="60,35" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<!--eLabel name="DEBUG" text="ALL04" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL EPGMulti Setup -->
-	<screen name="setup_epgmulti" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<!--panel name="M"/-->
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- ALL EPGEnhanced Setup -->
 	<screen name="setup_epgenhanced" position="fill" title="Setup" flags="wfNoBorder">
@@ -60,38 +30,11 @@
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!--eLabel name="DEBUG" text="ALL06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
-	<!-- ALL EPG Infobar Setup -->
-	<screen name="setup_epginfobar" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<panel name="M"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL07" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL EPG Infobar Graphical Setup -->
-	<screen name="setup_epginfobargraphical" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<panel name="M"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL08" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL EPG Graphical Setup -->
-	<screen name="setup_epggraphical" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<!--panel name="M"/-->
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
 	<!-- ALL SubTitle Setup -->
 	<screen name="setup_subtitlesetup" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="HelpWindow" position="center,753" size="1,1" zPosition="1" alphatest="on"/>
 		<widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
@@ -159,57 +102,16 @@
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!--eLabel name="DEBUG" text="ALL17" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
-	<!-- ALL Display Setup -->
-	<screen name="setup_display" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL18" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL Channel Selection Setup -->
-	<screen name="setup_channelselection" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<widget name="footnote" position="1260,880" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
-		<!--eLabel name="DEBUG" text="ALL19" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL Usage Setup -->
-	<screen name="setup_usage" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL20" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL Remote Setup -->
-	<screen name="setup_remotesetup" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL21" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
 	<!-- ALL AutoLanguage Setup -->
 	<screen name="setup_autolanguagesetup" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="HelpWindow" position="center,753" size="1,1" zPosition="1" alphatest="on"/>
 		<widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!--eLabel name="DEBUG" text="ALL22" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-	<!-- ALL HardDisk Setup -->
-	<screen name="setup_harddisk" position="fill" title="Setup" flags="wfNoBorder">
-		<panel name="p800_Template_menu"/>
-		<panel name="sRG"/>
-		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="ALL23" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<!--  EGAMI SCREENS FHD -->
 	<!-- Modified for corret screen icon -->
@@ -1142,7 +1044,6 @@
 	<screen name="SoftwarePanel" position="fill" title="SoftwarePanel" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="nRG"/>
-		<eLabel position="379,183" size="825,50" backgroundColor="bluette" />
 		<widget source="list" render="Listbox" position="379,240" size="1170,640" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header"
 		        backgroundColorSelected="bluette" foregroundColorSelected="white" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -1157,10 +1058,14 @@
 				}
 			</convert>
 		</widget>
-		<widget name="feedstatusRED"    position="center,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
-		<widget name="feedstatusYELLOW" position="center,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
-		<widget name="feedstatusGREEN"  position="center,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
-		<widget name="packagetext"      position="379,183" size="820,40" font="Regular;36" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="a_off" position="1630,760" zPosition="1" size="256,256" pixmap="MadMax/icons/aoff.png" alphatest="on" />
+		<widget name="a_red" position="1630,760" zPosition="1" size="256,256" pixmap="MadMax/icons/ared.png" alphatest="on" />
+		<widget name="a_yellow" position="1630,760" zPosition="1" size="256,256" pixmap="MadMax/icons/ayellow.png" alphatest="on" />
+		<widget name="a_green" position="1630,760" zPosition="1" size="256,256" pixmap="MadMax/icons/agreen.png" alphatest="on" />
+		<widget name="feedstatusRED"    position="900,180" size="200,40" zPosition="1" foregroundColor="#ffffff" backgroundColor="header" font="Regular;30" halign="left" transparent="1" />
+		<widget name="feedstatusYELLOW" position="900,180" size="200,40" zPosition="1" foregroundColor="#ffffff" backgroundColor="header" font="Regular;30" halign="left" transparent="1" />
+		<widget name="feedstatusGREEN"  position="900,180" size="200,40" zPosition="1" foregroundColor="#ffffff" backgroundColor="header" font="Regular;30" halign="left" transparent="1" />
+		<widget name="packagetext"      position="379,180" size="820,40" font="Regular;36" halign="left" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="packagenr"        position="830,180" size="100,40" zPosition="1" font="Regular;36" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
 		<!-- eLabel name="DEBUG" text="AT03" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -1295,9 +1200,11 @@
 	<screen name="setup_userinterface" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,00"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- O-ATV OSD 3D Setup -->
@@ -1313,7 +1220,7 @@
 	<screen name="VideoSetup" position="fill" title="Video Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="HelpWindow" position="center,700" size="1,1" zPosition="1" alphatest="on"/>
 		<widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
@@ -1324,28 +1231,33 @@
 	<screen name="setup_epgsettings" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<widget name="HelpWindow" position="80,700" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="description" position="center,753" size="1170,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="0,0" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- O-ATV EPGMulti Setup -->
 	<screen name="setup_epgmulti" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1170,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT10" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- O-ATV EPGEnhanced Setup -->
 	<screen name="setup_epgenhanced" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1170,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT11" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1353,9 +1265,11 @@
 	<screen name="setup_epginfobar" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT12" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1363,9 +1277,11 @@
 	<screen name="setup_epginfobargraphical" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1170,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT13" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1375,7 +1291,9 @@
 		<panel name="sRG"/>
 		<panel name="M"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1170,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT14" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1443,9 +1361,11 @@
 	<screen name="setup_display" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="description" position="center,753" size="1170,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT23" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1453,9 +1373,11 @@
 	<screen name="setup_channelselection" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT24" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1463,9 +1385,11 @@
 	<screen name="setup_usage" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT25" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1473,9 +1397,11 @@
 	<screen name="setup_remotesetup" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT26" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1483,9 +1409,11 @@
 	<screen name="setup_harddisk" position="fill" title="Setup" flags="wfNoBorder">
 		<panel name="p800_Template_menu"/>
 		<panel name="sRG"/>
-		<panel name="M"/>
+		<panel name="exitbutton"/>
 		<widget name="config"      position="379,183" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
 		<widget name="description" position="center,753" size="1000,300" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="HelpWindow" position="center,700" size="0,0" zPosition="1" alphatest="on"/>
+		<widget name="footnote" position="379,180" size="0,0"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="AT28" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
