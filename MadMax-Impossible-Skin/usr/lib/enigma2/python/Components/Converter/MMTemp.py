@@ -3,13 +3,7 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.Converter.Poll import Poll
 from enigma import eConsoleAppContainer
-import os, re, sys
-from os import system, path, popen
-try:
-    from boxbranding import getMachineBuild
-except ImportError:
-    pass
-from subprocess import *
+import os, re, socket
 
 class MMTemp(Poll, Converter):
     TEMPERATURE = 0
@@ -87,10 +81,10 @@ class MMTemp(Poll, Converter):
             try:
                 if os.path.exists("/proc/stb/sensors/temp0/value"):
                     with open("/proc/stb/sensors/temp0/value") as stemp:
-                        systemp = "Sys Temp: %s°C" % stemp.readline().replace("\n", "")
+                        systemp = "%s°C" % stemp.readline().replace("\n", "")
                 elif os.path.exists("/proc/stb/fp/temp_sensor"):
                     with open("/proc/stb/fp/temp_sensor") as stemp:
-                        systemp = "Board: %s°C" % stemp.readline().replace("\n", "")
+                        systemp = "%s°C" % stemp.readline().replace("\n", "")
                 if os.path.exists("/proc/stb/fp/temp_sensor_avs"):
                     with open("/proc/stb/fp/temp_sensor_avs") as ctemp:
                         cputemp = "%s°C" % ctemp.readline().replace("\n", "")
@@ -116,14 +110,11 @@ class MMTemp(Poll, Converter):
         if self.type == self.HDDTEMP:
             return self.hddtemp
         if self.type == self.IPLOCAL:
-            py_version = sys.version_info.major
-            if py_version == 3:
-                ip = "ifconfig | egrep 'inet addr' | grep Bcast | awk '{ print $2 }' | awk -F ':' '{ print $2 }'"
-                ip_local = getoutput(ip)
-            else:
-                ip = "ifconfig | egrep 'inet addr' | grep Bcast | awk '{ print $2 }' | awk -F ':' '{ print $2 }'"
-                ip_local = popen(ip).read()
-        return "%s" % ip_local
+            gw = os.popen("ip -4 route show default").read().split()
+            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            s.connect((gw[2], 0))
+            ipaddr = s.getsockname()[0]
+        return "%s" % ipaddr
         if self.type == self.CPUSPEED:
             try:
                 cpuspeed = 0
