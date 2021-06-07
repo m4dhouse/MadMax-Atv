@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os, socket, sys
+import os
+import socket
+import sys
 from Components.Sources.Progress import Progress
 from Tools.Downloader import downloadWithProgress
 from Tools.Directories import SCOPE_LANGUAGE, resolveFilename
@@ -18,12 +20,12 @@ try:
 except:
     py_version = 3
 try:
-    from urllib.request import urlopen, Request, HTTPError, URLError
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError, URLError
 except ImportError:
     from urllib2 import urlopen, Request, HTTPError, URLError
 
-file_vers = open('/usr/share/enigma2/MadMax/version','r')
-version = file_vers.read()
+version = open('/usr/share/enigma2/MadMax/version','r').read()
 
 PluginLanguageDomain = 'madmax'
 PluginLanguagePath = '/usr/lib/enigma2/python/Plugins/Extensions/MadMax/locale'
@@ -43,9 +45,6 @@ def _(txt):
 localeInit()
 language.addCallback(localeInit)
 
-url_ipk = 'http://raw.githubusercontent.com/m4dhouse/MadMax-Atv/main/'
-read_version_git = 'http://raw.githubusercontent.com/m4dhouse/MadMax-Atv/main/version.txt'
-
 skin_madmax = """
         <screen name="updatemadmax" position="center,center" size="600,60" backgroundColor="#ff000000" flags="wfNoBorder">
           <widget source="progress" zPosition="1" render="Progress" position="0,0" size="600,60" transparent="1" borderWidth="0" backgroundColor="#ff000000" foregroundColor="#49bbff" />
@@ -62,10 +61,10 @@ def DownloadInfo(url):
         else:
             link = response.read().decode('utf-8')
         return link
-    except URLError:
-        print('Impossibile trovare il server.')
-    except HTTPError:
-        print('HTTP Error code: ')
+    except URLError as e:
+        print('URL Error: ', e.reason)
+    except HTTPError as e:
+        print('HTTP Error code: ', e.code)
     response.close()
 
 class updatemadmax(Screen):
@@ -82,13 +81,13 @@ class updatemadmax(Screen):
         self.onFirstExecBegin.append(self.Update)
 
     def Update(self):
-        file_vers = open('/usr/share/enigma2/MadMax/version','r')
-        version = file_vers.read()
+        file_vers = open('/usr/share/enigma2/MadMax/version', 'r').read()
         try:
+            read_version_git = 'http://raw.githubusercontent.com/m4dhouse/MadMax-Atv/main/version.txt'
             self.update_version = DownloadInfo(read_version_git)
-            if float(self.update_version) > float(version):
+            if float(self.update_version) > float(file_vers):
                 self.session.openWithCallback(self.down_inst, MessageBox, _('New version available!\n\nMadMax Impossible Skin update'), MessageBox.TYPE_INFO, timeout=5, default=True)
-            elif float(self.update_version) == float(version):
+            elif float(self.update_version) == float(file_vers):
                 self.session.open(MessageBox, _('No updates available!'), MessageBox.TYPE_INFO, timeout=5)
                 self.close()
         except:
@@ -98,7 +97,8 @@ class updatemadmax(Screen):
         os.system('mkdir -p /tmp/madmax')
         try:
             self.dlfile = '/tmp/madmax/madmax.ipk'
-            self.updateoea = url_ipk + 'enigma2-plugin-skins-madmax-impossible_' + self.update_version + '_all.ipk'
+            url_ipk = 'http://raw.githubusercontent.com/m4dhouse/MadMax-Atv/main/'
+            self.updateoea = url_ipk + 'enigma2-plugin-skins-madmax-impossible_' + str(self.update_version) + '_all.ipk'
             self.download = downloadWithProgress(self.updateoea, self.dlfile)
             self.download.addProgress(self.downloadProgress)
             self.download.start().addCallback(self.instSkin).addErrback(self.downloadfailed)
