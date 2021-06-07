@@ -46,7 +46,7 @@
     <widget source="global.CurrentTime" render="Label" position="1679,1025" size="240,30" font="Regular;25" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
       <convert type="ClockToText">Format %a %d %b | %H:%M</convert>
     </widget>
-    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.jpg" zPosition="-1" />
+    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
     <widget source="menu" render="Listbox" position="575,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="2"
       foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" >
@@ -319,7 +319,7 @@
     <widget source="global.CurrentTime" render="Label" position="1679,1025" size="240,30" font="Regular;25" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
       <convert type="ClockToText">Format %a %d %b | %H:%M</convert>
     </widget>
-    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.jpg" zPosition="-1" />
+    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
     <!-- menu list -->
     <widget source="menu" render="Listbox" position="576,178" size="766,720" transparent="1" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066">
@@ -338,7 +338,7 @@
     <widget source="global.CurrentTime" render="Label" position="1679,1025" size="240,30" font="Regular;25" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
       <convert type="ClockToText">Format %a %d %b | %H:%M</convert>
     </widget>
-    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.jpg" zPosition="-1" />
+    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
   </screen>
 
@@ -346,7 +346,7 @@
     <widget source="global.CurrentTime" render="Label" position="1679,1025" size="240,30" font="Regular;25" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
       <convert type="ClockToText">Format %a %d %b | %H:%M</convert>
     </widget>
-    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu2.jpg" zPosition="-1" />
+    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu2.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
   </screen>
 
@@ -372,7 +372,7 @@
     <widget source="global.CurrentTime" render="Label" position="1679,1025" size="240,30" font="Regular;25" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
       <convert type="ClockToText">Format %a %d %b | %H:%M</convert>
     </widget>
-    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu3.jpg" zPosition="-1" />
+    <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu3.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
   </screen>
 
