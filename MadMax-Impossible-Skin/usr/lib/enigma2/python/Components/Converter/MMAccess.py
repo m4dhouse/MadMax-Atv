@@ -928,6 +928,8 @@ class MMAccess(Poll, Converter):
 							for line in open("/tmp/.ncam/ncam.version"):
 								if line.startswith("Version:"):
 									cam1 = "%s" % line.split(':')[1].replace(" ", "")
+									if cam1.startswith('ncam-'):
+										cam1 = 'ncam'
 						else:
 							for line in open("/etc/init.d/softcam"):
 								if "Short-Description" in line:
