@@ -922,6 +922,8 @@ class MMAccess(Poll, Converter):
 							for line in open("/tmp/.oscam/oscam.version"):
 								if line.startswith("Version:"):
 									cam1 = "%s" % line.split(':')[1].replace(" ", "")
+									if cam1.startswith('oscam-'):
+										cam1 = 'oscam'
 						elif os.path.exists("/tmp/.ncam/ncam.version"):
 							for line in open("/tmp/.ncam/ncam.version"):
 								if line.startswith("Version:"):
@@ -930,11 +932,17 @@ class MMAccess(Poll, Converter):
 							for line in open("/etc/init.d/softcam"):
 								if "Short-Description" in line:
 									cam1 = "%s" % line.split(':')[1].replace(" ", "")
+									if cam1.startswith('oscam-'):
+										cam1 = 'oscam'
 								if line.startswith("CAMNAME="):
 									cam1 = "%s" % line.split('"')[1]
+									if cam1.startswith('oscam-'):
+										cam1 = 'oscam'
 								elif line.find("echo") > -1:
 									camdname.append(line)
 							cam2 = "%s" % camdname[1].split('"')[1]
+							if cam2.startswith('oscam-'):
+								cam2 = 'oscam'
 						if not cam1:
 							return cam2
 						else:
