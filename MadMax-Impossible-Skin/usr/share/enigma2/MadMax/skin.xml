@@ -901,7 +901,7 @@
       <convert type="MMAccess">CamName</convert>
     </widget>
     <!-- nagra/nds/etc -->
-    <widget source="session.CurrentService" render="Label" position="720,100" size="250,26" font="Regular;23" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Label" position="710,100" size="250,26" font="Regular;23" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
       <convert type="MMCaidInfo2">CryptInfo2</convert>
     </widget>
     <ePixmap pixmap="MadMax/icons/cpuload.png" position="718,22" size="30,30" zPosition="1" alphatest="blend" transparent="1" />
@@ -985,14 +985,14 @@
     <!-- <widget font="Regular; 21" halign="center" position="660,1045" render="Label" size="310,30" backgroundColor="header" foregroundColor="white" source="session.CurrentService" transparent="1">
       <convert type="MMPliExtraInfo">ResolutionString</convert>
     </widget>-->
-		<eLabel position="30,1045" size="8,25" backgroundColor="red" zPosition="1" />
-    <eLabel text="Info" position="45,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
-		<eLabel position="190,1045" size="8,25" backgroundColor="green" zPosition="1" />
-    <eLabel text="Plugins" position="205,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
-		<eLabel position="370,1045" size="8,25" backgroundColor="yellow" zPosition="1" />
-    <eLabel text="Audio" position="385,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
-		<eLabel position="550,1045" size="8,25" backgroundColor="blue" zPosition="1" />
-    <eLabel text="Extensions" position="565,1042" size="250,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="20,1045" size="8,25" backgroundColor="red" zPosition="1" />
+    <eLabel text="Info" position="35,1042" size="200,40" font="Regular;24" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="200,1045" size="8,25" backgroundColor="green" zPosition="1" />
+    <eLabel text="Plugins" position="215,1042" size="200,40" font="Regular;24" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="380,1045" size="8,25" backgroundColor="yellow" zPosition="1" />
+    <eLabel text="Audio" position="395,1042" size="200,40" font="Regular;24" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="560,1045" size="8,25" backgroundColor="blue" zPosition="1" />
+    <eLabel text="Extensions" position="575,1042" size="250,40" font="Regular;24" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
     <panel name="res_fhd_4k" />
     <ePixmap alphatest="blend" pixmap="MadMax/icons/ico_crypt_offbar.png" transparent="1" position="1005,1040" size="80,40" zPosition="1" />
     <widget alphatest="blend" pixmap="MadMax/icons/ico_crypt_onbar.png" transparent="1" position="1005,1040" render="Pixmap" size="80,38" source="session.CurrentService" zPosition="2">
