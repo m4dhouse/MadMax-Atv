@@ -45,6 +45,7 @@ class MMCaidInfo2(Poll, Converter, object):
 	CRD = 33
 	CRDTXT = 34
 	SHORT = 35
+	FTA = 36
 	my_interval = 1000
 
 
@@ -119,6 +120,8 @@ class MMCaidInfo2(Poll, Converter, object):
 			self.type = self.CRDTXT
 		elif type == "Short":
 			self.type = self.SHORT
+		elif type == "Fta":
+			self.type = self.FTA
 		elif type == "Default" or type == "" or type == None or type == "%":
 			self.type = self.ALL
 		else:
@@ -160,13 +163,21 @@ class MMCaidInfo2(Poll, Converter, object):
 
 	@cached
 	def getBoolean(self):
-
+		ecm_info = self.ecmfile()
+		protocol = str(ecm_info.get("protocol", ""))
 		service = self.source.service
 		info = service and service.info()
 		if not info:
 			return False
 
 		caids = info.getInfoObject(iServiceInformation.sCAIDs)
+		if self.type == self.FTA:
+			if not caids and not ecm_info:
+				return True
+			elif ecm_info:
+				if "fta" in protocol:
+					return True
+			return False
 		if caids:
 			if self.type == self.SECA:
 				for caid in caids:
