@@ -987,12 +987,12 @@
     </widget>-->
 		<eLabel position="30,1045" size="8,25" backgroundColor="red" zPosition="1" />
     <eLabel text="Info" position="45,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
-		<eLabel position="120,1045" size="8,25" backgroundColor="green" zPosition="1" />
-    <eLabel text="Plugins" position="135,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
-		<eLabel position="230,1045" size="8,25" backgroundColor="yellow" zPosition="1" />
-    <eLabel text="Audio" position="245,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
-		<eLabel position="340,1045" size="8,25" backgroundColor="blue" zPosition="1" />
-    <eLabel text="Extensions" position="355,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="190,1045" size="8,25" backgroundColor="green" zPosition="1" />
+    <eLabel text="Plugins" position="205,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="370,1045" size="8,25" backgroundColor="yellow" zPosition="1" />
+    <eLabel text="Audio" position="385,1042" size="200,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
+		<eLabel position="550,1045" size="8,25" backgroundColor="blue" zPosition="1" />
+    <eLabel text="Extensions" position="565,1042" size="250,40" font="Regular;25" foregroundColor="#FFFFFF" halign="left" backgroundColor="header" transparent="1" zPosition="10" />
     <panel name="res_fhd_4k" />
     <ePixmap alphatest="blend" pixmap="MadMax/icons/ico_crypt_offbar.png" transparent="1" position="1005,1040" size="80,40" zPosition="1" />
     <widget alphatest="blend" pixmap="MadMax/icons/ico_crypt_onbar.png" transparent="1" position="1005,1040" render="Pixmap" size="80,38" source="session.CurrentService" zPosition="2">
