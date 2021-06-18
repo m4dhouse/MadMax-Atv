@@ -629,7 +629,7 @@
     <!-- PIG CHANNEL  -->
     <ePixmap position="90,120" pixmap="MadMax/menu/tv_chn.png" size="750,513" alphatest="blend" transparent="1" zPosition="-1" />
     <widget source="session.VideoPicture" render="Pig" position="118,155" backgroundColor="transparent" size="598,333" zPosition="1" />
-    <widget source="session.Event_Now" render="Label" position="117,444" size="589,40" font="Regular;22" halign="center" valign="center" foregroundColor="#b0b0b0" backgroundColor="#40000000" transparent="0" zPosition="3" >
+    <widget source="session.Event_Now" render="Label" position="117,446" size="596,40" font="Regular;22" halign="center" valign="center" foregroundColor="#b0b0b0" backgroundColor="#40000000" transparent="0" zPosition="3" >
       <convert type="EventName">Name</convert>
     </widget>
     <!-- Picon -->
