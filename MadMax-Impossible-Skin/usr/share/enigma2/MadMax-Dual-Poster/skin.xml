@@ -1,6 +1,6 @@
 <skin>
   <!--
-  #################### Madhouse & StixMax v.1.0 ###########################
+  #################### Madhouse & StixMax v.2.3 ###########################
   #                                                                       #
   #      MadMax Skin       Version 2.0.0 released        01/03/21         #
   #                                                                       #
@@ -16,51 +16,54 @@
   </output>
 
   <parameters>
-    <parameter name="ConfigListSeperator" value="320" />
-    <parameter name="ChoicelistDash" value="0,3,1000,50" />
-    <parameter name="ChoicelistName" value="85,3,1000,50" />
-    <parameter name="ChoicelistIcon" value="10,4,64,50" />
-    <parameter name="FileListName" value="68,4,1000,50" />
-    <parameter name="FileListIcon" value="7,4,52,50" />
-    <parameter name="FileListMultiName" value="90,3,1000,50" />
-    <parameter name="FileListMultiIcon" value="45, 4, 50, 50" />
-    <parameter name="FileListMultiLock" value="2,0,50,50" />
+    <parameter name="ConfigListSlider" value="22,3" />
+    <parameter name="ConfigListSeperator" value="800" />
     <parameter name="PluginBrowserName" value="180,8,38" />
     <parameter name="PluginBrowserDescr" value="180,42,25" />
     <parameter name="PluginBrowserIcon" value="15,8,150,60" />
     <parameter name="PluginBrowserDownloadName" value="120,8,38" />
     <parameter name="PluginBrowserDownloadDescr" value="120,42,25" />
     <parameter name="PluginBrowserDownloadIcon" value="15,0,90,76" />
-    <parameter name="ServiceInfo" value="0,0,450,50" />
-    <parameter name="ServiceInfoLeft" value="0,0,450,45" />
-    <parameter name="ServiceInfoRight" value="450,0,1000,45" />
-    <parameter name="SelectionListDescr" value="55, 3, 1000, 50" />
-    <parameter name="SelectionListLock" value="10, 7, 50, 50" />
-    <parameter name="VirtualKeyBoard" value="69,68"/>
-    <parameter name="PartnerBoxEntryListName" value="8, 2, 225, 38" />
-    <parameter name="PartnerBoxEntryListIP" value="180, 2, 225, 38" />
-    <parameter name="PartnerBoxEntryListPort" value="405, 2, 150, 38" />
-    <parameter name="PartnerBoxEntryListType" value="615, 2, 150, 38" />
-    <parameter name="PartnerBoxTimerServicename" value="0, 0, 45" />
-    <parameter name="PartnerBoxTimerName" value="0, 42, 30" />
-    <parameter name="PartnerBoxE1TimerTime" value="0, 78, 255, 30" />
-    <parameter name="PartnerBoxE1TimerState" value="255, 78, 255, 30" />
-    <parameter name="PartnerBoxE2TimerTime" value="0, 78, 225, 30" />
-    <parameter name="PartnerBoxE2TimerState" value="225, 78, 225, 30" />
-    <parameter name="PartnerBoxE2TimerIcon" value="735, 8, 60, 60" />
-    <parameter name="PartnerBoxBouquetListName" value="0, 0, 45" />
-    <parameter name="PartnerBoxChannelListName" value="0, 0, 45" />
-    <parameter name="PartnerBoxChannelListTitle" value="0, 42, 30" />
-    <parameter name="PartnerBoxChannelListTime" value="0, 78, 225, 30" />
-    <parameter name="HelpMenuListHlp" value="0, 0, 900, 42" />
-    <parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39" />
-    <parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30" />
-    <parameter name="AboutHddSplit" value="1" />
-    <parameter name="DreamexplorerName" value="62, 0, 1200, 38" />
-    <parameter name="DreamexplorerIcon" value="15, 4, 30, 30" />
-    <parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25" />
-    <parameter name="PlayListName" value="65,2,1000,50" />
-    <parameter name="PlayListIcon" value="10,0,50,50" />
+    <parameter name="ChoicelistDash" value="10,7,1000,49" />
+    <parameter name="ChoicelistName" value="80,7,1040,49" />
+    <parameter name="ChoicelistNameSingle" value="10,7,1040,49" />
+    <parameter name="ChoicelistIcon" value="10,7,53,38" />
+    <parameter name="PartnerBoxEntryListName" value="60,2,225,45" />
+    <parameter name="PartnerBoxEntryListIP" value="400,2,225,45" />
+    <parameter name="PartnerBoxEntryListPort" value="810,2,150,45" />
+    <parameter name="PartnerBoxEntryListType" value="1140,2,220,45" />
+    <parameter name="PartnerBoxChannelListName" value="15,0,45" />
+    <parameter name="PartnerBoxChannelListTitle" value="15,42,30" />
+    <parameter name="PartnerBoxChannelListTime" value="15,78,225,30" />
+    <parameter name="PartnerBoxBouquetListName" value="15,0,45" />
+    <parameter name="VirtualKeyBoard" value="80,60" />
+    <parameter name="DreamexplorerName" value="70,0,1040,40" />
+    <parameter name="DreamexplorerIcon" value="5,1,48,38" scale="fill" />
+    <parameter name="FcFileListName" value="70,0,1030,40" />
+    <parameter name="FcFileListIcon" value="5,0,48,38" scale="fill" />
+    <parameter name="FcFileListMultiName" value="110,0,990,40" />
+    <parameter name="FcFileListMultiIcon" value="57,0,48,38" scale="fill" />
+    <parameter name="FcFileListMultiLock" value="5,0,48,38" scale="fill" />
+    <parameter name="FileListName" value="70,0,1030,40" />
+    <parameter name="FileListIcon" value="5,0,48,38" scale="fill" />
+    <parameter name="FileListMultiName" value="110,0,990,40" />
+    <parameter name="FileListMultiIcon" value="57,0,48,38" scale="fill" />
+    <parameter name="iDreamList" value="40,40" />
+    <parameter name="iDreamListItem" value="40,40" />
+    <parameter name="PlayListName" value="38,0,1000,40" />
+    <parameter name="PlayListIcon" value="5,8,24,24" scale="fill" />
+    <parameter name="fstabMenuList" value="0, 0, 250, 25, 280, 0, 900, 25" />
+    <parameter name="ServiceInfo" value="10,0, 1090, 45" />
+    <parameter name="ServiceInfoLeft" value="10, 0, 580, 45" />
+    <parameter name="ServiceInfoRight" value="600, 0, 500, 45" />
+    <parameter name="SelectionListDescr" value="60, 0, 1040, 44" />
+    <parameter name="SelectionListLock" value="5, 2, 40, 40" />
+    <parameter name="ImsSelectionListDescr" value="60, 0, 1040, 44" />
+    <parameter name="ImsSelectionListLock" value="5, 2, 40, 40" />
+    <parameter name="ZapStatisticBrowserListEntry" value="0, 0, 700, 40" />
+    <parameter name="HelpMenuListHlp" value="10, 0, 980, 40" />
+    <parameter name="HelpMenuListExtHlp0" value="10, 2, 980, 43" />
+    <parameter name="HelpMenuListExtHlp1" value="10, 45, 980, 35" />
   </parameters>
   <!-- Colors FHD -->
   <colors>
