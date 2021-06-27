@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rules>
-	<ruleset name="ColorKeys">
-		<rule type="marker"  Name="openatv" Red="InfoPanel" Green="Plugins" Yellow="Audio" Blue="" > </rule>
-	</ruleset>
-</rules>
