@@ -1,0 +1,15 @@
+#!/bin/sh
+if [ -d /usr/lib/enigma2/python/Plugins/Extensions/MadMax ]; then
+  rm -rf /usr/lib/enigma2/python/Plugins/Extensions/MadMax
+fi;
+if [ -d /usr/share/enigma2/MadMax-Poster ]; then
+  rm -rf /usr/share/enigma2/MadMax-Poster
+fi;
+if [ -d /usr/share/enigma2/MadMax-Dual-Poster ]; then
+  rm -rf /usr/share/enigma2/MadMax-Dual-Poster
+fi;
+if [ -d /usr/share/enigma2/MadMax ]; then
+  rm -rf /usr/lib/enigma2/python/Components/Converter/MM*
+  rm -rf /usr/lib/enigma2/python/Components/Renderer/MM*
+fi;
+exit 0

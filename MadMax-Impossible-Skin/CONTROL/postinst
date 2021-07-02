@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "*****************************************"
+echo "*         MadMax Impossible Skin        *"
+echo "*            Code by Madhouse           *"
+echo "*      Graphics & Style by StixMax      *"
+echo "*****************************************"
+echo $LINE
+sleep 2
+echo "*****************************************"
+echo "*               Thanks to               *"
+echo "*    Miky1964 - SkyRun1973 - Zorro71    *"
+echo "*****************************************"
+echo $LINE
+sleep 2
+echo "*****************************************"
+echo "*            Skin Installed             *"
+echo "*****************************************"
+sleep 2
+rm -r /var/volatile/tmp/*.ipk > /dev/null 2>&1
+rm -r /control > /dev/null 2>&1
+exit 0
