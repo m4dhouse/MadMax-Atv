@@ -426,15 +426,25 @@ class MMPliExtraInfo(Poll, Converter, object):
 			+ addspace(self.createModulation(fedata)) + addspace(self.createOrbPos(feraw)) + addspace(self.createMisPls(fedata))
 
 	def createFrequency(self, fedata):
+		py_version = sys.version_info.major
 		frequency = fedata.get("frequency")
 		if frequency:
-			return str(frequency)
+			frequency = str(frequency)
+			if py_version == 2:
+				return frequency
+			else:
+				return frequency[:-3]
 		return ""
 
 	def createChannelNumber(self, fedata, feraw):
-		return "DVB-T" in feraw.get("tuner_type") and fedata.get("channel") or ""
+		py_version = sys.version_info.major
+		if py_version == 2:
+			return "DVB-T" in feraw.get("tuner_type") and fedata.get("channel") or ""
+		else:
+			return "DVB-T" in feraw.get("tuner_type") and fedata.get("channel").replace(".5", "") or ""
 
 	def createSymbolRate(self, fedata, feraw):
+		py_version = sys.version_info.major
 		if "DVB-T" in feraw.get("tuner_type"):
 			bandwidth = fedata.get("bandwidth")
 			if bandwidth:
@@ -442,7 +452,11 @@ class MMPliExtraInfo(Poll, Converter, object):
 		else:
 			symbolrate = fedata.get("symbol_rate")
 			if symbolrate:
-				return str(symbolrate)
+				symbolrate = str(symbolrate)
+				if py_version == 2:
+					return symbolrate
+				else:
+					return symbolrate[:-3]
 		return ""
 
 	def createPolarization(self, fedata):
