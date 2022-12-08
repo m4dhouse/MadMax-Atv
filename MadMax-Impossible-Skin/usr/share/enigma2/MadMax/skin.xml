@@ -1,6 +1,6 @@
 <skin>
   <!--
-  #################### Madhouse & StixMax v.2.3 ###########################
+  #################### Madhouse & StixMax v.2.6 ###########################
   #                                                                       #
   #                 MadMax Skin          07/06/21                         #
   #                                                                       #
@@ -15,56 +15,103 @@
     <resolution bpp="32" xres="1920" yres="1080" />
   </output>
 
+  <!-- Fonts FHD -->
+  <fonts>
+    <font name="LCD"         filename="lcd.ttf"         scale="100"/>
+    <font name="Console"     filename="tuxtxt.ttf"      scale="100"/>
+    <font name="Fixed"       filename="andale.ttf"      scale="100"/>
+    <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1"/>
+    <font name="Regular"     filename="/usr/share/enigma2/MadMax/fonts/verdana.ttf" scale="93"/>
+    <font name="xRegular"    filename="/usr/share/fonts/nmsbd.ttf" scale="100"/>
+    <font name="Regular2"     filename="/usr/share/enigma2/MadMax/fonts/verdana2.ttf" scale="93"/>
+    <font name="digital"     filename="/usr/share/enigma2/MadMax/fonts/digital.ttf" scale="100"/>
+    <font name="speedtest"     filename="/usr/share/enigma2/MadMax/fonts/Roboto-Regular.ttf" scale="100"/>
+    <alias name="Body" font="Regular" size="32" height="50" />
+		<alias name="TextNormal" font="Regular" size="30" height="50" />
+		<alias name="ChoiceList" font="Regular" size="32" height="50" />
+		<alias name="FileList" font="Regular" size="30" height="50" />
+		<alias name="FileListMulti" font="Regular" size="30" height="50" />
+		<alias name="PluginBrowser0" font="Regular" size="32" height="76" />
+		<alias name="PluginBrowser1" font="Regular" size="22" />
+		<alias name="ServiceInfo" font="Regular" size="30" height="45" />
+		<alias name="SelectionList" font="Regular" size="28" height="50" />
+		<alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38" />
+		<alias name="PartnerBoxEntryList1" font="Regular" size="28" />
+		<alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114" />
+		<alias name="PartnerBoxE2TimerMenu1" font="Regular" size="28" />
+		<alias name="PartnerBoxBouquetList0" font="Regular" size="32" height="45" />
+		<alias name="PartnerBoxBouquetList1" font="Regular" size="28" />
+		<alias name="PartnerBoxChannelList0" font="Regular" size="32" height="114" />
+		<alias name="PartnerBoxChannelList1" font="Regular" size="28" />
+		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38" />
+		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24" />
+		<alias name="VirtualKeyBoard" font="Regular" size="42" height="68" />
+		<alias name="HelpMenuList" font="Regular" size="30" height="45" />
+		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75" />
+		<alias name="HelpMenuListExt1" font="Regular" size="28" />
+		<alias name="Dreamexplorer" font="Regular" size="28" height="38" />
+		<alias name="PlayList" font="Regular" size="28" height="50" />
+		<alias name="MenuList" font="Regular" size="28" height="50" />
+	</fonts>
+
   <parameters>
-    <parameter name="ConfigListSlider" value="22,3" />
-    <parameter name="ConfigListSeperator" value="800" />
-    <parameter name="PluginBrowserName" value="180,8,38" />
-    <parameter name="PluginBrowserDescr" value="180,42,25" />
-    <parameter name="PluginBrowserIcon" value="15,8,150,60" />
-    <parameter name="PluginBrowserDownloadName" value="120,8,38" />
-    <parameter name="PluginBrowserDownloadDescr" value="120,42,25" />
-    <parameter name="PluginBrowserDownloadIcon" value="15,0,90,76" />
-    <parameter name="ChoicelistDash" value="10,7,1000,49" />
-    <parameter name="ChoicelistName" value="80,7,1040,49" />
-    <parameter name="ChoicelistNameSingle" value="10,7,1040,49" />
-    <parameter name="ChoicelistIcon" value="10,7,53,38" />
-    <parameter name="PartnerBoxEntryListName" value="60,2,225,45" />
-    <parameter name="PartnerBoxEntryListIP" value="400,2,225,45" />
-    <parameter name="PartnerBoxEntryListPort" value="810,2,150,45" />
-    <parameter name="PartnerBoxEntryListType" value="1140,2,220,45" />
-    <parameter name="PartnerBoxChannelListName" value="15,0,45" />
-    <parameter name="PartnerBoxChannelListTitle" value="15,42,30" />
-    <parameter name="PartnerBoxChannelListTime" value="15,78,225,30" />
-    <parameter name="PartnerBoxBouquetListName" value="15,0,45" />
-    <parameter name="VirtualKeyBoard" value="80,60" />
-    <parameter name="DreamexplorerName" value="70,0,1040,40" />
-    <parameter name="DreamexplorerIcon" value="5,1,48,38" scale="fill" />
-    <parameter name="FcFileListName" value="70,0,1030,40" />
-    <parameter name="FcFileListIcon" value="5,0,48,38" scale="fill" />
-    <parameter name="FcFileListMultiName" value="110,0,990,40" />
-    <parameter name="FcFileListMultiIcon" value="57,0,48,38" scale="fill" />
-    <parameter name="FcFileListMultiLock" value="5,0,48,38" scale="fill" />
-    <parameter name="FileListName" value="70,0,1030,40" />
-    <parameter name="FileListIcon" value="5,0,48,38" scale="fill" />
-    <parameter name="FileListMultiName" value="110,0,990,40" />
-    <parameter name="FileListMultiIcon" value="57,0,48,38" scale="fill" />
-    <parameter name="iDreamList" value="40,40" />
-    <parameter name="iDreamListItem" value="40,40" />
-    <parameter name="PlayListName" value="38,0,1000,40" />
-    <parameter name="PlayListIcon" value="5,8,24,24" scale="fill" />
-    <parameter name="fstabMenuList" value="0, 0, 250, 25, 280, 0, 900, 25" />
-    <parameter name="ServiceInfo" value="10,0, 1090, 45" />
-    <parameter name="ServiceInfoLeft" value="10, 0, 580, 45" />
-    <parameter name="ServiceInfoRight" value="600, 0, 500, 45" />
-    <parameter name="SelectionListDescr" value="60, 0, 1040, 44" />
-    <parameter name="SelectionListLock" value="5, 2, 40, 40" />
-    <parameter name="ImsSelectionListDescr" value="60, 0, 1040, 44" />
-    <parameter name="ImsSelectionListLock" value="5, 2, 40, 40" />
-    <parameter name="ZapStatisticBrowserListEntry" value="0, 0, 700, 40" />
-    <parameter name="HelpMenuListHlp" value="10, 0, 980, 40" />
-    <parameter name="HelpMenuListExtHlp0" value="10, 2, 980, 43" />
-    <parameter name="HelpMenuListExtHlp1" value="10, 45, 980, 35" />
-  </parameters>
+		<parameter name="ConfigListSeperator" value="500" />
+		<parameter name="ChoicelistDash" value="0,3,1000,50" />
+		<parameter name="ChoicelistName" value="85,2,1000,53" />
+		<parameter name="ChoicelistIcon" value="10,5,64,50" />
+		<parameter name="ChoicelistIconVerticalline" value="10,2,50,50" />
+		<parameter name="ChoicelistIconExpanded" value="10,2,50,50" />
+		<parameter name="ChoicelistNameSingle" value="5,0,1000,50" />
+		<parameter name="FileListName" value="68,4,1000,50" />
+		<parameter name="FileListIcon" value="7,4,52,50" />
+		<parameter name="FileListMultiName" value="90,3,1000,50" />
+		<parameter name="FileListMultiIcon" value="45,4,50,50" />
+		<parameter name="FileListMultiLock" value="2,0,50,50" />
+		<parameter name="PluginBrowserName" value="180,8,38" />
+		<parameter name="PluginBrowserDescr" value="180,42,25" />
+		<parameter name="PluginBrowserIcon" value="15,8,150,60" />
+		<parameter name="PluginBrowserDownloadName" value="120,8,38" />
+		<parameter name="PluginBrowserDownloadDescr" value="120,42,25" />
+		<parameter name="PluginBrowserDownloadIcon" value="15,0,90,76" />
+		<parameter name="ServiceInfo" value="0,0,450,50" />
+		<parameter name="ServiceInfoLeft" value="5,5,450,45" />
+		<parameter name="ServiceInfoRight" value="450,5,1000,45" />
+		<parameter name="SelectionListDescr" value="75,10,1000,50" />
+		<parameter name="SelectionListLock" value="10,7,50,50" />
+		<parameter name="SelectionListLockOff" value="10,7,50,50" />
+		<parameter name="VirtualKeyBoard" value="68,68" />
+		<parameter name="VirtualKeyBoardAlignment" value="0,0" />
+		<parameter name="VirtualKeyBoardPadding" value="6,6" />
+		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
+		<parameter name="PartnerBoxEntryListName" value="8,2,225,38" />
+		<parameter name="PartnerBoxEntryListIP" value="180,2,225,38" />
+		<parameter name="PartnerBoxEntryListPort" value="405,2,150,38" />
+		<parameter name="PartnerBoxEntryListType" value="615,2,150,38" />
+		<parameter name="PartnerBoxTimerServicename" value="0,0,45" />
+		<parameter name="PartnerBoxTimerName" value="0,42,30" />
+		<parameter name="PartnerBoxE1TimerTime" value="0,78,255,30" />
+		<parameter name="PartnerBoxE1TimerState" value="255,78,255,30" />
+		<parameter name="PartnerBoxE2TimerTime" value="0,78,225,30" />
+		<parameter name="PartnerBoxE2TimerState" value="225,78,225,30" />
+		<parameter name="PartnerBoxE2TimerIcon" value="735,8,60,60" />
+		<parameter name="PartnerBoxBouquetListName" value="0,0,45" />
+		<parameter name="PartnerBoxChannelListName" value="0,0,45" />
+		<parameter name="PartnerBoxChannelListTitle" value="0,42,30" />
+		<parameter name="PartnerBoxChannelListTime" value="0,78,225,30" />
+		<parameter name="HelpMenuListHlp" value="0,0,900,42" />
+		<parameter name="HelpMenuListExtHlp0" value="0,0,900,39" />
+		<parameter name="HelpMenuListExtHlp1" value="0,42,900,30" />
+		<parameter name="AboutHddSplit" value="1" />
+		<parameter name="DreamexplorerName" value="62,0,1200,38" />
+		<parameter name="DreamexplorerIcon" value="15,4,30,30" />
+		<parameter name="PicturePlayerThumb" value="30,285,45,300,30,25" />
+		<parameter name="PlayListName" value="65,2,1000,50" />
+		<parameter name="PlayListIcon" value="10,0,50,50" />
+		<parameter name="WeatherPluginSearchlocation" value="10,0,550,70" />
+		<parameter name="WeatherPluginSearchresult" value="470,0,500,70" />
+		<parameter name="WeatherPluginCity" value="10,0,700,50" />
+		<parameter name="WeatherPluginDegreetype" value="465,0,100,50" />
+	</parameters>
   <!-- Colors FHD -->
   <colors>
     <color name="background" value="#20000000"/>
@@ -108,6 +155,7 @@
   <!-- Main screen colors (id=0 Framebuffer) FHD -->
   <windowstyle type="skinned" id="0">
     <title offset="130,15" font="Regular;40" />
+    <configList entryFont="Regular;28" valueFont="Regular;28" />
     <color name="Background"                         color="#20000000" />
     <color name="LabelForeground"                    color="#ffffff" />
     <color name="ListboxBackground"                  color="#20000000" />
@@ -689,44 +737,6 @@
     <eLabel position="750,1020" size="10,30" backgroundColor="blue"   zPosition="0" />
     <widget name="key_blue"     position="508,1017" size="225,32"     zPosition="1" font="Regular;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1" />
   </screen>
-  <!-- Fonts FHD -->
-  <fonts>
-    <font name="LCD"         filename="lcd.ttf"         scale="100"/>
-    <font name="Console"     filename="tuxtxt.ttf"      scale="100"/>
-    <font name="Fixed"       filename="andale.ttf"      scale="100"/>
-    <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1"/>
-    <font name="Regular"     filename="/usr/share/enigma2/MadMax/fonts/verdana.ttf" scale="93"/>
-    <font name="xRegular"    filename="/usr/share/fonts/nmsbd.ttf" scale="100"/>
-    <font name="Regular2"     filename="/usr/share/enigma2/MadMax/fonts/verdana2.ttf" scale="93"/>
-    <font name="digital"     filename="/usr/share/enigma2/MadMax/fonts/digital.ttf" scale="100"/>
-    <font name="speedtest"     filename="/usr/share/enigma2/MadMax/fonts/Roboto-Regular.ttf" scale="100"/>
-    <alias name="Body"                      font="Regular" size="32" height="50" />
-    <alias name="TextNormal"                font="Regular" size="30" height="50" />
-    <alias name="ChoiceList"                font="Regular" size="32" height="50" />
-    <alias name="FileList"                  font="Regular" size="30" height="50"/>
-    <alias name="FileListMulti"             font="Regular" size="30" height="50"/>
-    <alias name="PluginBrowser0"            font="Regular" size="32" height="76"/>
-    <alias name="PluginBrowser1"            font="Regular" size="22"/>
-    <alias name="ServiceInfo"               font="Regular" size="30" height="45"/>
-    <alias name="SelectionList"             font="Regular" size="28" height="50" />
-    <alias name="PartnerBoxEntryList0"      font="Regular" size="28" height="38"/>
-    <alias name="PartnerBoxEntryList1"      font="Regular" size="28"/>
-    <alias name="PartnerBoxE2TimerMenu0"    font="Regular" size="32" height="114"/>
-    <alias name="PartnerBoxE2TimerMenu1"    font="Regular" size="28"/>
-    <alias name="PartnerBoxBouquetList0"    font="Regular" size="32" height="45"/>
-    <alias name="PartnerBoxBouquetList1"    font="Regular" size="28"/>
-    <alias name="PartnerBoxChannelList0"    font="Regular" size="32" height="114"/>
-    <alias name="PartnerBoxChannelList1"    font="Regular" size="28"/>
-    <alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
-    <alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
-    <alias name="VirtualKeyBoard"           font="Regular" size="42" height="68"/>
-    <alias name="HelpMenuList"              font="Regular" size="30" height="45"/>
-    <alias name="HelpMenuListExt0"          font="Regular" size="32" height="75"/>
-    <alias name="HelpMenuListExt1"          font="Regular" size="28"/>
-    <alias name="Dreamexplorer"             font="Regular" size="28" height="38"/>
-    <alias name="PlayList"                  font="Regular" size="28" height="50"/>
-    <alias name="MenuList"                  font="Regular" size="28" height="50"/>
-  </fonts>
   <!-- Infobar Gradient Emu FHD -->
   <screen name="InfoBar" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="MadMax/box/grad_up.png" position="0,0" size="1920,233" transparent="1" zPosition="-1" />
@@ -1045,6 +1055,7 @@
   <!-- ********** SKIN PANELS ********** -->
   <!-- Menu FHD -->
   <screen name="Menu" position="fill" title="Menu" flags="wfNoBorder">
+    <panel name="M"/>
     <panel name="Menu_Template" />
     <panel name="menu_sort_bl" />
   </screen>
@@ -1173,7 +1184,7 @@
   <!-- ChannelList Menu FHD (NOT COMPATIBLE) -->
   <screen name="ChannelContextMenu" title="Channel Context Menu" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
-    <widget name="menu" position="379,180" size="1160,600" itemHeight="40" font="Regular;40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="menu" position="379,180" size="1160,706" itemHeight="53" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S111" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Eventview FHD -->
@@ -2382,7 +2393,6 @@
   <screen name="PluginBrowser" title="Plugin Browser" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="nRGYB"/>
-    <panel name="plugincolor"/>
     <widget name="list" position="364,170" size="1190,750" font="Regular;30" itemHeight="75" zPosition="2" scrollbarMode="showOnDemand"
       scrollbarWidth="7" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1"
       foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>

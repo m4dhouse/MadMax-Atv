@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!--
-  #################### Madhouse & StixMax v.1.0 ###########################
+  #################### Madhouse & StixMax v.2.6 ###########################
   #                                                                       #
-  #      MadMax Skin       Version 2.0.0 released        01/03/21         #
+  #      MadMax Skin       Version 2.6   released        08/12/22         #
   #                                                                       #
   #########################################################################
   -->
@@ -324,12 +324,32 @@
     <!-- menu list -->
     <widget source="menu" render="Listbox" position="576,178" size="766,720" transparent="1" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066">
       <convert type="TemplatedMultiContent">
-         {"template": [ MultiContentEntryText(pos = (100, 10), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0),
-         MultiContentEntryPixmapAlphaBlend(pos=(20,2),size=(56,56),png=5,)],
-         "fonts": [gFont("Regular", 35)],
-         "itemHeight": 60
-         }
-       </convert>
+				{"templates":
+					{"default": (60,[
+						MultiContentEntryText(pos = (30, 0), size = (680, 60), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)
+						]),
+					"text": (60,[
+						MultiContentEntryText(pos = (30, 0), size = (680, 60), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3)
+						]),
+					"number": (60,[
+						MultiContentEntryText(pos = (20, 0), size = (40, 60), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (80, 0), size = (680, 60), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						]),
+					"image": (60,[
+						MultiContentEntryPixmapAlphaBlend(pos = (25, 2), size = (56, 56), png = 1, flags = BT_SCALE | BT_KEEP_ASPECT_RATIO),
+						MultiContentEntryText(pos = (113, 0), size = (680, 60), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						]),
+					"both": (60,[
+						MultiContentEntryPixmapAlphaBlend(pos = (25, 2), size = (56, 56), png = 1, flags = BT_SCALE | BT_KEEP_ASPECT_RATIO),
+						MultiContentEntryText(pos = (95, 0), size = (40, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (150, 0), size = (680, 60), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						])
+					},
+				"fonts": [gFont("Regular", 35),gFont("Regular", 35),gFont("Regular", 35)],
+				"itemHeight": 60,
+				"scrollbarMode": "showOnDemand"
+				}
+			</convert>
     </widget>
   </screen>
 
@@ -378,13 +398,28 @@
 
   <!-- Button Templates Menu Sort -->
   <screen name="menu_sort_bl">
-    <ePixmap position="27,1025" pixmap="MadMax/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="blue" position="65,992" size="250,95" zPosition="2" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-    <ePixmap position="325,1025" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="green" position="363,992" size="250,95" zPosition="2" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-    <ePixmap position="625,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="yellow" position="665,992" size="250,95" zPosition="2" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-  </screen>
+		<!-- Button Blue -->
+		<ePixmap position="50,1025" pixmap="MadMax/buttons/bluepanel.png" size="30,30" alphatest="blend" objectTypes="key_red,Button,Label" transparent="1" zPosition="2" />
+		<widget source="key_blue" render="Pixmap" pixmap="MadMax/buttons/bluepanel.png" position="90,1025" size="260,95" alphatest="blend" objectTypes="key_blue,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_blue" position="130,992" size="260,95" noWrap="1" zPosition="1" valign="center" font="Regular;28" halign="left" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_blue,Button,Label" transparent="1" />
+		<widget source="key_blue" render="Label" position="130,992" size="260,95" noWrap="1" zPosition="1" valign="center" font="Regular;28" halign="left" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_blue,StaticText" transparent="1" />
+		<!-- Button Green -->
+		<ePixmap position="400,1025" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" objectTypes="key_green,Button,Label" transparent="1" zPosition="2" />
+		<widget source="key_green" render="Pixmap" pixmap="MadMax/buttons/greenpanel.png" position="440,1025" size="330,95" alphatest="blend" objectTypes="key_green,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_green" position="480,992" size="330,95" noWrap="1" zPosition="1" valign="center" font="Regular;28" halign="left" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_green,Button,Label" transparent="1" />
+		<widget source="key_green" render="Label" position="480,992" size="330,95" noWrap="1" zPosition="1" valign="center" font="Regular;28" halign="left" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_green,StaticText" transparent="1" />
+		<!-- Button Yellow -->
+		<ePixmap position="800,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" objectTypes="key_yellow,Button,Label" transparent="1" />
+		<widget source="key_yellow" render="Pixmap" pixmap="MadMax/buttons/yellowpanel.png" position="840,1025" size="260,95" alphatest="blend" objectTypes="key_yellow,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_yellow" position="880,992" size="260,95" noWrap="1" zPosition="1" valign="center" font="Regular;28" halign="left" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_yellow,Button,Label" transparent="1" />
+		<widget source="key_yellow" render="Label" position="880,992" size="260,95" font="Regular;28" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" zPosition="1" objectTypes="key_yellow,StaticText" transparent="1" />
+	</screen>
 
   <screen name="menu_sort_blr">
     <ePixmap position="27,1025" pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
@@ -508,201 +543,150 @@
 
   <screen name="nR">
     <!-- Keys Buttons FHD -->
-    <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_red" position="110,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nRG">
     <!-- Keys Buttons FHD -->
-    <panel name="nR" />
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_green"  position="400,992" size="230,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nRGY">
     <!-- Keys Buttons FHD -->
-    <panel name="nRG" />
-    <ePixmap position="640,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_yellow" position="680,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nRGYB">
-    <!-- Keys Buttons FHD -->
-    <panel name="nRGY" />
-    <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_blue" position="950,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-  </screen>
+		<!-- Button Red -->
+		<ePixmap position="70,1025" pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" objectTypes="key_red,Button,Label" transparent="1" />
+		<widget source="key_red" render="Pixmap" pixmap="MadMax/buttons/redpanel.png" position="70,1025" size="30,30" alphatest="blend" objectTypes="key_red,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_red" position="110,992" size="210,95" zPosition="+1" halign="left" valign="center" font="Regular;30" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_red,Button,Label" transparent="1" />
+		<widget source="key_red" render="Label" position="110,992" size="210,95" zPosition="+1" halign="left" valign="center" font="Regular;30" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_red,StaticText" transparent="1" />
+		<!-- Button Green -->
+		<ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" objectTypes="key_green,Button,Label" transparent="1" />
+		<widget source="key_green" render="Pixmap" pixmap="MadMax/buttons/greenpanel.png" position="360,1025" size="30,30" alphatest="blend" objectTypes="key_green,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_green" position="400,992" size="210,95" zPosition="+1" halign="left" valign="center" font="Regular;30" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_green,Button,Label" transparent="1" />
+		<widget source="key_green" render="Label" position="400,992" size="210,95" zPosition="+1" halign="left" valign="center" font="Regular;30" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_green,StaticText" transparent="1" />
+		<!-- Button Yellow -->
+		<ePixmap position="640,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" objectTypes="key_yellow,Button,Label" transparent="1" />
+		<widget source="key_yellow" render="Pixmap" pixmap="MadMax/buttons/yellowpanel.png" position="640,1025" size="30,30" alphatest="blend" objectTypes="key_yellow,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_yellow" position="680,992" size="210,95" zPosition="+1" halign="left" valign="center" font="Regular;30" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_yellow,Button,Label" transparent="1" />
+		<widget source="key_yellow" render="Label" position="680,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" zPosition="+1" objectTypes="key_yellow,StaticText" transparent="1" />
+		<!-- Button Blue -->
+		<ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png" size="30,30" alphatest="blend" objectTypes="key_blue,Button,Label" transparent="1" />
+		<widget source="key_blue" render="Pixmap" pixmap="MadMax/buttons/bluepanel.png" position="910,1025" size="30,30" alphatest="blend" objectTypes="key_blue,StaticText" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_blue" position="950,992" size="250,95" zPosition="+1" halign="left" valign="center" font="Regular;30" backgroundColor="header" foregroundColor="#b0b0b0" objectTypes="key_blue,Button,Label" transparent="1" />
+		<widget source="key_blue" position="950,992" size="250,95" zPosition="+1" render="Label" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" objectTypes="key_blue,StaticText" transparent="1" />
+	</screen>
 
   <screen name="nRB">
     <!-- Keys Buttons FHD -->
-    <panel name="nR" />
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_blue"  position="400,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nRGB">
     <!-- Keys Buttons FHD -->
-    <panel name="nRG" />
-    <ePixmap position="640,1025" pixmap="MadMax/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="key_blue" position="680,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <!-- Button Templates Colors NoKeyName FHD -->
 
   <screen name="nkR">
     <!-- Keys Buttons FHD -->
-    <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
-    <widget name="red" position="110,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nkRG">
     <!-- Keys Buttons FHD -->
-    <panel name="nkR" />
-    <widget name="green"  position="530,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-    <ePixmap position="490,1025" pixmap="MadMax/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nkRGY">
     <!-- Keys Buttons FHD -->
-    <panel name="nkRG" />
-    <widget name="yellow" position="800,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-    <ePixmap position="760,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nkRGYB">
     <!-- Keys Buttons FHD -->
-    <panel name="nkRGY" />
-    <widget name="blue" position="950,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-    <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="nkRB">
     <!-- Keys Buttons DRE -->
-    <panel name="nkR" />
-    <widget name="key_blue" position="950,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-    <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+    <panel name="nRGYB" />
   </screen>
 
   <!-- Button Templates Colors Source DRE -->
 
   <screen name="sR">
-    <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_red" render="Label" position="110,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRG">
-    <panel name="sR"/>
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_green" render="Label" position="400,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRGY">
-    <panel name="sRG"/>
-    <ePixmap position="640,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_yellow" render="Label" position="680,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRGYB">
-    <panel name="sRGY"/>
-    <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_blue" render="Label" position="950,992" size="400,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRGB">
-    <panel name="sRG"/>
-    <ePixmap position="640,1025" pixmap="MadMax/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_blue" render="Label" position="680,992" size="400,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRB">
-    <panel name="sR"/>
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_blue" render="Label" position="400,992" size="400,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRY">
-    <panel name="sR"/>
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_yellow" render="Label" position="400,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sRYB">
-    <panel name="sRY"/>
-    <ePixmap position="640,1025" pixmap="MadMax/buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_yellow" render="Label" position="680,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-    <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_blue" render="Label" position="950,992" size="400,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="sYB">
-    <ePixmap position="70,1025"  pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_yellow" render="Label" position="110,992" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="key_blue" render="Label" position="400,992" size="400,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <!-- Button Templates Colors NoKeySource FHD -->
 
   <screen name="skR">
     <!-- Keys Buttons FHD -->
-    <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="red" render="Label" position="110,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="skRG">
     <!-- Keys Buttons FHD -->
-    <panel name="skR" />
-    <ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="green" render="Label" position="400,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="skRGY">
     <!-- Keys Buttons FHD -->
-    <panel name="skRG" />
-    <ePixmap position="640,1025" pixmap="MadMax/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="yellow" render="Label" position="680,992" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="skRGYB">
     <!-- Keys Buttons FHD -->
-    <panel name="skRGY" />
-    <ePixmap position="910,1025" pixmap="MadMax/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
-    <widget source="blue" render="Label" position="950,992" size="400,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+    <panel name="nRGYB" />
   </screen>
 
   <screen name="fakeExit">
     <ePixmap position="27,1025" pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <eLabel text="Exit" position="65,992" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="2" />
-  </screen>
-
-  <screen name="infocolor">
-    <widget source="session.CurrentService" render="Label" position="100,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">labelred</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="400,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">labelgreen</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="700,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">labelyellow</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1000,1007" size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">labelblue</convert>
-    </widget>
-  </screen>
-
-  <screen name="plugincolor">
-    <widget source="session.CurrentService" render="Label" position="120,992"  size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">pluginred</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="405,992"  size="300,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">plugingreen</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="685,992"  size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">pluginyellow</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1000,992" size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
-      <convert type="MMColorlabel">pluginblue</convert>
-    </widget>
   </screen>
 
 </skin>

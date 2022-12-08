@@ -108,6 +108,7 @@
   <!-- Main screen colors (id=0 Framebuffer) FHD -->
   <windowstyle type="skinned" id="0">
     <title offset="130,15" font="Regular;40" />
+    <configList entryFont="Regular;28" valueFont="Regular;28" />
     <color name="Background"                         color="#20000000" />
     <color name="LabelForeground"                    color="#ffffff" />
     <color name="ListboxBackground"                  color="#20000000" />
@@ -1056,6 +1057,7 @@
   <!-- ********** SKIN PANELS ********** -->
   <!-- Menu FHD -->
   <screen name="Menu" position="fill" title="Menu" flags="wfNoBorder">
+    <panel name="M"/>
     <panel name="Menu_Template" />
     <panel name="menu_sort_bl" />
   </screen>
@@ -1063,9 +1065,9 @@
   <screen name="About" position="fill" title="About" flags="wfNoBorder" >
     <panel name="p800_Template"/>
     <widget name="AboutScrollLabel" position="center,263" size="840,740" backgroundColor="header" font="Regular;26" transparent="1" zPosition="2"/>
-    <widget source="lab1" render="Label" position="70,800" size="820,30"  font="Boldit;26" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
-    <widget source="lab2" render="Label" position="70,830" size="820,30"  font="Italic;26" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2"/>
-    <widget source="lab3" render="Label" position="70,860" size="820,30"  font="Italic;30" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1"/>
+    <widget source="lab1" render="Label" position="70,800" size="820,30" font="Boldit;26" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
+    <widget source="lab2" render="Label" position="70,830" size="820,30" font="Italic;26" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2"/>
+    <widget source="lab3" render="Label" position="70,860" size="820,30" font="Italic;30" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="S100a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- About FHD -->
@@ -1184,7 +1186,7 @@
   <!-- ChannelList Menu FHD (NOT COMPATIBLE) -->
   <screen name="ChannelContextMenu" title="Channel Context Menu" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
-    <widget name="menu" position="379,180" size="1160,600" itemHeight="40" font="Regular;40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="menu" position="379,180" size="1160,706" itemHeight="53" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S111" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Eventview FHD -->
@@ -2393,7 +2395,6 @@
   <screen name="PluginBrowser" title="Plugin Browser" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="nRGYB"/>
-    <panel name="plugincolor"/>
     <widget name="list" position="364,170" size="1190,750" font="Regular;30" itemHeight="75" zPosition="2" scrollbarMode="showOnDemand"
       scrollbarWidth="7" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1"
       foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
