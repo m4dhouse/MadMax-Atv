@@ -1235,7 +1235,7 @@
   <screen name="ChoiceBox" title="Choice Box" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template_menu"/>
     <panel name="exitbutton" />
-    <widget name="list" position="379,180" size="1160,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="list" position="379,180" size="1160,720" font="Regular;30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
     <widget name="text" position="379,700" size="800,300" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S115" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
