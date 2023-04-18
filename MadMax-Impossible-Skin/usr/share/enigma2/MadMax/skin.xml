@@ -3716,7 +3716,7 @@
   </screen>
 
   <screen name="MessageBox-template">
-    <widget name="text" position="15,120" size="1170,75" font="Regular;32" valign="center" halign="center" backgroundColor="header" foregroundColor="ltbluette" backgroundColor="header" />
+    <widget name="text" position="15,120" size="1170,75" font="Regular;32" valign="center" halign="center" backgroundColor="header" foregroundColor="ltbluette" />
     <widget name="ErrorPixmap"    pixmap="MadMax/icons/input_error.png"    position="12,12" size="80,80" alphatest="blend" scale="1" transparent="1"/>
     <widget name="QuestionPixmap" pixmap="MadMax/icons/input_question.png" position="12,12" size="80,80" alphatest="blend" scale="1" transparent="1"/>
     <widget name="InfoPixmap"     pixmap="MadMax/icons/input_info.png"     position="12,12" size="80,80" alphatest="blend" scale="1" transparent="1"/>
