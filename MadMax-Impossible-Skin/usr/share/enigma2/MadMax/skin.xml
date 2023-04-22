@@ -210,6 +210,12 @@
     <color name="WindowTitleForeground"              color="#ffffff" />
     <color name="WindowTitleBackground"              color="#000000" />
   </windowstyle>
+  <subtitles>
+    <sub name="Subtitle_TTX" font="Regular;45" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+    <sub name="Subtitle_Regular" font="Regular;45" foregroundColor="#00dcdcdc" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+    <sub name="Subtitle_Bold" font="Replacement;45" foregroundColor="#00dcdcdc" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+    <sub name="Subtitle_Italic" font="Regular;45" foregroundColor="#00dcaaaa" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+  </subtitles>
   <cascadingstylesheets name="slider_volume_horizontal" >
     <css name="sliderForeground" value="MadMax/skin_default/volbar.png" />
   </cascadingstylesheets>
