@@ -1398,18 +1398,18 @@
 	<screen name="ButtonSetup" position="fill" title="Setup" flags="wfNoBorder" >
 		<panel name="p800_Template_menu" />
 		<panel name="nR"/>
-		<widget name="choosen"     position="379,180"   size="1170,90"  itemHeight="40" font="Regular; 34" halign="center" valign="center" scrollbarMode="showOnDemand" backgroundColor="bluette" transparent="0" />
-		<widget name="list"        position="379,300"   size="1170,480" itemHeight="40" font="Regular; 32" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,830" size="1150,200" font="Regular; 30" foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1" />
+		<widget name="choosen"     position="379,180"   size="1170,90"  itemHeight="53" font="Regular;34" halign="center" valign="center" scrollbarMode="showOnDemand" backgroundColor="bluette" transparent="0" />
+		<widget name="list"        position="379,300"   size="1170,480" itemHeight="53" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+		<widget name="description" position="center,860" size="1150,200" font="Regular;30" foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1" />
 		<!--eLabel name="DEBUG" text="024" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="red" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- Button Selection FHD -->
 	<screen name="ButtonSetupSelect" position="fill" title="Setup" flags="wfNoBorder" >
 		<panel name="p800_Template_menu" />
 		<panel name="nRG"/>
-		<widget name="list" position="379,360" size="1170,400" itemHeight="40" font="Regular; 32" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
-		<widget name="choosen" position="379,180" size="1170,160" itemHeight="40" font="Regular; 32" halign="left" foregroundColor="ltbluette" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="2" />
-		<widget name="description" position="center,780" size="1150,200" font="Regular; 30" foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1" />
+		<widget name="list" position="379,360" size="1170,400" itemHeight="53" font="Regular;32" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+		<widget name="choosen" position="379,180" size="1170,160" itemHeight="53" font="Regular;32" halign="left" foregroundColor="ltbluette" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget name="description" position="center,780" size="1150,200" font="Regular;30" foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1" />
 		<!--eLabel name="DEBUG" text="024a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="red" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- ********** CCCam Info ********** P025 -->
@@ -2158,17 +2158,17 @@
 	<screen name="Swap" position="fill" title="Swap Manager" flags="wfNoBorder" >
 		<panel name="p800_Template"/>
 		<panel name="nRGY"/>
-		<widget name="lab2"          position="585,180"  size="200,50"  font="Regular;34" foregroundColor="white" backgroundColor="header" valign="center" transparent="1"/>
-		<widget name="labplace"      position="809,180" size="530,100" font="Regular;32" foregroundColor="ltbluette" backgroundColor="bluette" transparent="0" />
-		<eLabel                      position="809,320" size="530,2"   backgroundColor="#303030" zPosition="1"/>
-		<widget name="lab3"          position="585,350"  size="200,50"  font="Regular;34" foregroundColor="white" backgroundColor="header" valign="center" transparent="1"/>
-		<widget name="labsize"       position="809,350" size="120,50"  font="Regular;32" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="0" />
-		<widget name="lab4"          position="585,420"  size="200,50"  font="Regular;34" foregroundColor="white" backgroundColor="header" valign="center" transparent="1" />
-		<widget name="inactive"      position="809,420" size="530,50"  font="Regular;32" valign="center" halign="center" foregroundColor="white" backgroundColor="red" />
-		<widget name="active"        position="809,420" size="530,50"  font="Regular;32" valign="center" halign="center" foregroundColor="white" backgroundColor="green" />
-		<widget name="autostart_off" position="585,535"  size="32,32"   pixmap="MadMax/skin_default/icons/lock_off.png" alphatest="blend" zPosition="1" />
-		<widget name="autostart_on"  position="585,535"  size="32,32"   pixmap="MadMax/skin_default/icons/lock_on.png"  alphatest="blend" zPosition="1" />
-		<widget name="lab1"          position="639,525" size="760,50"  font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" valign="center" transparent="1"/>
+		<widget name="lab2"          position="585,160"  size="200,100" font="Regular;32" foregroundColor="white" backgroundColor="header" valign="center" transparent="1"/>
+		<widget name="labplace"      position="809,180" size="530,50" font="Regular;32" foregroundColor="white" backgroundColor="bluette" transparent="0" />
+		<eLabel                      position="809,280" size="530,2" backgroundColor="#303030" zPosition="1"/>
+		<widget name="lab3"          position="585,280" size="200,100" font="Regular;30" foregroundColor="white" backgroundColor="header" valign="center" transparent="1"/>
+		<widget name="labsize"       position="809,300" size="140,50" font="Regular;30" valign="center" foregroundColor="white" backgroundColor="bluette" transparent="0" />
+		<widget name="lab4"          position="585,420" size="300,50" font="Regular;32" foregroundColor="white" backgroundColor="header" valign="center" transparent="1" />
+		<widget name="inactive"      position="809,420" size="530,50" font="Regular;32" valign="center" halign="center" foregroundColor="white" backgroundColor="red" />
+		<widget name="active"        position="809,420" size="530,50" font="Regular;32" valign="center" halign="center" foregroundColor="white" backgroundColor="green" />
+		<widget name="autostart_off" position="585,535"  size="32,32" pixmap="MadMax/skin_default/icons/lock_off.png" alphatest="blend" zPosition="1" />
+		<widget name="autostart_on"  position="585,535"  size="32,32" pixmap="MadMax/skin_default/icons/lock_on.png"  alphatest="blend" zPosition="1" />
+		<widget name="lab1"          position="639,525" size="760,50" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" valign="center" transparent="1"/>
 		<!--eLabel name="DEBUG" text="038" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="red" transparent="1" zPosition="99"/-->
 	</screen>
 	<screen name="SwapManager" position="fill" title="Swap Manager" flags="wfNoBorder" >
@@ -4139,17 +4139,6 @@
 		<widget name="menu_list"  position="575,400" size="770,352" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="copyright"  position="575,800" size="770,40" valign="center" halign="center" font="Regular;30" transparent="1" foregroundColor="white" />
 		<!-- eLabel name="DEBUG" text="103m" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-  <screen name="SubsControllerDVB" position="fill" flags="wfNoBorder">
-		<panel name="p800_Template" />
-		<widget name="subtitle" position="575,180"            size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" shadowColor="#40101010" shadowOffset="2,2" />
-		<widget name="subtitlesTime" position="685,230"      size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" shadowColor="#40101010" shadowOffset="2,2" />
-		<widget name="subtitlesPosition" position="685,380"  size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" shadowColor="#40101010" shadowOffset="2,2" />
-		<widget name="subtitlesFps" position="685,430"       size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#6F9EF5" shadowColor="#40101010" shadowOffset="2,2" />
-		<widget name="eventName" position="685,480"          size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" shadowColor="#40101010" shadowOffset="2,2" />
-		<widget name="eventTime" position="685,530"          size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" shadowColor="#40101010" shadowOffset="2,2" />
-		<widget name="eventDuration" position="685,80"      size="770,50" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" shadowColor="#40101010" shadowOffset="2,2" />
-		<!-- eLabel name="DEBUG" text="103n" position="20,20"    size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	<screen name="XXXCaptchDialog" position="center,center" size="560,460" zPosition="99" title="Virtual keyboard">
 		<ePixmap pixmap="MadMax/skin_default/vkey_text.png" position="9,165" zPosition="-4" size="542,52" alphatest="on" />
