@@ -1,0 +1,199 @@
+<skin>
+  <fonts>
+    <font name="LCD" filename="lcd.ttf" scale="100"/>
+    <font name="Console" filename="tuxtxt.ttf" scale="100"/>
+    <font name="Fixed" filename="andale.ttf" scale="100"/>
+    <font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1"/>
+    <font name="Regular" filename="/usr/share/enigma2/MadMax/fonts/verdana.ttf" scale="93"/>
+    <font name="xRegular" filename="/usr/share/fonts/nmsbd.ttf" scale="100"/>
+    <font name="Regular2" filename="/usr/share/enigma2/MadMax/fonts/verdana2.ttf" scale="93"/>
+    <font name="digital" filename="/usr/share/enigma2/MadMax/fonts/digital.ttf" scale="100"/>
+    <font name="speedtest" filename="/usr/share/enigma2/MadMax/fonts/Roboto-Regular.ttf" scale="100"/>
+    <alias name="Body" font="Regular" size="32" height="50" />
+    <alias name="TextNormal" font="Regular" size="30" height="50" />
+    <alias name="ChoiceList" font="Regular" size="32" height="50" />
+    <alias name="FileList" font="Regular" size="30" height="50" />
+    <alias name="FileListMulti" font="Regular" size="30" height="50" />
+    <alias name="PluginBrowser0" font="Regular" size="32" height="76" />
+    <alias name="PluginBrowser1" font="Regular" size="22" />
+    <alias name="ServiceInfo" font="Regular" size="30" height="45" />
+    <alias name="SelectionList" font="Regular" size="28" height="50" />
+    <alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38" />
+    <alias name="PartnerBoxEntryList1" font="Regular" size="28" />
+    <alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114" />
+    <alias name="PartnerBoxE2TimerMenu1" font="Regular" size="28" />
+    <alias name="PartnerBoxBouquetList0" font="Regular" size="32" height="45" />
+    <alias name="PartnerBoxBouquetList1" font="Regular" size="28" />
+    <alias name="PartnerBoxChannelList0" font="Regular" size="32" height="114" />
+    <alias name="PartnerBoxChannelList1" font="Regular" size="28" />
+    <alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38" />
+    <alias name="PartnerBoxChannelEPGList1" font="Regular" size="24" />
+    <alias name="VirtualKeyBoard" font="Regular" size="42" height="68" />
+    <alias name="HelpMenuList" font="Regular" size="30" height="45" />
+    <alias name="HelpMenuListExt0" font="Regular" size="32" height="75" />
+    <alias name="HelpMenuListExt1" font="Regular" size="28" />
+    <alias name="Dreamexplorer" font="Regular" size="28" height="38" />
+    <alias name="PlayList" font="Regular" size="28" height="50" />
+    <alias name="MenuList" font="Regular" size="28" height="50" />
+  </fonts>
+  <parameters>
+    <parameter name="ConfigListSeperator" value="500" />
+    <parameter name="ChoicelistDash" value="0,3,1000,50" />
+    <parameter name="ChoicelistName" value="85,2,1000,53" />
+    <parameter name="ChoicelistIcon" value="10,5,64,50" />
+    <parameter name="ChoicelistIconVerticalline" value="10,2,50,50" />
+    <parameter name="ChoicelistIconExpanded" value="10,2,50,50" />
+    <parameter name="ChoicelistNameSingle" value="5,0,1000,50" />
+    <parameter name="FileListName" value="68,4,1000,50" />
+    <parameter name="FileListIcon" value="7,4,52,50" />
+    <parameter name="FileListMultiName" value="90,3,1000,50" />
+    <parameter name="FileListMultiIcon" value="45,4,50,50" />
+    <parameter name="FileListMultiLock" value="2,0,50,50" />
+    <parameter name="PluginBrowserName" value="180,8,38" />
+    <parameter name="PluginBrowserDescr" value="180,42,25" />
+    <parameter name="PluginBrowserIcon" value="15,8,150,60" />
+    <parameter name="PluginBrowserDownloadName" value="120,8,38" />
+    <parameter name="PluginBrowserDownloadDescr" value="120,42,25" />
+    <parameter name="PluginBrowserDownloadIcon" value="15,0,90,76" />
+    <parameter name="ServiceInfo" value="0,0,450,50" />
+    <parameter name="ServiceInfoLeft" value="5,5,450,45" />
+    <parameter name="ServiceInfoRight" value="450,5,1000,45" />
+    <parameter name="SelectionListDescr" value="75,10,1000,50" />
+    <parameter name="SelectionListLock" value="10,7,50,50" />
+    <parameter name="SelectionListLockOff" value="10,7,50,50" />
+    <parameter name="VirtualKeyBoard" value="68,68" />
+    <parameter name="VirtualKeyBoardAlignment" value="0,0" />
+    <parameter name="VirtualKeyBoardPadding" value="6,6" />
+    <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
+    <parameter name="PartnerBoxEntryListName" value="8,2,225,38" />
+    <parameter name="PartnerBoxEntryListIP" value="180,2,225,38" />
+    <parameter name="PartnerBoxEntryListPort" value="405,2,150,38" />
+    <parameter name="PartnerBoxEntryListType" value="615,2,150,38" />
+    <parameter name="PartnerBoxTimerServicename" value="0,0,45" />
+    <parameter name="PartnerBoxTimerName" value="0,42,30" />
+    <parameter name="PartnerBoxE1TimerTime" value="0,78,255,30" />
+    <parameter name="PartnerBoxE1TimerState" value="255,78,255,30" />
+    <parameter name="PartnerBoxE2TimerTime" value="0,78,225,30" />
+    <parameter name="PartnerBoxE2TimerState" value="225,78,225,30" />
+    <parameter name="PartnerBoxE2TimerIcon" value="735,8,60,60" />
+    <parameter name="PartnerBoxBouquetListName" value="0,0,45" />
+    <parameter name="PartnerBoxChannelListName" value="0,0,45" />
+    <parameter name="PartnerBoxChannelListTitle" value="0,42,30" />
+    <parameter name="PartnerBoxChannelListTime" value="0,78,225,30" />
+    <parameter name="HelpMenuListHlp" value="0,0,900,42" />
+    <parameter name="HelpMenuListExtHlp0" value="0,0,900,39" />
+    <parameter name="HelpMenuListExtHlp1" value="0,42,900,30" />
+    <parameter name="AboutHddSplit" value="1" />
+    <parameter name="DreamexplorerName" value="62,0,1200,38" />
+    <parameter name="DreamexplorerIcon" value="15,4,30,30" />
+    <parameter name="PicturePlayerThumb" value="30,285,45,300,30,25" />
+    <parameter name="PlayListName" value="65,2,1000,50" />
+    <parameter name="PlayListIcon" value="10,0,50,50" />
+    <parameter name="WeatherPluginSearchlocation" value="10,0,550,70" />
+    <parameter name="WeatherPluginSearchresult" value="470,0,500,70" />
+    <parameter name="WeatherPluginCity" value="10,0,700,50" />
+    <parameter name="WeatherPluginDegreetype" value="465,0,100,50" />
+  </parameters>
+  <colors>
+    <color name="background" value="#20000000"/>
+    <color name="header" value="#00272e43"/>
+    <color name="bkblue" value="#00162b49"/>
+    <color name="bkinfobar" value="#00204372"/>
+    <color name="black" value="#00000000"/>
+    <color name="blue" value="#00879ce1"/>
+    <color name="bluetransparent" value="#08001e4b"/>
+    <color name="dark" value="#00242424"/>
+    <color name="darkgrey" value="#00555556"/>
+    <color name="foreground" value="#00f0f0f0"/>
+    <color name="green" value="#0056c856"/>
+    <color name="greentransparent" value="#08004c00"/>
+    <color name="grey" value="#00aaaaaa"/>
+    <color name="infobarBG" value="#41080808"/>
+    <color name="listbox" value="#000f56a4"/>
+    <color name="noTransBG" value="#00101214"/>
+    <color name="orange" value="#00ffc000"/>
+    <color name="rds_text_bg" value="#00003258"/>
+    <color name="red" value="#00ff4a3c"/>
+    <color name="redtransparent" value="#084c0000"/>
+    <color name="rssviewtop" value="#00005050"/>
+    <color name="secondBG" value="#18101214"/>
+    <color name="secondFG" value="#00fcc000"/>
+    <color name="selectedBG" value="#06303240"/>
+    <color name="selectedFG" value="#00fcc000"/>
+    <color name="transparent" value="#ff000000"/>
+    <color name="transpBlack" value="#54111112"/>
+    <color name="transpWhite" value="#70f0f0f0"/>
+    <color name="white" value="#00f0f0f0"/>
+    <color name="yellow" value="#00ffc000"/>
+    <color name="yellowtransparent" value="#084b4b00"/>
+    <color name="backpurple" value="#73c6ff"/>
+    <color name="trbluette" value="#201b3c85" />
+    <color name="bluette" value="#1b3c85" />
+    <color name="ltbluette" value="#49bbff" />
+    <color name="header" value="#20000000" />
+    <color name="dreamy" value="#182963" />
+  </colors>
+  <windowstyle type="skinned" id="0">
+    <title offset="130,15" font="Regular;40" />
+    <configList entryFont="Regular;28" valueFont="Regular;28" />
+    <color name="Background" color="#20000000" />
+    <color name="LabelForeground" color="#ffffff" />
+    <color name="ListboxBackground" color="#20000000" />
+    <color name="ListboxForeground" color="#ffffff" />
+    <color name="ListboxSelectedBackground" color="#204176b6" />
+    <color name="ListboxSelectedForeground" color="#ffffff" />
+    <color name="ListboxMarkedBackground" color="#20000000" />
+    <color name="ListboxMarkedForeground" color="#00ff00" />
+    <color name="ListboxMarkedAndSelectedBackground" color="#204176b6" />
+    <color name="ListboxMarkedAndSelectedForeground" color="#00ff00" />
+    <color name="WindowTitleForeground" color="#49bbff" />
+    <color name="WindowTitleBackground" color="#1b3c85" />
+    <borderset name="bsWindow">
+      <pixmap pos="bpTopLeft" filename="/usr/share/enigma2/MadMax/box/b_tl.png" />
+      <pixmap pos="bpTop" filename="/usr/share/enigma2/MadMax/box/b_t.png" />
+      <pixmap pos="bpTopRight" filename="/usr/share/enigma2/MadMax/box/b_tr.png" />
+      <pixmap pos="bpLeft" filename="/usr/share/enigma2/MadMax/box/b_ll.png" />
+      <pixmap pos="bpRight" filename="/usr/share/enigma2/MadMax/box/b_lr.png" />
+      <pixmap pos="bpBottomLeft" filename="/usr/share/enigma2/MadMax/box/b_bl.png" />
+      <pixmap pos="bpBottom" filename="/usr/share/enigma2/MadMax/box/b_b.png" />
+      <pixmap pos="bpBottomRight" filename="/usr/share/enigma2/MadMax/box/b_br.png" />
+    </borderset>
+  </windowstyle>
+  <windowstyle type="skinned" id="1">
+    <color name="Background" color="#000000" />
+    <color name="LabelForeground" color="#ffffff" />
+    <color name="ListboxBackground" color="#000000" />
+    <color name="ListboxForeground" color="#ffffff" />
+    <color name="ListboxSelectedBackground" color="#000000" />
+    <color name="ListboxSelectedForeground" color="#ffffff" />
+    <color name="ListboxMarkedBackground" color="#000000" />
+    <color name="ListboxMarkedForeground" color="#ffffff" />
+    <color name="ListboxMarkedAndSelectedBackground" color="#000000" />
+    <color name="ListboxMarkedAndSelectedForeground" color="#ffffff" />
+    <color name="WindowTitleForeground" color="#ffffff" />
+    <color name="WindowTitleBackground" color="#000000" />
+  </windowstyle>
+  <windowstyle type="skinned" id="2">
+    <color name="Background" color="#000000" />
+    <color name="LabelForeground" color="#ffffff" />
+    <color name="ListboxBackground" color="#000000" />
+    <color name="ListboxForeground" color="#ffffff" />
+    <color name="ListboxSelectedBackground" color="#000000" />
+    <color name="ListboxSelectedForeground" color="#ffffff" />
+    <color name="ListboxMarkedBackground" color="#000000" />
+    <color name="ListboxMarkedForeground" color="#ffffff" />
+    <color name="ListboxMarkedAndSelectedBackground" color="#000000" />
+    <color name="ListboxMarkedAndSelectedForeground" color="#ffffff" />
+    <color name="WindowTitleForeground" color="#ffffff" />
+    <color name="WindowTitleBackground" color="#000000" />
+  </windowstyle>
+  <subtitles>
+    <sub name="Subtitle_TTX" font="Regular;45" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+    <sub name="Subtitle_Regular" font="Regular;45" foregroundColor="#00dcdcdc" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+    <sub name="Subtitle_Bold" font="Replacement;45" foregroundColor="#00dcdcdc" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+    <sub name="Subtitle_Italic" font="Regular;45" foregroundColor="#00dcaaaa" shadowColor="#40101010" shadowOffset="5,5" borderWidth="3" />
+  </subtitles>
+  <cascadingstylesheets name="slider_volume_horizontal" >
+    <css name="sliderForeground" value="MadMax/skin_default/volbar.png" />
+  </cascadingstylesheets>
+</skin>

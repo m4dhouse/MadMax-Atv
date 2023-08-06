@@ -3277,14 +3277,6 @@
 		<widget name="list" position="575,180" size="770,600" itemHeight="30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1"/>
 		<!--eLabel name="DEBUG" text="069" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="red" transparent="1" zPosition="99"/-->
 	</screen>
-	<!-- ********** Video Enhancement Setup ********** P070 -->
-	<screen name="VideoEnhancementSetup" position="fill" title="Setup" flags="wfNoBorder" >
-		<panel name="p800_Template"/>
-		<panel name="sRG"/>
-		<widget name="config" position="70,180" size="1160,520" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
-		<widget name="description" position="center,660" size="750,300" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
-		<!--eLabel name="DEBUG" text="070" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="red" transparent="1" zPosition="99"/-->
-	</screen>
 	<!-- ********** HddMount Screens ********** P071 -->
 	<screen name="HddMount" position="fill" title="Mount Manager" flags="wfNoBorder" >
 		<panel name="p800_Template_menu"/>
