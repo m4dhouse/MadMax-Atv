@@ -1,8 +1,8 @@
 <skin>
 	<!--
-  #################### Madhouse & StixMax v.1.0 ###########################
+  ####################### Madhouse & StixMax  #############################
   #                                                                       #
-  #      MadMax Skin       Version 2.0.0 released        01/03/21         #
+  #      MadMax Skin         Version 3.0 released        01/03/21         #
   #                                                                       #
   #########################################################################
   -->
@@ -11,6 +11,98 @@
   <!-- !!!!!!! BUT DO NOT REMOVE OR CHANGE THIS DISCLAIMER !!!!!!! -->
   <!-- Do whatever you want with this skin,but don't tell it's yours, or your idea -->
   <!--    and leave the credentials in the "About-box" as they are -->
+
+	<!-- Plugin Browser FHD -->
+  <screen name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="p800_Template_menu"/>
+    <panel name="nRGYB"/>
+    <widget name="list" position="364,170" size="1190,750" font="Regular;30" itemHeight="75" zPosition="2" scrollbarMode="showOnDemand"
+      scrollbarWidth="7" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1"
+      foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+		<eLabel text="Extensions" position="8,803" size="1920,300" font="Regular;150" noWrap="0" backgroundColor="header" transparent="1" foregroundColor="ltbluette" valign="bottom" zPosition="-50" />
+	</screen>
+
+	<screen name="PluginBrowserGrid" position="0,0" size="1920,1080" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="p900_Template"/>
+    <panel name="nRGYB"/>
+    <panel name="M"/>
+		<widget name="description" position="87,185" size="e-150,35" font="Regular;30" transparent="1" zPosition="5" foregroundColor="ltbluette" valign="center"/>
+		<widget source="pluginGrid" render="Listbox" position="150,245" size="1680,660" transparent="1" zPosition="5" itemSpacing="15,15" selectionZoom="10" scrollbarMode="showOnDemand" scrollbarWidth="7" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="white" backgroundColorSelected="bluette" scrollbarSliderBorderWidth="1" listOrientation="grid" moveBackgroundColor="bluette">
+			<convert type="TemplatedMultiContent">
+				{
+					"template": [
+						MultiContentEntryText(pos = (0, 0), size = (300, 165), font=0),
+						MultiContentEntryText(pos = (8, 75), size = (285, 75), font=0, flags = RT_VALIGN_CENTER|RT_HALIGN_CENTER|RT_WRAP, text = 1),
+						MultiContentEntryPixmapAlphaBlend(pos=(75, 15), size=(150, 60), png=3, flags=BT_SCALE)
+					],
+					"fonts": [gFont("Regular", 27),gFont("Regular", 21)],
+					"itemWidth": 300,
+					"itemHeight": 165
+				}
+			</convert>
+		</widget>
+		<eLabel text="Extensions" position="8,803" size="1920,300" font="Regular;150" noWrap="0" backgroundColor="header" transparent="1" foregroundColor="white" valign="bottom" zPosition="-50" />
+		<widget name="quickselect" position="75,120" size="1140,788" backgroundColor="header" foregroundColor="Regular" font="Regular;150" halign="center" transparent="1" valign="center" zPosition="5" />
+	</screen>
+
+  <screen name="PluginBrowserList" position="0,0" size="1920,1080" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="p800_Template_menu"/>
+    <panel name="nRGYB"/>
+    <panel name="M"/>
+		<widget source="pluginList" render="Listbox" position="364,170" size="1190,750" transparent="1" listOrientation="vertical" backgroundColor="header" foregroundColor="white" backgroundColorSelected="bluette" foregroundColorSelected="white">
+			<convert type="TemplatedMultiContent">
+				{
+					"template": [
+						MultiContentEntryText(pos = (180, 8), size = (840, 38), font=0, flags = RT_HALIGN_LEFT, text = 1),
+						MultiContentEntryText(pos = (180, 39), size = (840, 29), font=1, flags = RT_HALIGN_LEFT, text = 2),
+						MultiContentEntryPixmapAlphaBlend(pos=(15, 8), size=(150, 60), png=3, flags=BT_SCALE)
+					],
+					"fonts": [gFont("Regular", 27),gFont("Regular", 24)],
+					"itemHeight": 75
+				}
+			</convert>
+		</widget>
+		<eLabel text="Extensions" position="8,803" size="1920,300" font="Regular;150" noWrap="0" backgroundColor="header" transparent="1" foregroundColor="white" valign="bottom" zPosition="-50" />
+		<widget name="quickselect" position="75,120" size="1140,788" backgroundColor="header" foregroundColor="white" font="Regular;150" halign="center" transparent="1" valign="center" zPosition="5" />
+	</screen>
+
+	<screen name="PluginAction" position="0,0" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="p900_Template"/>
+    <panel name="nRGYB"/>
+		<widget source="plugins" render="Listbox" position="115,165" size="1050,750" zPosition="4" scrollbarMode="showOnDemand" backgroundColor="header" foregroundColor="white" backgroundColorSelected="bluette" foregroundColorSelected="white" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{
+				"template":
+					[
+					MultiContentEntryPixmapAlphaBlend(pos=(8, 0), size=(90, 75), png=6, flags=BT_SCALE),
+					MultiContentEntryText(pos=(105, 0), size=(870, 75), font=0, flags=RT_VALIGN_CENTER, text=2), # Category
+					MultiContentEntryText(pos=(105, 2), size=(870, 38), font=1, flags=RT_VALIGN_CENTER, text=11), # Name + Version
+					# MultiContentEntryText(pos=(70, 1), size=(430, 25), font=1, flags=RT_VALIGN_CENTER, text=3), Name
+					# MultiContentEntryText(pos=(480, 1), size=(160, 25), font=1, flags=RT_VALIGN_CENTER, text=5), Version
+					MultiContentEntryText(pos=(105, 42), size=(840, 32), font=2, flags=RT_VALIGN_CENTER, text=4, color=0x00b0b0b0), # Description
+					MultiContentEntryPixmapAlphaBlend(pos=(960, 2), size=(72, 72), png=7, flags=BT_SCALE)
+					],
+				"fonts": [gFont("Regular", 38),gFont("Regular", 27),gFont("Regular", 24)],
+				"itemHeight": 75
+				}
+			</convert>
+		</widget>
+		<widget name="description" position="1215,623" size="623,285" font="Regular;30" foregroundColor="ltbluette" halign="center" backgroundColor="header" valign="center" transparent="1" conditional="description"/>
+		<widget source="global.CurrentTime" render="Label" position="1238,180" size="570,45" font="Regular;30" foregroundColor="ltbluette" halign="center" backgroundColor="header" valign="center" transparent="1">
+			<convert type="MetrixHDSTBinfo">FLASHfree</convert>
+		</widget>
+		<widget name="quickselect" position="75,120" size="1140,788" backgroundColor="header" foregroundColor="ltbluette" font="Regular;150" halign="center" transparent="1" valign="center" zPosition="5" />
+	</screen>
+
+	<screen name="PluginDownloadBrowser" position="0,0" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="p900_Template"/>
+    <panel name="nRGYB"/>
+		<widget name="list" position="105,150" size="1050,750" zPosition="4" itemHeight="75" font="Regular;30" scrollbarMode="showOnDemand" backgroundColor="header" foregroundColor="white" backgroundColorSelected="bluette" foregroundColorSelected="white" transparent="1" />
+		<widget name="text" position="1215,623" size="623,285" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="header" valign="center" transparent="1"/>
+		<widget source="global.CurrentTime" render="Label" position="1238,180" size="570,45" font="Regular;30" foregroundColor="white" halign="center" backgroundColor="header" valign="center" transparent="1">
+			<convert type="MetrixHDSTBinfo">FLASHfree</convert>
+		</widget>
+	</screen>
 
 	<!-- ALL OSD 3D Setup -->
 	<screen name="setup_osd3d" position="fill" title="Setup" flags="wfNoBorder">
