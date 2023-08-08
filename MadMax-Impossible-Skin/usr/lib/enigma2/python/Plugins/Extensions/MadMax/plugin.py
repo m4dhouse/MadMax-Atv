@@ -110,7 +110,7 @@ class updatemadmax(Screen):
 			pass
 
 	def instSkin(self, string = ''):
-		cmd4 = 'opkg --force-reinstall --force-overwrite install /tmp/madmax/madmax.ipk'
+		cmd4 = 'opkg --force-downgrade --force-reinstall --force-overwrite install /tmp/madmax/madmax.ipk'
 		self.session.openWithCallback(self.pre_gui, Console, title=_('Update MadMax Skin...'), cmdlist=[cmd4], closeOnSuccess=True)
 
 	def pre_gui(self, string=""):

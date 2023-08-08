@@ -350,6 +350,9 @@
       options="movetype=none,direction=right,startpoint=0,startdelay=5000,steptime=40,wrap=1,always=0,repeat=6,oneshot=1">
       <convert type="MMNextEvents">Event3,onlyStart</convert>
     </widget>
+    <widget source="ServiceEvent" render="Label" position="1000,903" size="720,30" foregroundColor="ltbluette" backgroundColor="header" font="Regular;25" valign="center" halign="center" transparent="1" zPosition="5">
+			<convert type="MMTransponderInfo">NoRoot</convert>
+		</widget>
     <!-- KEY EVENTS -->
     <ePixmap position="30,940" size="1860,3" pixmap="MadMax/skin_default/sep2.png" alphatest="blend" zPosition="3" />
     <eLabel position="50,965"   size="10,30" backgroundColor="red"    zPosition="0" />
@@ -511,8 +514,8 @@
       <convert type="MMCaidInfo2">Prov: %p Caid: %C %PR %T</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="0,168" size="1920,24" font="Regular;21" halign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3">
-      <convert type="MMPliExtraInfo">TransponderInfo</convert>
-    </widget>
+      <convert type="MMTransponderInfo">NoRoot</convert>
+		</widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/iptv3.png" position="1789,125" size="56,23" alphatest="blend" zPosition="1" transparent="1">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide">
