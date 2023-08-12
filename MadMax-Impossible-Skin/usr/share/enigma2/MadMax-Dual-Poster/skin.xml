@@ -514,7 +514,7 @@
       <convert type="MMCaidInfo2">Prov: %p Caid: %C %PR %T</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="0,168" size="1920,24" font="Regular;21" halign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3">
-      <convert type="MMTransponderInfo">NoRoot</convert>
+      <convert type="MMPliExtraInfo">TransponderInfo</convert>
 		</widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/iptv3.png" position="1789,125" size="56,23" alphatest="blend" zPosition="1" transparent="1">
       <convert type="ServiceInfo">IsStream</convert>
@@ -558,8 +558,8 @@
       <convert type="OAWeather">temperature_text,current</convert>
     </widget>
     <widget noWrap="1" backgroundColor="background" font="Regular; 36" render="Label" position="140,60" size="150,43" source="session.OAWeather" transparent="1" zPosition="1" halign="left" foregroundColor="ltbluette" text="45 `C" valign="top">
-      <convert type="OAWeather">temperature_current</convert>
-    </widget>
+			<convert type="OAWeather">temperature_current</convert>
+		</widget>
     <widget noWrap="1" backgroundColor="background" font="Regular; 25" render="Label" foregroundColor="ltbluette" position="30,10" size="400,60" source="session.OAWeather" zPosition="1" valign="top" halign="left" transparent="1">
       <convert type="OAWeather">city</convert>
     </widget>

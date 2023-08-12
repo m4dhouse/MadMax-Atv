@@ -281,7 +281,20 @@
   <screen name="AudioSelection" position="fill" title="Audio Selection" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="M"/>
-    <widget name="config" position="575,178" size="770,320" itemHeight="45" font="Regular;34" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+    <widget name="key_left" position="132,188" size="0,0" alphatest="blend" />
+		<widget name="key_right" position="186,188" size="0,0" alphatest="blend" />
+		<widget name="switchdescription" position="273,195" size="0,0" font="Regular;30" foregroundColor="white" backgroundColor="header" transparent="1" />
+		<!-- Code -->
+		<widget source="key_red" render="Pixmap" position="590,184" size="30,30" pixmap="MadMax/buttons/redpanel.png" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_green" render="Pixmap" position="590,230" size="30,30" pixmap="MadMax/buttons/greenpanel.png" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_yellow" render="Pixmap" position="590,275" size="30,30" pixmap="MadMax/buttons/yellowpanel.png" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget name="config" position="625,178" size="720,320" itemHeight="45" font="Regular;34" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
     <widget source="streams" render="Listbox" position="center,600" size="620,270" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" scrollbarMode="showOnDemand" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"templates":
@@ -1383,11 +1396,24 @@
     <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
     <!--eLabel name="DEBUG" text="S184" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
+  <!-- MultiBootSelector -->
+	<screen name="MultiBootManager" position="fill" title="MultiBoot Image Selector" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="p800_Template_menu" />
+		<panel name="sRGYB" />
+		<widget name="slotlist" position="379,180" size="1160,450" itemHeight="45" font="Regular;35" scrollbarMode="showOnDemand" backgroundColor="header" backgroundColorSelected="bluette" />
+    <widget name="description" position="center,745" size="1150,500" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
+	</screen>
+  <!-- Info Information FHD -->
+	<screen name="Information" title="Information" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p900_Template" />
+		<panel name="sRGYB" />
+		<widget name="information" position="70,180" size="1770,740" colPosition="475" conditional="information" divideChar="|" font="Regular;29" noWrap="1" split="1" foregroundColor="white" backgroundColor="header" scrollbarForegroundColor="ltbluette" scrollbarBorderWidth="1" scrollbarBorderColor="ltbluette" scrollbarWidth="8" transparent="1" />
+	</screen>
   <!-- Info Software FHD -->
   <screen name="SoftwareUpdateChanges" title="Software OE Changes" position="fill" flags="wfNoBorder" >
     <panel name="p900_Template"/>
     <panel name="sRGY"/>
-    <widget name="text" position="80,170" size="1770,740" font="Regular;32" halign="left" backgroundColor="header" scrollbarMode="showNever" transparent="1" noWrap="1" zPosition="2"/>
+    <widget name="text" position="575,180" size="1770,740" font="Regular;32" halign="left" backgroundColor="header" scrollbarMode="showNever" transparent="1" noWrap="1" zPosition="2"/>
     <!--eLabel name="DEBUG" text="S185" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Info Devices FHD -->

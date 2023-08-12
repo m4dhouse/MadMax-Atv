@@ -514,7 +514,7 @@
 			<convert type="MMCaidInfo2">Prov: %p Caid: %C %PR %T</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="0,168" size="1920,24" font="Regular;21" halign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3">
-      <convert type="MMTransponderInfo">NoRoot</convert>
+      <convert type="MMPliExtraInfo">TransponderInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MadMax/icons/iptv3.png" position="1789,125" size="56,23" alphatest="blend" zPosition="1" transparent="1">
 			<convert type="ServiceInfo">IsStream</convert>
