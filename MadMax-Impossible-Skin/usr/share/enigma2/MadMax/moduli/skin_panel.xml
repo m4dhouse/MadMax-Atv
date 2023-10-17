@@ -47,8 +47,8 @@
     </widget>
     <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
-    <widget source="menu" render="Listbox" position="575,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="2"
-      foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" >
+    <widget source="menu" render="Listbox" position="575,180" size="775,720" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" zPosition="2"
+      foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" >
        <convert type="TemplatedMultiContent">
          {"template": [ MultiContentEntryText(pos = (30, 10), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0)],
          "fonts": [gFont("Regular", 35)],
@@ -321,7 +321,7 @@
     <ePixmap position="0,0" size="1920,1080" pixmap="MadMax/menu/chb_menu.png" transparent="1" zPosition="-1" />
     <widget source="Title" render="Label" position="center,927" size="1920,95" font="Regular;43" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="2" />
     <!-- menu list -->
-    <widget source="menu" render="Listbox" position="576,178" size="766,720" transparent="1" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066">
+    <widget source="menu" render="Listbox" position="576,178" size="766,720" transparent="1" scrollbarRadius="5" selectionZoom="4" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (60,[
@@ -696,7 +696,7 @@
     <widget name="QuestionPixmap" pixmap="MadMax/icons/input_question.png" position="575,100" size="80,80" alphatest="blend"/>
     <widget name="InfoPixmap"     pixmap="MadMax/icons/input_info.png"     position="575,100" size="80,80" alphatest="blend"/>
     <widget name="text" position="575,180" size="640,270" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1"/>
-    <widget source="list" render="Listbox" position="575,220" size="770,400" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" position="575,220" size="770,400" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (20, 2), size = (780, 29), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 28)],
@@ -721,7 +721,7 @@
     <widget name="InfoPixmap"     pixmap="MadMax/icons/input_info.png"     position="12,12" size="80,80" alphatest="blend" scale="1" transparent="1"/>
 		<eLabel name="underline" position="0,104" size="1920,2" backgroundColor="white" />
 		<widget source="Title" render="Label" position="107,9" foregroundColor="ltbluette" size="935,75" noWrap="1" valign="bottom" font="Regular;51" backgroundColor="header" transparent="1" />
-		<widget name="list" position="15,210" size="1170,360" textPadding="15,0" itemHeight="45" font="Regular;32" scrollbarBorderWidth="1" scrollbarWidth="12" scrollbarForegroundColor="ltbluette" scrollbarBorderColor="ltbluette" scrollbarMode="showOnDemand" backgroundColorSelected="bluette" foregroundColorSelected="white" backgroundColor="header" foregroundColor="white" transparent="1" />
+		<widget name="list" position="15,210" size="1170,360" textPadding="15,0" itemHeight="45" font="Regular;32" scrollbarBorderWidth="1" scrollbarWidth="12" scrollbarForegroundColor="ltbluette" scrollbarBorderColor="ltbluette" scrollbarRadius="5" scrollbarMode="showOnDemand" backgroundColorSelected="bluette" itemCornerRadius="12" foregroundColorSelected="white" backgroundColor="header" foregroundColor="white" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from __future__ import division
@@ -805,7 +805,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)//2,int(deskheight - newheigh
   <!-- ExtraMessageBox -->
 	<screen name="ExtraMessageBox" title="Extra Message" position="center,255" size="900,200">
 		<widget name="message" position="10,10" size="880,40" font="Regular;30" />
-		<widget name="menu" position="10,60" size="880,360" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
+		<widget name="menu" position="10,60" size="880,360" scrollbarRadius="5" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint

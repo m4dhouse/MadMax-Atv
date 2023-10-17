@@ -173,7 +173,7 @@
   <screen name="HelpMenu" position="fill" title="HELP WINDOW" flags="wfNoBorder" >
     <panel name="p800_Template_menu" />
     <!-- Code -->
-    <widget name="list" position="380,180" size="1170,630" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+    <widget name="list" position="380,180" size="1170,630" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
     <widget name="rc"         position="1670,280" pixmaps="MadMax/skin_default/rc.png,MadMax/skin_default/rc1.png,MadMax/skin_default/rc2.png" zPosition="10" size="160,500" alphatest="blend" />
     <widget name="long_key"   position="379,810" size="1170,80" font="Regular;30" zPosition="10" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
     <widget name="arrowdown"  pixmap="MadMax/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
@@ -252,7 +252,7 @@
   <screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu" />
     <panel name="sRG"/>
-    <widget name="config" position="379,180" size="1170,500" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="config" position="379,180" size="1170,500" font="Regular;28" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <widget name="description" position="center,720" size="1145,420" font="Regular;30" halign="center" valign="top" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1"/>
     <widget name="footnote"    position="1260,1840" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1"/>
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
@@ -269,7 +269,7 @@
       foregroundColor="#ffffff" foregroundColorSelected="#ffffff" foregroundColorServiceNotAvail="#5e5e5e"
       colorServiceDescription="#0073c6ff" colorServiceDescriptionSelected="#00ffffff"	backgroundColor="#00272e43"
       foregroundColorEventSelected="#0036c6" foregroundColorMarkedSelected="#902020"
-      scrollbarMode="showOnDemand" picServiceEventProgressbar="MadMax/skin_default/progcl.png" transparent="1" />
+      scrollbarRadius="5" scrollbarMode="showOnDemand" picServiceEventProgressbar="MadMax/skin_default/progcl.png" transparent="1" />
     <!--eLabel name="DEBUG" text="S106" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Simple channelselection TV FHD -->
@@ -294,8 +294,11 @@
 		<widget source="key_yellow" render="Pixmap" position="590,275" size="30,30" pixmap="MadMax/buttons/yellowpanel.png" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-    <widget name="config" position="625,178" size="720,320" itemHeight="45" font="Regular;34" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-    <widget source="streams" render="Listbox" position="center,600" size="620,270" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" scrollbarMode="showOnDemand" transparent="1" >
+    <widget source="key_blue" render="Pixmap" position="590,320" size="30,30" pixmap="MadMax/buttons/bluepanel.png" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget name="config" position="625,178" size="720,320" itemHeight="45" font="Regular;34" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+    <widget source="streams" render="Listbox" position="center,600" size="620,270" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="2" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"templates":
           {"default": (45, [
@@ -361,7 +364,7 @@
   <!-- ChannelList Menu FHD (NOT COMPATIBLE) -->
   <screen name="ChannelContextMenu" title="Channel Context Menu" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
-    <widget name="menu" position="379,180" size="1160,706" itemHeight="53" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="menu" position="379,180" size="1160,706" itemHeight="53" font="Regular;32" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S111" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Eventview FHD -->
@@ -403,7 +406,7 @@
   <!-- Event View Context Menu FHD -->
   <screen name="EventViewContextMenu" title="Eventview Context Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="p800_Template"/>
-    <widget name="menu" position="585,180" size="760,510" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="menu" position="585,180" size="760,510" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S113" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Console FHD -->
@@ -416,7 +419,7 @@
   <screen name="ChoiceBox" title="Choice Box" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template_menu"/>
     <panel name="exitbutton" />
-    <widget name="list" position="379,180" size="1160,720" font="Regular;30" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="list" position="379,180" size="1160,720" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <widget name="text" position="379,700" size="800,300" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S115" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -424,14 +427,14 @@
   <screen name="TimerEditList" title="Timer Overview" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nRGYB"/>
-    <widget name="timerlist" position="575,178" size="770,675" itemHeight="75" rowSplit="40" setEventNameFont="Regular;32" setServiceNameFont="Regular;32" setFont="Regular;28" satPosLeft="400" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
+    <widget name="timerlist" position="575,178" size="770,675" itemHeight="75" rowSplit="40" setEventNameFont="Regular;32" setServiceNameFont="Regular;32" setFont="Regular;28" satPosLeft="400" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="2" />
     <!--eLabel name="DEBUG" text="S116" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Timer Entry FHD -->
   <screen name="TimerEntry" title="Timer entry" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
-    <widget name="config" position="379,178" size="1170,540" font="Regular;32" zPosition="2" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1"/>
-    <widget name="description" position="center,680" size="1170,400" font="Regular;28" halign="center" scrollbarMode="showOnDemand" foregroundColor="ltbluette" transparent="1" zPosition="2" />
+    <widget name="config" position="379,178" size="1170,540" font="Regular;32" zPosition="2" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="description" position="center,680" size="1170,400" font="Regular;28" halign="center" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="ltbluette" transparent="1" zPosition="2" />
     <widget name="HelpWindow" position="379,730" size="1,1" zPosition="2" alphatest="on" />
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <ePixmap position="360,1025" pixmap="MadMax/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
@@ -445,7 +448,7 @@
   <screen name="TimerLog" title="Timer log" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nRGYB"/>
-    <widget name="loglist" position="575,178" size="770,540" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="loglist" position="575,178" size="770,540" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <widget name="logentry" position="575,560" size="770,0" font="Regular;20" foregroundColor="ltbluette" transparent="1"/>
     <!--eLabel name="DEBUG" text="S118" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -453,7 +456,7 @@
   <screen name="TimerSanityConflict" title="Timer sanity error" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nRYB"/>
-    <widget name="list"   position="575,180" size="770,360" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="list"   position="575,180" size="770,360" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <widget name="timer1" position="575,540" size="770,180" font="Regular;32" itemHeight="45" scrollbarMode="showNever" transparent="1"/>
     <widget name="timer2" position="575,780" size="770,100" font="Regular;32" itemHeight="45" scrollbarMode="showNever" transparent="1"/>
     <!--eLabel name="DEBUG" text="S119" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -461,19 +464,19 @@
   <!-- Timer Selection FHD -->
   <screen name="TimerSelection" title="Timer selection" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
-    <widget name="timerlist" position="575,180" size="770,750" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" font="Regular;32" itemHeight="75" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="timerlist" position="575,180" size="770,750" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" font="Regular;32" itemHeight="75" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <!--eLabel name="DEBUG" text="S120" position="200,400" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
   </screen>
   <!-- RecordTimerQuestions FHD -->
   <screen name="RecordTimerQuestion" position="100,100" size="800,380" backgroundColor="#20000000" zPosition="5">
     <widget name="text" position="10,30" size="780,45" font="Regular;32" backgroundColor="header" transparent="1" zPosition="3" />
-    <widget name="list" position="10,90" size="780,320" font="Regular;32" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+    <widget name="list" position="10,90" size="780,320" font="Regular;32" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" />
     <!--eLabel name="DEBUG" text="S121" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- RemoveTimerQuestions FHD -->
   <screen name="RemoveTimerQuestion" position="center,center" size="700,240" backgroundColor="#20000000" zPosition="5" >
     <widget name="text" position="10,10" size="680,40" font="Regular;32" backgroundColor="header" transparent="3" />
-    <widget name="list" position="10,70" size="680,180" font="Regular;32" itemHeight="45" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+    <widget name="list" position="10,70" size="680,180" font="Regular;32" itemHeight="45" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" />
     <applet type="onLayoutFinish">
       self.autoResize()
     </applet>
@@ -484,7 +487,7 @@
     <panel name="p900_Template"/>
     <panel name="nRGYB"/>
     <panel name="M"/>
-    <widget name="list" position="70,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="list" position="70,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <widget name="number" position="170,1900" size="500,60" font="Regular;34" valign="center" halign="left" foregroundColor="#73c6ff" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" zPosition="2" />
     <widget name="lab1"   position="70,1950"  size="150,30" font="Regular;24" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
     <!-- Event Name - Time -->
@@ -526,7 +529,7 @@
     <eLabel position="70,220" size="1165,1" backgroundColor="#10202020" zPosition="2"/>
     <eLabel position="70,222" size="1165,1" backgroundColor="#10404040" zPosition="2"/>
     <ePixmap pixmap="MadMax/box/maxbar.png" position="1230,240" size="10,690" zPosition="2" alphatest="blend"/>
-    <widget name="list" position="70,240" size="1170,690" font="Regular;30" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="70,240" size="1170,690" font="Regular;30" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" />
     <!-- Event Name -->
     <widget source="Event" render="MMRunningText" font="Regular; 34" foregroundColor="yellow" backgroundColor="header" position="1280,160" halign="center" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="550,60" transparent="1" noWrap="1">
       <convert type="EventName">Name</convert>
@@ -554,7 +557,7 @@
     <panel name="p900_Template"/>
     <panel name="nRGYB"/>
     <panel name="MI"/>
-    <widget name="list" position="70,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="list" position="70,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <!-- Event Name - Time -->
     <eLabel text="Start Time :" position="1540,185" size="200,40" font="Regular;32" halign="left" backgroundColor="header" foregroundColor="yellow" transparent="1" zPosition="1" />
     <widget source="Event" render="Label" position="1730,185" size="200,40" font="Regular;32" halign="left" backgroundColor="header" transparent="1" zPosition="1" >
@@ -581,7 +584,7 @@
   <screen name="EPGSearchSetup" position="fill" title="EPGSearch Setup" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="sRG"/>
-    <widget name="config" position="379,180" size="1160,720" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+    <widget name="config" position="379,180" size="1160,720" font="Regular;30" itemHeight="40" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
     <widget name="description" position="center,770" size="1160,440" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="S127" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -589,7 +592,7 @@
   <screen name="SelectBouquet" position="fill" title="Choose bouquet" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nkRGYB"/>
-    <widget name="menu" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="menu" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S128" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- VerticalEPG FHD -->
@@ -856,7 +859,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <ePixmap position="1150,60" size="10,160" pixmap="MadMax/box/maxbar.png" alphatest="blend" zPosition="2" />
-    <widget name="list" position="60,60" size="1100,160" backgroundColor="header" foregroundColor="ltbluette" font="Regular; 20" scrollbarMode="showOnDemand" />
+    <widget name="list" position="60,60" size="1100,160" backgroundColor="header" foregroundColor="ltbluette" font="Regular; 20" scrollbarRadius="5" scrollbarMode="showOnDemand" />
     <widget source="Event" render="MMRunningText" position="1200,50" size="615,155" font="Regular;28" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" halign="center" foregroundColor="white" backgroundColor="header" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -881,7 +884,7 @@
   <!-- Harddisk selection FHD -->
   <screen name="HarddiskSelection" title="HardDisk Selection" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
-    <widget name="hddlist" position="379,180" size="1160,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="hddlist" position="379,180" size="1160,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S129" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Harddisk setup FHD -->
@@ -899,7 +902,7 @@
   <screen name="ShowUpdatePackages" position="fill" title="New Packages" flags="wfNoBorder" >
     <panel name="p800_Template"/>
     <panel name="sRG"/>
-    <widget source="list" render="Listbox" position="575,180" size="770,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1">
+    <widget source="list" render="Listbox" position="575,180" size="770,720" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (65, 1), size = (800, 32), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -917,7 +920,7 @@
   <screen name="NetworkAdapterSelection" position="fill" title="Network Adapter Selection" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRGYB"/>
-    <widget source="list" render="Listbox" position="575,180" size="770,540" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="2" transparent="1" >
+    <widget source="list" render="Listbox" position="575,180" size="770,540" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="2" transparent="1" >
     <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (90,2),size = (740,40),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
@@ -940,7 +943,7 @@
     <ePixmap position="585,180" size="40,40" pixmap="MadMax/icons/net_off.png" alphatest="blend" zPosition="1"/>
     <widget name="statuspic" position="585,180" size="40,40" transparent="1" pixmaps="MadMax/icons/net_on.png,icons/net_off.png" alphatest="on" zPosition="2" />
     <widget source="IF" render="Label" position="655,180" size="750,40" font="Regular;38" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="10" />
-    <widget name="menulist" position="580,270" size="760,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2"/>
+    <widget name="menulist" position="580,270" size="760,540" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2"/>
     <widget source="description" render="Label" position="center,690" size="750,280" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="2" transparent="1"/>
     <widget source="IFtext"      render="Label" position="center,840" size="0,0" transparent="1" font="Regular;1" halign="left" backgroundColor="header" zPosition="-2" />
     <widget source="Statustext"  render="Label" position="center,890" size="0,0" transparent="1" font="Regular;1" halign="left" backgroundColor="header" zPosition="-2" />
@@ -954,7 +957,7 @@
     <widget source="Adaptertext" render="Label" position="130,180" size="100,50" font="Regular;36" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" />
     <widget source="Adapter"     render="Label" position="250,180" size="500,50" font="Regular;36" foregroundColor="white"     backgroundColor="header" transparent="1" zPosition="2" />
     <eLabel position="70,230" size="820,1" backgroundColor="#303030" zPosition="2"/>
-    <widget name="config" position="70,250" size="820,630" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="config" position="70,250" size="820,630" font="Regular;30" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <ePixmap pixmap="MadMax/icons/net_on.png" position="1180,450" size="40,40" zPosition="2" alphatest="blend"/>
     <widget source="introduction" render="Label" position="1240,1422" size="340,30" zPosition="2" font="Regular;28" foregroundColor="#ffffff" backgroundColor="bluette"/>
     <eLabel text="Connection..." position="1240,452" size="400,40" font="Regular;36" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="2"/>
@@ -977,7 +980,7 @@
   <screen name="NameserverSetup" title="Network NameServer" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRGY"/>
-    <widget name="config" position="575,180" size="770,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2"/>
+    <widget name="config" position="575,180" size="770,540" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2"/>
     <widget source="introduction" render="Label" position="center,560" size="770,80" font="Regular;34" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
     <!--eLabel name="DEBUG" text="S144" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1026,7 +1029,7 @@
   <screen name="NetworkMacSetup" position="fill" title="MAC-adress settings" flags="wfNoBorder" >
     <panel name="p800_Template"/>
     <panel name="sRG"/>
-    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="2" transparent="1"/>
+    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="2" transparent="1"/>
     <widget source="introduction" render="Label" position="70,840" size="820,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S146" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1034,7 +1037,7 @@
   <screen name="NetworkMountsMenu" title="Mounts Setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sR"/>
-    <widget name="menulist" position="585,180" size="760,360" font="Regular;32" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
+    <widget name="menulist" position="585,180" size="760,360" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
     <widget source="introduction" render="Label" position="center,560" size="750,80" font="Regular;34" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
     <!--eLabel name="DEBUG" text="S147" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1042,7 +1045,7 @@
   <screen name="NetworkBrowser" title="Network Neighbourhood" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="sRGYB"/>
-    <widget source="list" render="Listbox" position="389,180" size="1160,720" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" >
+    <widget source="list" render="Listbox" position="389,180" size="1160,720" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" >
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryPixmapAlphaTest(pos = (0,0),size = (48,48),png = 1),# index 1 is the expandable/expanded/verticalline icon
@@ -1064,7 +1067,7 @@
   <screen name="ScanIP" title="Scan IP" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRGY"/>
-    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="3" />
+    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="3" />
 
     <!--eLabel name="DEBUG" text="S149" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1073,7 +1076,7 @@
     <panel name="p800_Template_menu"/>
     <panel name="sRG"/>
     <widget source="info" render="Label" position="379,180" size="1170,50" font="Regular;40" foregroundColor="#73c6ff" zPosition="2" backgroundColor="header" transparent="1"/>
-    <widget source="list" render="Listbox" position="379,270" size="1170,560" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" >
+    <widget source="list" render="Listbox" position="379,270" size="1170,560" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (5, 1),    size = (800, 40), font=0, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -1093,7 +1096,7 @@
   <screen name="AutoMountManager" title="MountManager" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="sR"/>
-    <widget source="config" render="Listbox" position="379,180" size="1160,700" zPosition="2" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" >
+    <widget source="config" render="Listbox" position="379,180" size="1160,700" zPosition="2" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (60,1),size = (1080,40),font=0,color=0x73c6ff,flags = RT_HALIGN_LEFT,text = 0),# index 2 is the Menu Titel
@@ -1111,7 +1114,7 @@
   <screen name="AutoMountEdit" title="Add New MountPoint" position="fill" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRG"/>
-    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="3" transparent="1"/>
+    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="3" transparent="1"/>
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <widget source="introduction" render="Label" position="50,1580" size="680,40" font="Regular;32" halign="left" backgroundColor="header" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="S152" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -1123,7 +1126,7 @@
     <widget source="legend1" render="Label" position="575,180"  size="250,75" font="Regular;26" valign="center" foregroundColor="white" halign="left"   backgroundColor="header" transparent="1" zPosition="2" />
     <widget source="legend2" render="Label" position="575,220" size="345,75" font="Regular;26" valign="center" foregroundColor="white" halign="center" backgroundColor="header" transparent="1" zPosition="2"/>
     <widget source="legend3" render="Label" position="575,260" size="250,75" font="Regular;26" valign="center" foregroundColor="white" halign="right"  backgroundColor="header" transparent="1" zPosition="2"/>
-    <widget source="config" render="Listbox" position="575,290" size="770,480" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1" >
+    <widget source="config" render="Listbox" position="575,290" size="770,480" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryPixmapAlphaTest(pos = (2,1),size = (48,48),png = 0),# index 0 is the isMounted pixmap
@@ -1145,7 +1148,7 @@
   <screen name="UserManager" title="UserManager" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRY"/>
-    <widget source="config" render="Listbox" position="575,180" size="770,500" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1" >
+    <widget source="config" render="Listbox" position="575,180" size="770,500" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
             MultiContentEntryText(pos = (70,4),size = (750,50),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
@@ -1163,7 +1166,7 @@
   <screen name="UserDialog" title="UserDialog" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sR"/>
-    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" zPosition="3" transparent="1"/>
+    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="3" transparent="1"/>
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <widget source="introduction" render="Label" position="center,500" size="600,27" font="Regular;24" halign="left" backgroundColor="header" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="S155" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -1252,7 +1255,7 @@
   <screen name="NetworkInadynSetup" title="Inadyn Setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nR"/>
-    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
+    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1"/>
     <widget name="VKeyIcon" pixmap="MadMax/buttons/key_text.png" alphatest="on" zPosition="1" position="80,620" size="50,25"/>
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <!--eLabel name="DEBUG" text="S174" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -1299,7 +1302,7 @@
   <screen name="NetworkuShareSetup" title="Mini DLNA Setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nRG"/>
-    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
+    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1"/>
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <!--eLabel name="DEBUG" text="S177" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1385,7 +1388,7 @@
   <screen name="uShareSetup" title="uShare Setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nRG"/>
-    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
+    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1"/>
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <!--eLabel name="DEBUG" text="S183" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1393,14 +1396,14 @@
   <screen name="uShareSelection" title="Mini DLNA Browser" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template"/>
     <panel name="nRG"/>
-    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
+    <widget name="config" position="575,180" size="770,450" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1"/>
     <!--eLabel name="DEBUG" text="S184" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- MultiBootSelector -->
 	<screen name="MultiBootManager" position="fill" title="MultiBoot Image Selector" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="p800_Template_menu" />
 		<panel name="sRGYB" />
-		<widget name="slotlist" position="379,180" size="1160,450" itemHeight="45" font="Regular;35" scrollbarMode="showOnDemand" backgroundColor="header" backgroundColorSelected="bluette" />
+		<widget name="slotlist" position="379,180" size="1160,450" itemHeight="45" font="Regular;35" scrollbarRadius="5" scrollbarMode="showOnDemand" backgroundColor="header" backgroundColorSelected="bluette" itemCornerRadius="12" />
     <widget name="description" position="center,745" size="1150,500" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 	</screen>
   <!-- Info Information FHD -->
@@ -1452,7 +1455,7 @@
   <screen name="ServiceInfo" title="ServiceInfo" position="fill" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="nRGYB"/>
-    <widget name="infolist" position="379,180" font="Regular;26" size="1160,700" itemHeight="45" selectionDisabled="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="infolist" position="379,180" font="Regular;26" size="1160,700" itemHeight="45" selectionDisabled="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="session.CurrentService" render="Label" position="center,850" size="1160,30" font="Regular;24" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
       <convert type="ServiceInfo">HasHBBTV</convert>
     </widget>
@@ -1462,7 +1465,7 @@
   <!-- History Zap -->
    <screen name="HistoryZapSelector" Title="History Zap" position="fill" flags="wfNoBorder">
     <panel name="p900_Template"/>
-    <widget source="menu" render="Listbox" position="60,180" size="1805,720" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1">
+    <widget source="menu" render="Listbox" position="60,180" size="1805,720" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
          {"template": [
              MultiContentEntryText(pos = (170, 0),  size = (10, 90),  font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -1491,7 +1494,7 @@
     <panel name="p800_Template"/>
     <panel name="sRGYB"/>
     <panel name="sRG"/>
-    <widget name="filelist" position="575,180" font="Regular;24" size="770,600" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="filelist" position="575,180" font="Regular;24" size="770,600" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S192" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Location Box FHD -->
@@ -1501,9 +1504,9 @@
     <panel name="M"/>
     <widget name="text"     position="575,170" size="770,40"  font="Regular;34" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <widget name="target"   position="575,220" size="770,40"  font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
-    <widget name="filelist" position="575,290" size="770,400" font="Regular;30" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1" zPosition="1"/>
+    <widget name="filelist" position="575,290" size="770,400" font="Regular;30" itemHeight="40" selectionDisabled="1" scrollbarRadius="5" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1" zPosition="1"/>
     <widget name="textbook" position="575,710" size="770,40"  font="Regular;34" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-    <widget name="booklist" position="575,780" size="770,120" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1"/>
+    <widget name="booklist" position="575,780" size="770,120" font="Regular;30" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="S194" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Movieselection -->
@@ -1513,7 +1516,7 @@
     <!-- List Channel -->
     <widget name="waitingtext"  position="379,180" size="0,0" font="Regular;32" halign="center" valign="center" zPosition="4" foregroundColor="#73c6ff" backgroundColor="bluette" transparent="1"/>
     <widget name="chosenletter" position="379,180" size="0,0" font="Regular;32" halign="center" valign="center" zPosition="4" foregroundColor="#73c6ff" backgroundColor="bluette" transparent="1"/>
-    <widget name="list" position="379,180" size="1160,520" font="Regular;21" itemHeight="60" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+    <widget name="list" position="379,180" size="1160,520" font="Regular;21" itemHeight="60" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="2" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" />
     <!-- Name Event -->
     <widget source="Service" render="Label" position="389,830" size="580,70" font="Regular;38" halign="center" valign="center" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="2" >
       <convert type="MovieInfo">RecordServiceName</convert>
@@ -1547,7 +1550,7 @@
   <screen name="PacketManager" title="IPKG upgrade" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
     <panel name="p900_Template"/>
     <panel name="sRG"/>
-    <widget source="list" render="Listbox" position="70,180" size="1780,720" zPosition="2" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" >
+    <widget source="list" render="Listbox" position="70,180" size="1780,720" zPosition="2" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (60,1),  size = (1160,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1566,7 +1569,7 @@
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template_menu"/>
     <widget name="text" position="379,890" size="1160,100" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" halign="center" transparent="1"/>
-    <widget name="list" position="379,180" size="1170,700" font="Regular;32" itemHeight="70" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" transparent="1" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066"/>
+    <widget name="list" position="379,180" size="1170,700" font="Regular;32" itemHeight="70" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" transparent="1" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12"/>
     <!--eLabel name="DEBUG" text="S200" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Script Panel FHD-->
@@ -1574,7 +1577,7 @@
     <panel name="p800_Template"/>
     <panel name="nR"/>
     <widget name="labstatus" position="575,180" size="770,40" font="Regular;36" valign="center" noWrap="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-    <widget source="list" render="Listbox" position="575,230" size="770,700" font="Regular;30" itemHeight="35" scrollbarMode="showOnDemand" backgroundColor="#73c6ff" transparent="0">
+    <widget source="list" render="Listbox" position="575,230" size="770,700" font="Regular;30" itemHeight="35" scrollbarRadius="5" scrollbarMode="showOnDemand" backgroundColor="#73c6ff" transparent="0">
       <convert type="StringList"/>
     </widget>
     <!--eLabel name="DEBUG" text="S211" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -1583,7 +1586,7 @@
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="M"/>
-    <widget source="menu" render="Listbox" position="379,180" size="1170,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" >
+    <widget source="menu" render="Listbox" position="379,180" size="1170,720" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" >
        <convert type="TemplatedMultiContent">
          {"template": [ MultiContentEntryText(pos = (15, 5), size = (1170, 60), flags = RT_HALIGN_LEFT, text = 1)],
          "fonts": [gFont("Regular", 35)],
@@ -1607,7 +1610,7 @@
   <screen name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup" flags="wfNoBorder" >
     <panel name="p800_Template_menu"/>
     <panel name="exitbutton"/>
-    <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="introduction" render="Label" position="center,800" size="1150,80" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
     <!--eLabel name="DEBUG" text="S214" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1615,7 +1618,7 @@
   <screen name="PluginManager" title="Plugin manager" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="sRGY"/>
-    <widget source="list" render="Listbox" position="379,180" size="1160,635" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" scrollbarMode="showOnDemand" >
+    <widget source="list" render="Listbox" position="379,180" size="1160,635" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" scrollbarRadius="5" scrollbarMode="showOnDemand" >
       <convert type="TemplatedMultiContent">
         {"templates":
           {"default": (70,[
@@ -1653,7 +1656,7 @@
   <screen name="PluginManagerInfo" title="Plugin manager activity" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sRG"/>
-    <widget source="list" render="Listbox" position="575,180" size="770,750" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" render="Listbox" position="575,180" size="770,750" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" scrollbarRadius="5" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryPixmapAlphaTest(pos = (5,2),size = (48,48),png = 2),# index 2 is the status pixmap
@@ -1672,7 +1675,7 @@
   <screen name="PluginManagerHelp" title="Plugin manager help" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sR"/>
-    <widget source="list" render="Listbox" position="575,180" size="770,750" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" render="Listbox" position="575,180" size="770,750" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" scrollbarRadius="5" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         {"template": [
             MultiContentEntryText(pos = (80,5),size = (720,38),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
@@ -1691,7 +1694,7 @@
   <screen name="FlashOnline" position="fill" title="Flash On the Fly" flags="wfNoBorder">
     <panel name="p800_Template_menu" />
     <panel name="sRGY"/>
-    <widget name="list" position="379,180" size="1170,520" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="list" position="379,180" size="1170,520" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="description" render="Label" position="center,700" size="1170,150" font="Regular;28" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2"/>
     <!--eLabel name="DEBUG" text="S219" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1699,7 +1702,7 @@
   <screen name="doFlashImage" position="fill" title="Flash On the fly (select a image)" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nRGY"/>
-    <widget name="imageList" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="imageList" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S220" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Image Backup FHD -->
@@ -1708,14 +1711,14 @@
     <panel name="sRGYB"/>
     <widget source="info-hdd" position="379,180" size="1170,200" font="Regular;32" halign="left" valign="top" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1" />
     <widget source="info-usb" position="379,420" size="1170,200" font="Regular;32" halign="left" valign="top" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S221" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Image Backup FHD -->
   <screen name="RestorePlugins" position="fill" title="Select Plugins" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sRG"/>
-    <widget source="menu" render="Listbox" position="575,180" size="770,450" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1">
+    <widget source="menu" render="Listbox" position="575,180" size="770,450" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (40, 2), size = (760, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -1732,14 +1735,14 @@
   <screen name="RestoreMenu" title="Restore Backups" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sRGY"/>
-    <widget name="filelist" position="585,180" size="760,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="filelist" position="585,180" size="760,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S223" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Devices Panels FHD -->
   <screen name="DevicesPanel" title="Device Panels" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nRGYB"/>
-    <widget source="list" render="Listbox" position="575,180" size="770,600" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1">
+    <widget source="list" render="Listbox" position="575,180" size="770,600" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1">
       <convert type="TemplatedMultiContent">
         {"template": [
          MultiContentEntryText(pos = (90, 1),  size = (700, 30), font=0, color=0x73c6ff, text = 0),
@@ -1758,14 +1761,14 @@
   <screen name="DevicesConf" title="Device Conf" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nRG"/>
-    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget name="Linconn" position="575,840" size="770,40" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <!--eLabel name="DEBUG" text="S225" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Backup Screen FHD -->
   <screen name="BackupScreen" title="Backup is running" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
-    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S226" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Backup Selection FHD -->
@@ -1773,14 +1776,14 @@
     <panel name="p800_Template" />
     <panel name="nRGY"/>
     <panel name="sRGY"/>
-    <widget name="checkList" position="585,180" size="760,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="checkList" position="585,180" size="760,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S227" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Extra Plugins FHD -->
   <screen name="XtraPluginsSelection" title="Xtra Plugin" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nRGY"/>
-    <widget name="checkList" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="checkList" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S228" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Device Browser FHD -->
@@ -1788,7 +1791,7 @@
     <panel name="p800_Template" />
     <panel name="nRG"/>
     <panel name="sRG"/>
-    <widget name="filelist" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="filelist" position="575,180" size="770,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="message" render="Label" position="575,820" size="770,40" font="Regular;32" backgroundColor="header" halign="center" transparent="1" zPosition="3" />
     <!--eLabel name="DEBUG" text="S229" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1797,7 +1800,7 @@
     <panel name="p900_Template" />
     <panel name="nRG"/>
     <widget name="lab1" position="575,180" size="770,180" font="Regular;32" halign="left" valign="top" itemHeight="45" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2"/>
-    <widget name="list" position="575,420" size="770,360" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="list" position="575,420" size="770,360" font="Regular;32" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <applet type="onLayoutFinish">
       self["list"].instance.setItemHeight(45)
     </applet>
@@ -1807,7 +1810,7 @@
   <screen name="EventViewEPGSelect" title="Eventview EPG Select" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nRGYB"/>
-    <widget name="FullDescription" position="575,180" size="770,720" font="Regular;32" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="FullDescription" position="575,180" size="770,720" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S231" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Event View Context Menu FHD -->
@@ -1823,7 +1826,7 @@
   <screen name="InputDeviceSetup" title="Input device setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="sRG"/>
-    <widget name="config" position="389,180" size="1160,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1"/>
+    <widget name="config" position="389,180" size="1160,720" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1"/>
     <widget source="introduction" render="Label" position="389,820" size="1160,40" font="Regular;32" foregroundColor="#73c6ff" halign="center" backgroundColor="header" zPosition="1" transparent="1"/>
     <!--eLabel name="DEBUG" text="S233" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1831,7 +1834,7 @@
   <screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRG"/>
-    <widget name="config" position="575,180" size="770,630" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1" />
+    <widget name="config" position="575,180" size="770,630" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1" />
     <widget source="introduction" render="Label" position="575,980" size="600,40" font="Regular;32" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1" />
   </screen>
   <!-- Video Enh Setup FHD -->
@@ -1839,7 +1842,7 @@
     <panel name="p800_Template_menu"/>
     <panel name="sRGYB"/>
     <widget name="footnote" position="379,180" size="1170,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
-    <widget name="config"   position="379,180" size="1170,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2"/>
+    <widget name="config"   position="379,180" size="1170,540" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2"/>
     <widget name="description" position="center,760" size="1150,500" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <!--eLabel name="DEBUG" text="S235" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -1849,7 +1852,7 @@
     <panel name="p800_Template_menu"/>
     <panel name="sRGB"/>
     <eLabel text="Install extensions" position="center,180" size="1170,50" font="Regular;40" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget name="list" position="379,280" size="1170,450" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
+    <widget name="list" position="379,280" size="1170,450" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1"/>
     <widget source="introduction" render="Label" position="379,870" size="1170,40" font="Regular;30" halign="center" foregroundColor="#73c6ff" backgroundColor="header" zPosition="1" transparent="1"/>
     <!--eLabel name="DEBUG" text="S236a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1873,7 +1876,7 @@
   <screen name="IPKGMenu" title="IPKG Menu" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRG"/>
-    <widget name="filelist" position="585,180" size="750,720" font="Regular;35" transparent="1" itemHeight="60" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" />
+    <widget name="filelist" position="585,180" size="750,720" font="Regular;35" transparent="1" itemHeight="60" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="2" />
     <!--eLabel name="DEBUG" text="S238" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Edit upgrade source FHD -->
@@ -1890,14 +1893,14 @@
   <screen name="SoftwareUpdateChoices" title="Software Update..." position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <widget name="text" position="575,180" size="770,50" font="Regular;40" foregroundColor="ltbluette" backgroundColor="header" halign="center" transparent="0"/>
-    <widget name="list" position="575,300" size="770,400" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="3" transparent="1"/>
+    <widget name="list" position="575,300" size="770,400" font="Regular;32" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="3" transparent="1"/>
     <!--eLabel name="DEBUG" text="240" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Skin Selector FHD -->
   <screen name="SkinSelector" title="Skin Selector" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu" />
     <eLabel text="Choose your Skin" position="center,170" size="1920,50" font="Regular;44" valign="center" halign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget name="SkinList" position="389,240" size="610,630" font="Regular;35" scrollbarMode="showOnDemand" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="SkinList" position="389,240" size="610,630" font="Regular;35" scrollbarRadius="5" scrollbarMode="showOnDemand" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <ePixmap position="1035,570" pixmap="MadMax/menu/tv_skin.png" size="600,410" alphatest="blend" zPosition="4" />
     <widget name="Preview" position="1053,591" size="480,269" zPosition="3" alphatest="on"/>
     <widget source="introduction" render="Label" position="center,1022" size="1920,40" font="Regular;32" halign="center" foregroundColor="#73c6ff" backgroundColor="header" zPosition="1" transparent="1"/>
@@ -1908,14 +1911,14 @@
     <panel name="p800_Template" />
     <panel name="sRGY"/>
     <ePixmap alphatest="blend" pixmap="MadMax/box/osd.png" position="0,0" size="1920,1080" zPosition="-10" />
-    <widget name="config" position="575,180" size="770,360" itemHeight="45" font="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="575,180" size="770,360" itemHeight="45" font="Regular;32" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="status" render="Label" position="575,540" size="770,220" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" halign="center" valign="center" transparent="1" zPosition="2"/>
     <!--eLabel name="DEBUG" text="S242" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- ServiceInfo FHD -->
   <screen name="ServiceInfoSimple" title="Service Info" position="fill" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="p900_Template"/>
-    <widget name="infolist" position="70,165" size="1740,750" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" />
+    <widget name="infolist" position="70,165" size="1740,750" font="Regular;30" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" />
     <!--eLabel name="DEBUG" text="S243" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Bouquet Selector FHD -->
@@ -1926,14 +1929,14 @@
       colorServiceDescription="#0073c6ff" colorServiceDescriptionSelected="#00ffffff"
       backgroundColor="#00272e43" backgroundColorSelected="#0073c6ff"
       foregroundColorEventSelected="#0036c6" backgroundColorEventSelected="#73c6ff"
-      foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#73c6ff" scrollbarMode="showOnDemand" transparent="1" />
+      foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#73c6ff" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1" />
     <!--eLabel name="DEBUG" text="S244" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Language selection FHD -->
   <screen name="LanguageSelection" title="Language selection" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="nRGYB"/>
-    <widget source="languages" render="Listbox" position="575,180" size="770,720" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" >
+    <widget source="languages" render="Listbox" position="575,180" size="770,720" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (80, 10), size = (300, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -1951,7 +1954,7 @@
     <panel name="p800_Template_menu" />
     <panel name="sRG"/>
     <eLabel text="Choose Tuner" position="379,175" size="1170,100" font="Regular;50" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
-    <widget source="nimlist" render="Listbox" position="379,270" size="1170,600" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" zPosition="2" transparent="1" >
+    <widget source="nimlist" render="Listbox" position="379,270" size="1170,600" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" zPosition="2" transparent="1" >
       <convert type="TemplatedMultiContent">
         {"template": [
         MultiContentEntryText(pos = (10, 3), size = (1160, 40), color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -1968,7 +1971,7 @@
   <screen name="NimSetup" title="Reception Settings" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nRGYB" />
-    <widget name="config" position="575,180" size="770,540" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config" position="575,180" size="770,540" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <!--eLabel name="DEBUG" text="S247" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Scan simple FHD -->
@@ -1976,7 +1979,7 @@
     <panel name="p800_Template_menu" />
     <panel name="sRG" />
     <widget name="header" position="379,160" size="820,50" font="Regular;38" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
-    <widget name="config"  position="379,220" size="1165,675" font="Regular;28" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config"  position="379,220" size="1165,675" font="Regular;28" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <widget name="footer" position="0,0" size="0,0"/>
     <!--eLabel name="DEBUG" text="S248" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1985,7 +1988,7 @@
     <panel name="p800_Template_menu" />
     <panel name="sRG" />
     <widget name="header" position="379,180" size="0,0" font="Regular;38" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
-    <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config" position="379,180" size="1170,720" font="Regular;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <widget name="introduction" position="0,0" size="0,0"/>
     <!--eLabel name="DEBUG" text="S249" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -1993,7 +1996,7 @@
   <screen name="CableScanScreen" title="Scan Setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="nR" />
-    <widget name="config" position="575,180" size="770,630" font="Regular;32" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+    <widget name="config" position="575,180" size="770,630" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" itemHeight="45" scrollbarRadius="5" scrollbarMode="showOnDemand" transparent="1"/>
     <widget name="introduction" position="0,0" size="0,0"/>
     <eLabel text="OK Start Scan" position="center,840" size="770,95" font="Regular;32" halign="center" valign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="S249B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -2028,7 +2031,7 @@
     <widget name="pass"          position="585,320"  size="760,50" valign="center" font="Regular;32" foregroundColor="yellow" backgroundColor="header"  transparent="1"/>
     <widget name="scan_state"    position="585,370"  size="750,90" valign="center" zPosition="2" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <widget name="scan_progress" position="585,460"  size="750,25" borderWidth="2" borderColor="#cccccc" foregroundColor="bluette" />
-    <widget name="servicelist"   position="585,530"  size="760,370" selectionDisabled="1" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+    <widget name="servicelist"   position="585,530"  size="760,370" selectionDisabled="1" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
     <!--eLabel name="DEBUG" text="S250" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Satfinder FHD -->
@@ -2037,7 +2040,7 @@
     <panel name="sRG"/>
     <widget name="header" position="1280,245" size="600,60" font="Regular;40" halign="center" noWrap="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <ePixmap position="1450,300" size="300,200" pixmap="MadMax/icons/satellite.png" alphatest="blend"/>
-    <widget name="config" position="70,180" size="820,720" itemHeight="45" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066"/>
+    <widget name="config" position="70,180" size="820,720" itemHeight="45" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12"/>
     <!-- Line SNR -->
     <eLabel text="SNR : " position="1280,500" size="100,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="5"/>
     <widget source="Frontend" render="Label" position="1370,500" size="300,40" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="header" >
@@ -2096,7 +2099,7 @@
   <screen name="PositionerSetupLog" title="Positioner Setup Log" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template"/>
     <panel name="nRGYB"/>
-    <widget name="list" position="575,180" size="770,720" font="console;20" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="list" position="575,180" size="770,720" font="console;20" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S253" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- AutoDiseqC FHD -->
@@ -2105,14 +2108,14 @@
     <panel name="sR" />
     <widget source="statusbar" render="Label" position="575,190" size="740,80" font="Regular;32" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1" />
     <widget source="tunerstatusbar" render="Label" position="180,270" size="820,80" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget name="config" position="575,355" size="770,630" itemHeight="45" font="Regular;30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" />
+    <widget name="config" position="575,355" size="770,630" itemHeight="45" font="Regular;30" transparent="1" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" />
         <!--eLabel name="DEBUG" text="S254" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- FastScan FHD -->
   <screen name="FastScanScreen" title="FastScan Screen" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sRG"/>
-    <widget name="list" position="575,180" size="770,320" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="list" position="575,180" size="770,320" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S255" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- FastScanStatus FHD -->
@@ -2131,13 +2134,13 @@
   <!-- Sat Nim Selection FHD -->
   <screen name="SatNimSelection" title="Select Tuner" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
-    <widget name="nimlist" position="575,180" size="770,720" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="nimlist" position="575,180" size="770,720" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S258" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Tuner Screen FHD -->
   <screen name="TunerScreen" title="Tuner Screen" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template" />
-    <widget name="config" position="575,180" size="770,720" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="575,180" size="770,720" itemHeight="45" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget name="introduction" position="575,740" size="820,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <!--eLabel name="DEBUG" text="S259" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2161,7 +2164,7 @@
   <screen name="CAidSelect" title="SoftCam Service" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template" />
     <panel name="sRG"/>
-    <widget name="list" position="575,180" size="770,720" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="list" position="575,180" size="770,720" itemHeight="40" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="introduction" render="Label" position="center,820" size="770,40" font="Regular;32" foregroundColor="ltbluette" halign="center" valign="center" backgroundColor="header" transparent="1"/>
     <!--eLabel name="DEBUG" text="S261" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2169,14 +2172,14 @@
   <screen name="CiSelection" title="Common Interface" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template" />
     <widget name="text" position="575,180" size="770,50" font="Regular;42" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-    <widget name="entries" position="575,250" size="770,665" itemHeight="35" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="entries" position="575,250" size="770,665" itemHeight="35" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S262" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Service CI FHD -->
   <screen name="CIselectMainMenu" title="CI Select Menu" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sRG"/>
-    <widget name="CiList" position="575,180" size="770,720" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="CiList" position="575,180" size="770,720" itemHeight="40" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S263" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- CI Config Menu FHD -->
@@ -2186,7 +2189,7 @@
     <widget source="CAidList_desc"    render="Label" position="575,180" size="820,40"  font="Regular;34" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <widget source="CAidList"         render="Label" position="575,230" size="820,100" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
     <widget source="ServiceList_desc" render="Label" position="575,360" size="820,40"  font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-    <widget name="ServiceList" position="575,400" size="770,450" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="ServiceList" position="575,400" size="770,450" itemHeight="40" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="ServiceList_info" render="Label" position="center,260" size="560,600" font="Regular;30" foregroundColor="#73c6ff" backgroundColor="header" zPosition="2" transparent="1"/>
     <!--eLabel name="DEBUG" text="S264" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2195,7 +2198,7 @@
     <panel name="p800_Template" />
     <widget name="title"    position="575,180" size="770,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <widget name="subtitle" position="575,230" size="770,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-    <widget name="entries" position="575,300" size="770,450" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="entries" position="575,300" size="770,450" itemHeight="40" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget name="bottom" position="575,800" size="770,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
     <!--eLabel name="DEBUG" text="S265" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2203,7 +2206,7 @@
   <screen name="easyCIconfigMenu" title="Easy CI Menu" position="fill" flags="wfNoBorder" >
     <panel name="p800_Template" />
     <panel name="sRGYB"/>
-    <widget name="ServiceList" position="575,180" size="770,450" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="ServiceList" position="575,180" size="770,450" itemHeight="40" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <widget source="ServiceList_desc" render="Label" position="575,550" size="580,40"  font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
     <widget source="ServiceList_info" render="Label" position="575,650" size="580,400" font="Regular;30" foregroundColor="#73c6ff" backgroundColor="header" zPosition="2" transparent="1"/>
     <!--eLabel name="DEBUG" text="S266" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -2212,13 +2215,13 @@
   <screen name="ParentalControlSetup" title="Parental control setup" position="fill" flags="wfNoBorder">
     <panel name="p800_Template_menu"/>
     <panel name="sRG"/>
-    <widget name="config" position="379,180" size="1160,720" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="config" position="379,180" size="1160,720" itemHeight="40" font="Regular;30" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S267" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Parental Control Editor FHD -->
   <screen name="ParentalControlEditor" title="Parental control services Editor" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
-    <widget name="servicelist" position="575,180" size="770,720" font="Regular;32" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1"/>
+    <widget name="servicelist" position="575,180" size="770,720" font="Regular;32" itemHeight="40" enableWrapAround="1" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1"/>
     <!--eLabel name="DEBUG" text="S268" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Parental Control PinInput FHD -->
@@ -2243,7 +2246,7 @@
   <screen name="myProviderSelection" position="fill" title="Select provider to add..." flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRGYB"/>
-    <widget name="list" position="575,180" size="770,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="list" position="575,180" size="770,720" font="Regular;30" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <widget source="introduction" render="Label" position="70,840" size="820,40" itemHeight="30" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S271" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2251,7 +2254,7 @@
   <screen name="myChannelSelection" position="fill" title="Select channel to add..." flags="wfNoBorder">
     <panel name="p800_Template"/>
     <panel name="sRGYB"/>
-    <widget name="list" position="575,180" size="770,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2" />
+    <widget name="list" position="575,180" size="770,720" font="Regular;30" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2" />
     <widget source="introduction" render="Label" position="70,840" size="820,40" itemHeight="30" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
     <!--eLabel name="DEBUG" text="S272" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2260,8 +2263,8 @@
     <panel name="p800_Template_menu" />
     <panel name="nR"/>
     <panel name="sR"/>
-    <widget name="list" position="389,180" size="1160,500" scrollbarMode="showOnDemand" font="Regular;32" itemHeight="45" transparent="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" enableWrapAround="1" zPosition="5" />
-    <widget name="choosen"     position="389,760" size="1160,200" scrollbarMode="showOnDemand" font="Regular;30" itemHeight="40" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="5" />
+    <widget name="list" position="389,180" size="1160,500" scrollbarRadius="5" scrollbarMode="showOnDemand" font="Regular;32" itemHeight="45" transparent="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" enableWrapAround="1" zPosition="5" />
+    <widget name="choosen"     position="389,760" size="1160,200" scrollbarRadius="5" scrollbarMode="showOnDemand" font="Regular;30" itemHeight="40" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="5" />
     <widget name="description" position="389,680" size="1160,400" font="Regular;30" valign="center" halign="center" backgroundColor="header" foregroundColor="ltbluette" transparent="1" zPosition="5" />
     <!--eLabel name="DEBUG" text="S273" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2270,8 +2273,8 @@
     <panel name="p800_Template_menu" />
     <panel name="nRG"/>
     <panel name="sRG"/>
-    <widget name="list" position="389,180" size="1160,500" scrollbarMode="showOnDemand" font="Regular;32" itemHeight="45" transparent="1" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" enableWrapAround="1" zPosition="5" />
-    <widget name="choosen"     position="389,760" size="1160,200" scrollbarMode="showOnDemand" font="Regular;30" itemHeight="40" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="5" />
+    <widget name="list" position="389,180" size="1160,500" scrollbarRadius="5" scrollbarMode="showOnDemand" font="Regular;32" itemHeight="45" transparent="1" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" enableWrapAround="1" zPosition="5" />
+    <widget name="choosen"     position="389,760" size="1160,200" scrollbarRadius="5" scrollbarMode="showOnDemand" font="Regular;30" itemHeight="40" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="5" />
     <widget name="description" position="389,680" size="1160,400" font="Regular;30" valign="center" halign="center" backgroundColor="header" foregroundColor="ltbluette" transparent="1" zPosition="5" />
     <!--eLabel name="DEBUG" text="S274" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2279,7 +2282,7 @@
   <screen name="InputDeviceSelection" title="Select input device" position="fill" flags="wfNoBorder">
     <panel name="p800_Template" />
     <panel name="sRG"/>
-    <widget source="list" render="Listbox" position="575,180" size="770,720" zPosition="2" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" >
+    <widget source="list" render="Listbox" position="575,180" size="770,720" zPosition="2" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" >
       <convert type="TemplatedMultiContent">
         <!-- device, description, devicepng, divpng -->
         {"template": [
@@ -2300,7 +2303,7 @@
     <!-- Code -->
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
     <eLabel position="575,470" size="820,1" backgroundColor="#303030" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2308,7 +2311,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="575,955"  size="210,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
     <widget name="portpic" position="70,820" size="40,40" zPosition="2" alphatest="on" transparent="1"/>
@@ -2326,7 +2329,7 @@
     <!-- Code -->
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
     <eLabel position="70,260" size="820,1" backgroundColor="#303030" zPosition="1" />
-    <widget source="languages" render="Listbox" position="575,280" size="770,615" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1">
+    <widget source="languages" render="Listbox" position="575,280" size="770,615" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
         {"template": [
           MultiContentEntryText(pos = (100, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -2350,7 +2353,7 @@
     <!-- Code -->
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
     <eLabel position="575,470" size="820,1" backgroundColor="#303030" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2358,7 +2361,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="120,955"  size="210,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
     <widget name="rc"         position="2810,100" size="160,500"  pixmaps="MadMax/skin_default/rc.png,MadMax/skin_default/rcold.png" alphatest="blend" zPosition="2" />
@@ -2373,7 +2376,7 @@
     <panel name="p800_Template"/>
     <!-- Code -->
     <widget name="text"   position="585,180" size="760,300" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2381,7 +2384,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <widget name="HelpWindow" position="595,700" size="1,1" zPosition="1" alphatest="on"/>
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="65,992"  size="210,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
@@ -2396,7 +2399,7 @@
   <screen name="InstallWizardIpkgUpdater" title="Update Wizard..." position="fill" flags="wfNoBorder" >
     <panel name="p800_Template"/>
     <!-- Code -->
-    <widget source="statusbar" render="Label" position="575,150" size="770,250" font="Regular;32" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1"/>
+    <widget source="statusbar" render="Label" position="575,150" size="770,250" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1"/>
     <!--eLabel name="DEBUG" text="W005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
   <!-- Image Wizard FHD -->
@@ -2404,7 +2407,7 @@
     <panel name="p800_Template_menu"/>
     <!-- Code -->
     <widget name="text"   position="389,180" size="1160,300" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2412,7 +2415,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="389,500" size="1160,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="389,500" size="1160,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <widget name="HelpWindow" position="389,700" size="1,1" zPosition="1" alphatest="on"/>
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="110,992"  size="310,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
@@ -2441,7 +2444,7 @@
     <!-- Code -->
     <widget name="wizard" position="1480,580" size="200,294" pixmap="MadMax/menu/wizard.png" alphatest="blend" zPosition="1" />
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2449,7 +2452,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="575,955"  size="210,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
     <widget name="wizard" position="1020,415" size="160,180" pixmap="MadMax/menu/wizard.png" zPosition="1" />
@@ -2466,7 +2469,7 @@
     <!-- Code -->
     <widget name="wizard" position="1480,580" size="200,294" pixmap="MadMax/menu/wizard.png" alphatest="blend" zPosition="1" />
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2474,7 +2477,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="575,955"  size="210,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
     <widget name="rc"         position="2810,100" size="160,500"  pixmaps="MadMax/skin_default/rc.png,MadMax/skin_default/rcold.png" alphatest="blend" zPosition="2" />
@@ -2486,7 +2489,7 @@
   </screen>
   <!-- Default Wizard FHD -->
   <screen name="SoftwareUpdateChoices" title="Software Update..." position="center,center" size="650,340">
-    <widget name="list" position="10,10"  size="630,160" itemHeight="40" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+    <widget name="list" position="10,10"  size="630,160" itemHeight="40" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" transparent="0" scrollbarRadius="5" scrollbarMode="showOnDemand" enableWrapAround="1"/>
     <widget name="text" position="10,210" size="630,100" font="Regular;30" foregroundColor="#ffffff" backgroundColor="header" halign="center" transparent="0"/>
     <!--eLabel name="DEBUG" text="W011" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
   </screen>
@@ -2496,7 +2499,7 @@
     <!-- Code -->
     <widget name="wizard" position="1480,580" size="200,294" pixmap="MadMax/menu/wizard.png" alphatest="blend" zPosition="1" />
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="1">
+    <widget source="list" render="Listbox" position="575,500" size="770,320" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (10, 2), size = (800, 38), flags = RT_HALIGN_LEFT, text = 0) ],
           "fonts": [gFont("Regular", 32)],
@@ -2504,7 +2507,7 @@
         }
       </convert>
     </widget>
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <ePixmap position="70,1025"  pixmap="MadMax/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
     <widget name="languagetext" position="575,955"  size="210,95" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="bluette" transparent="1" />
     <widget name="rc"         position="2810,100" size="160,500"  pixmaps="MadMax/skin_default/rc.png,MadMax/skin_default/rcold.png" alphatest="blend" zPosition="2" />
@@ -2518,7 +2521,7 @@
   <screen name="CleanupWizardConfiguration" title="Cleanup Wizard Settings" position="fill" flags="wfNoBorder">
     <panel name="p800_Template"/>
     <widget name="text"   position="575,180" size="770,300" font="Regular;30" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1" />
-    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#000066" foregroundColorSelected="#ffffff" backgroundColorSelected="#000066" transparent="1" zPosition="5" />
+    <widget name="config" position="575,500" size="770,320" font="Regular;32" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="header" foregroundColorSelected="#ffffff" backgroundColorSelected="bluette" itemCornerRadius="12" transparent="1" zPosition="5" />
     <!-- widget source="Title"  render="Label" font="Regular;35" position="70,47" size="800,43" backgroundColor="header" transparent="1"/-->
     <widget source="status" render="Label" font="Regular;32" halign="center" position="575,820" size="820,40" backgroundColor="header" transparent="1"/>
     <ePixmap alphatest="blend" pixmap="MadMax/buttons/redpanel.png" position="70,1025" size="30,30"/>
@@ -2554,9 +2557,9 @@
     <widget name="year"       position="480,367" size="200,50"  zPosition="1" font="Regular;32" halign="left" valign="top" foregroundColor="white" backgroundColor="header" transparent="1" />
     <ePixmap position="20,420" size="1920,3" pixmap="MadMax/skin_default/sep2.png" alphatest="blend" zPosition="1"/>
     <!-- FileList -->
-    <widget name="filelist" position="1000,155" size="860,240" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#001842" transparent="1" zPosition="1" />
+    <widget name="filelist" position="1000,155" size="860,240" font="Regular;28" itemHeight="40" scrollbarRadius="5" scrollbarMode="showOnDemand" foregroundColor="#ffffff" backgroundColor="#001842" transparent="1" zPosition="1" />
     <!-- PlayList -->
-    <widget name="playlist" position="60,450" size="1800,500" font="Regular;28" itemHeight="50" scrollbarMode="showOnDemand" selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="1" />
+    <widget name="playlist" position="60,450" size="1800,500" font="Regular;28" itemHeight="50" scrollbarRadius="5" scrollbarMode="showOnDemand" selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="1" />
     <widget name="currenttext" position="0,985" size="0,0" font="Regular;32" halign="center" valign="center" backgroundColor="bluette" foregroundColor="white" transparent="1" />
     <!-- Player -->
     <widget source="session.CurrentService" render="Label" position="60,975" size="190,50" font="Regular;40" halign="center" valign="center" noWrap="1" foregroundColor="#ffffff" backgroundColor="bluette" transparent="0" zPosition="3" >

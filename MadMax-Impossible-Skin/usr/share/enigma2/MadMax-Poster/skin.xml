@@ -389,11 +389,11 @@
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel position="480,990" size="1102,40" backgroundColor="#10202020" transparent="0" zPosition="1" />
-    <eLabel position="480,923" size="1103,55" backgroundColor="#10202020" transparent="0" zPosition="1" />
-    <widget source="session.Event_Now" render="Progress" position="480,923" size="1103,55" pixmap="MadMax/skin_default/progress_infobar55.png" backgroundColor="#10202020" zPosition="2">
-      <convert type="EventTime">Progress</convert>
-    </widget>
+    <eLabel position="480,990" size="1102,40" backgroundColor="#10202020" transparent="0" zPosition="1" cornerRadius="5" />
+		<eLabel position="480,923" size="1103,55" backgroundColor="#10202020" transparent="0" zPosition="1" cornerRadius="5" />
+		<widget source="session.Event_Now" render="Progress" position="480,923" size="1103,55" cornerRadius="5" backgroundColor="#10202020" borderWidth="0" borderColor="#20202020" foregroundColor="bluette" transparent="1" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
     <!-- *** Event (NOW) *** -->
     <widget source="session.Event_Now" render="MMRunningText" position="487,923" size="892,55" font="Regular2;40" valign="center" backgroundColor="#202020" transparent="1" noWrap="1"
       options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=6,oneshot=1" zPosition="3">
